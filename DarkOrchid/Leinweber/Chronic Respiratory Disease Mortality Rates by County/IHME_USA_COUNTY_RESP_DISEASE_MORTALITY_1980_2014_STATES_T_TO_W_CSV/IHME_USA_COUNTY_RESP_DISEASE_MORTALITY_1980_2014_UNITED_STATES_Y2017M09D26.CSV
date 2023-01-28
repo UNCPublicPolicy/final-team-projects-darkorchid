@@ -1,0 +1,1051 @@
+"measure_id","measure_name","location_id","location_name","FIPS","cause_id","cause_name","sex_id","sex","age_id","age_name","year_id","metric","mx","lower","upper"
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1980,"Rate",68.7256489029032,66.5604180456924,70.861126021771
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1981,"Rate",68.0050282874759,66.0084329362517,70.0468992851899
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1982,"Rate",67.4468680356121,65.4709862136759,69.4429545203261
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1983,"Rate",68.1727642050111,66.2076358130696,70.0764888621611
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1984,"Rate",68.8942153410512,66.9755325172015,70.7557870096947
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1985,"Rate",70.0381675722071,68.238891775355,71.881214377986
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1986,"Rate",70.3073162346708,68.5361271497517,72.1337281561678
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1987,"Rate",70.1233384615494,68.3015934150206,71.9875850276377
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1988,"Rate",70.4594649314798,68.7037761651384,72.3294609872572
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1989,"Rate",69.5612881210008,67.8884371959606,71.4563941223632
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1990,"Rate",68.7947544651341,67.0856946416649,70.7483101556733
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1991,"Rate",68.6074238261189,66.9272928008075,70.4751188643007
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1992,"Rate",68.2255959433421,66.5401215766675,70.1085419408821
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1993,"Rate",69.7685792260191,67.974383079102,71.7518602636029
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1994,"Rate",69.8944881607245,68.0125088227196,71.9940043520891
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1995,"Rate",70.3764535468854,68.5132570217608,72.4929757216962
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1996,"Rate",69.5945377207353,67.731202480278,71.6924743230661
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1997,"Rate",68.9829454879715,67.1466087746604,70.9641533244643
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1998,"Rate",69.5323378207744,67.7084388415877,71.5356280285306
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",1999,"Rate",71.051910783479,69.2405567867333,72.8849256370548
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2000,"Rate",70.8918180095085,69.1080791431753,72.6276790434354
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2001,"Rate",70.6446603654948,68.8358452975384,72.4172876327551
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2002,"Rate",70.2620645519915,68.4790169526435,72.0435439021598
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2003,"Rate",69.190963800533,67.4124629124382,71.0618179061864
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2004,"Rate",67.3711047675075,65.6423914616934,69.2789685465522
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2005,"Rate",67.3720514247124,65.6215739465343,69.3445844451057
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2006,"Rate",66.408597843642,64.6722939838889,68.3355414109798
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2007,"Rate",65.3824142745837,63.6612212741097,67.159139080267
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2008,"Rate",65.3220257972847,63.5674913374295,67.1012960902145
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2009,"Rate",64.1313234638843,62.330234077203,65.8173870243965
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2010,"Rate",63.3624326319019,61.658432341971,65.0599535180356
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2011,"Rate",63.2477055082655,61.5239124338336,65.0228276616112
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2012,"Rate",62.6557497925821,60.8974666827367,64.511217007334
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2013,"Rate",62.5064334530079,60.4794146226605,64.5065628216475
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",1,"Male",27,"Age-standardized",2014,"Rate",62.5023173408961,60.5055460658979,64.4980603781474
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1980,"Rate",23.6765389022269,22.8128934723844,24.5072927056912
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1981,"Rate",23.7045076016714,22.8824249885168,24.4768317919468
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1982,"Rate",23.9078619139651,23.1040309187074,24.7154602694162
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1983,"Rate",24.9453790379777,24.1351893423555,25.7475562712511
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1984,"Rate",25.8845762550633,25.0707869663827,26.6911632484369
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1985,"Rate",27.0407542022829,26.1850869292947,27.885537482311
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1986,"Rate",27.9610013894373,27.0641384447146,28.8708134765595
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1987,"Rate",29.0231792960975,28.1261639507435,29.9667946889996
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1988,"Rate",30.2817125160159,29.3482615967355,31.2107976299849
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1989,"Rate",30.9595602070471,30.053418299736,31.8666926073491
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1990,"Rate",31.0906480478258,30.1644356697496,32.0390617066655
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1991,"Rate",32.348198154886,31.4268787196234,33.3888813554706
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1992,"Rate",33.2843058244167,32.3440245982733,34.2998235376103
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1993,"Rate",35.3302066589154,34.3138402190799,36.4151558952032
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1994,"Rate",36.7223095211076,35.6158987944561,37.8897736818339
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1995,"Rate",38.2482538766069,37.0805187553008,39.4926713477784
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1996,"Rate",39.3100527780368,38.1227548437568,40.546457536045
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1997,"Rate",40.2975528133597,39.0799089772141,41.556784918034
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1998,"Rate",41.5465186608479,40.3016102378892,42.798949075989
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",1999,"Rate",43.6470013193291,42.3680190420451,44.9528726153715
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2000,"Rate",44.8319906623574,43.454293036729,46.1420373732881
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2001,"Rate",45.8541262372656,44.5384270538002,47.1241765420199
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2002,"Rate",46.2811801835496,44.919904129938,47.6421964664638
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2003,"Rate",46.5578305607931,45.2143706068387,47.9114330450874
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2004,"Rate",45.9372853890739,44.5999159708379,47.2446823913919
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2005,"Rate",46.4434413762281,45.0996734054464,47.8227335474149
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2006,"Rate",46.3582536062524,44.9945627345212,47.7410578457523
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2007,"Rate",46.0045299150653,44.6929204762257,47.3030491045771
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2008,"Rate",46.4244488147491,45.0903966920601,47.7300178996956
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2009,"Rate",46.4047139253892,45.0324037725615,47.7852305417322
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2010,"Rate",45.9089229111325,44.5388691199836,47.3480706155828
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2011,"Rate",46.3037280524657,44.899446490958,47.7906767623218
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2012,"Rate",45.944239048923,44.5330173615343,47.4740973487243
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2013,"Rate",45.9355926154619,44.2787242390629,47.5090834967036
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",2,"Female",27,"Age-standardized",2014,"Rate",46.2414940046959,44.5954787658347,47.8533116934754
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1980,"Rate",40.7895882462489,39.7983900305675,41.7739561649076
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1981,"Rate",40.4430511787721,39.4776178282683,41.4309998775527
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1982,"Rate",40.272819702609,39.3322773291132,41.234775579724
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1983,"Rate",41.1072179656247,40.2062152401343,41.990075128129
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1984,"Rate",41.9010847212124,41.0159234820485,42.7970471686121
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1985,"Rate",42.9949889652874,42.0988139616601,43.896919341597
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1986,"Rate",43.6299540734487,42.7303459185543,44.5700934983241
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1987,"Rate",44.1848297316016,43.2370200564136,45.1279083262275
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1988,"Rate",45.0743748019551,44.1258391003497,46.0382226686053
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1989,"Rate",45.158643507103,44.2861901906996,46.1043517095409
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1990,"Rate",44.9391489471592,44.0779072000347,45.9307938312162
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1991,"Rate",45.649800821638,44.7963677719765,46.6446817747338
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1992,"Rate",46.1041833974806,45.1739558688868,47.1631127568939
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1993,"Rate",47.9698839815343,46.9624991075116,49.0683741724174
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1994,"Rate",48.9097424731547,47.8203070326695,50.0232675249229
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1995,"Rate",50.0698759701828,48.9774908457388,51.230930024172
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1996,"Rate",50.4518967091283,49.3490724457972,51.6248729021975
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1997,"Rate",50.8658155782162,49.7260109884845,52.004311269812
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1998,"Rate",51.9015208671381,50.7397756304673,53.0683300291513
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",1999,"Rate",53.8285250069254,52.6623957829927,54.9634017272261
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2000,"Rate",54.5557345615069,53.3389810992854,55.7405716930345
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2001,"Rate",55.1739094535062,54.0246660469194,56.3495754243636
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2002,"Rate",55.3653357040136,54.1467736935,56.5372602019355
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2003,"Rate",55.1998595052759,53.9461171892331,56.4253951761318
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2004,"Rate",54.1862477187823,52.955648362677,55.4130186849983
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2005,"Rate",54.5754812997631,53.3863955408912,55.8509085299279
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2006,"Rate",54.2040160828865,53.0737496384526,55.4549664206525
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2007,"Rate",53.6454495655807,52.4464726179519,54.8624196508537
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2008,"Rate",53.9236314445698,52.664168554478,55.1688453301912
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2009,"Rate",53.4708929269217,52.2482536630256,54.6857149524814
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2010,"Rate",52.9165085870933,51.7186538552246,54.1642025654586
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2011,"Rate",53.1402615607284,51.9147252674948,54.4295662176935
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2012,"Rate",52.7274393984569,51.5037355689604,54.0802796088937
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2013,"Rate",52.6928615181925,51.4055039012575,54.0990449455386
+1,"Deaths",102,"United States",NA,508,"Chronic respiratory diseases",3,"Both",27,"Age-standardized",2014,"Rate",52.918027784272,51.6030816156271,54.3600165035935
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1980,"Rate",59.6639469523162,56.7219317540259,61.8850402118799
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1981,"Rate",59.1082670920871,56.1310875196654,61.2385991286827
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1982,"Rate",58.7770934112243,55.8453577839846,60.8479820369003
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1983,"Rate",59.5372015595381,56.6807730851357,61.5196616267372
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1984,"Rate",60.2973518838702,57.4398542596816,62.2509303358639
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1985,"Rate",61.3588237359634,58.482232860248,63.3100202626601
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1986,"Rate",61.6148189741805,58.8020701672502,63.5046125236614
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1987,"Rate",61.4673550618168,58.7776002374112,63.3564886104039
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1988,"Rate",61.7508246256501,59.1993813720888,63.5970825698256
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1989,"Rate",60.8269326812703,58.5798589102339,62.5511303615919
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1990,"Rate",60.1106073656245,57.9641979532427,61.8433363480626
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1991,"Rate",59.9281222955644,57.8669089294857,61.6937066121004
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1992,"Rate",59.5909403187215,57.5367059984672,61.4104448871863
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1993,"Rate",60.9671835848866,58.8501635793261,62.8426616665141
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1994,"Rate",61.0155603500657,58.9412440067519,62.8977765052826
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1995,"Rate",61.3632788251027,59.3820055160494,63.3872419478913
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1996,"Rate",60.6415917732518,58.6887431144031,62.6439795859092
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1997,"Rate",60.1006879929956,58.2213580942458,62.1225414963947
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1998,"Rate",60.490635673687,58.6772728316094,62.5820559142534
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",1999,"Rate",61.8230956535398,59.9342025272033,63.9733283700476
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2000,"Rate",61.4623226946859,59.6243652635968,63.7069425579583
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2001,"Rate",61.1311330952813,59.3301907444949,63.4645787151917
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2002,"Rate",60.7035347589177,58.8709274129048,63.1530453195394
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2003,"Rate",59.6292248856557,57.7813644896272,62.2815229040677
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2004,"Rate",57.9201238358142,56.1543103192342,60.645352998225
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2005,"Rate",57.885161418534,56.0488596162165,60.6165156459382
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2006,"Rate",56.9321079840996,55.0204644992565,59.8300951973172
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2007,"Rate",55.9765688250318,54.0955011348555,58.9329428343567
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2008,"Rate",55.9314347870271,54.0792622287015,58.862028503378
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2009,"Rate",54.7582267157217,52.8830193874677,57.8837692402089
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2010,"Rate",54.0809972162508,52.3025922790992,57.2079473819171
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2011,"Rate",53.9381095444885,52.1239705048858,56.9396312701656
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2012,"Rate",53.3874371114114,51.489453967328,56.3193228526871
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2013,"Rate",53.2304496239251,51.3093241101528,56.0941118681647
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",1,"Male",27,"Age-standardized",2014,"Rate",53.1846055381222,51.185205054332,56.1257016062664
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1980,"Rate",19.0487506902681,17.63840856396,19.9509974550568
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1981,"Rate",19.1044745114593,17.7400064485978,19.9597277285602
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1982,"Rate",19.2990152555891,17.9732699872251,20.1647709955015
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1983,"Rate",20.2354255858451,18.9080172719938,21.104273529482
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1984,"Rate",21.0732845521769,19.780369274577,21.9767489052678
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1985,"Rate",22.0851630081356,20.8292898635723,23.021674275113
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1986,"Rate",22.9124632461309,21.7076678352394,23.8723536997539
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1987,"Rate",23.8258236992231,22.6129926068671,24.7875477028945
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1988,"Rate",24.9378436941133,23.6783758026385,25.9205955824665
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1989,"Rate",25.5329907122525,24.2865441164797,26.5174031923165
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1990,"Rate",25.6939086087868,24.5436626533548,26.6899765722356
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1991,"Rate",26.7920156343247,25.5603137174824,27.8410422714157
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1992,"Rate",27.6827135753331,26.4450233790854,28.720500896721
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1993,"Rate",29.5086142940986,28.1879728036494,30.6449529179688
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1994,"Rate",30.7659004270441,29.4719976741626,31.9304718590977
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1995,"Rate",32.085990566104,30.7719931283467,33.3464473367655
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1996,"Rate",33.086842356382,31.7734682889474,34.4129433483509
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1997,"Rate",33.9789902917908,32.6982498802434,35.3825154694266
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1998,"Rate",35.1667301939898,33.8878558963503,36.6028157431345
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",1999,"Rate",37.0397721405721,35.7332229343222,38.6054945162539
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2000,"Rate",38.1126109932934,36.6128017897887,39.8151567184468
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2001,"Rate",38.9695565524329,37.5527632605594,40.7343992319945
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2002,"Rate",39.4476929454069,37.9820850850598,41.2672540669914
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2003,"Rate",39.7132846225809,38.2642988990421,41.5597371829521
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2004,"Rate",39.1701247507147,37.7338587441253,41.0843491586362
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2005,"Rate",39.6170009737521,38.1632927044991,41.5164948578288
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2006,"Rate",39.5492882321913,38.0639633358727,41.483591769441
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2007,"Rate",39.3042141071581,37.8791160491858,41.246762165661
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2008,"Rate",39.7345292578954,38.2754129342986,41.6715065987648
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2009,"Rate",39.7043722681333,38.2151955294314,41.6774089711138
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2010,"Rate",39.2731224078003,37.7698538395217,41.2609620727479
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2011,"Rate",39.6268123931758,38.0959182737203,41.6548677959965
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2012,"Rate",39.2661215676299,37.6596425260739,41.2780243287168
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2013,"Rate",39.3089859522112,37.4912665912716,41.3597341703106
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",2,"Female",27,"Age-standardized",2014,"Rate",39.5124442474027,37.7027058346634,41.5157023093193
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1980,"Rate",34.4770811325293,32.9946807265676,35.5286345358521
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1981,"Rate",34.2200460332816,32.710354074174,35.2562168184498
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1982,"Rate",34.1372624003953,32.6517467744895,35.1229603705936
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1983,"Rate",34.9298525653668,33.4502919384818,35.8673929678362
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1984,"Rate",35.6807790094719,34.1914580148397,36.6395921755598
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1985,"Rate",36.6574840175724,35.1517371608536,37.6363203008992
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1986,"Rate",37.231040435403,35.751799167227,38.176940927571
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1987,"Rate",37.710855498565,36.2172244877991,38.6370924228986
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1988,"Rate",38.4904606833436,37.0592867177937,39.4305129688489
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1989,"Rate",38.5126540802913,37.2361791065775,39.4441009487286
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1990,"Rate",38.3334274031147,37.0676766512936,39.2567923959199
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1991,"Rate",38.9486064588558,37.7457257319065,39.9243687690656
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1992,"Rate",39.3915554890709,38.2470714610239,40.3792654963731
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1993,"Rate",41.0564198544751,39.921047799749,42.0664599834408
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1994,"Rate",41.8808957958898,40.6450366785858,42.9869543453042
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1995,"Rate",42.8618175950935,41.648116283689,43.9850257361394
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1996,"Rate",43.2269308155758,42.0007073099699,44.3720423196058
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1997,"Rate",43.606683871519,42.4564321181365,44.8004003096775
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1998,"Rate",44.5337250128997,43.3604731207642,45.7938459687294
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",1999,"Rate",46.2439667425102,45.0329442805396,47.57238912221
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2000,"Rate",46.8155992451217,45.5673711641662,48.2924295360616
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2001,"Rate",47.2911581121551,46.0590852283652,48.8141463234394
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2002,"Rate",47.482359171459,46.1698707368147,49.0740861033523
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2003,"Rate",47.2991646139557,46.0171167643039,48.951413169552
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2004,"Rate",46.3662022563313,45.0952590874982,48.0748946480461
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2005,"Rate",46.6949742942926,45.4685410919665,48.4330894779195
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2006,"Rate",46.3288848562873,45.1133276602694,48.1257507916695
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2007,"Rate",45.8534469851107,44.5844769294166,47.7044270993446
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2008,"Rate",46.1372898710984,44.8799108361137,47.9726833631448
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2009,"Rate",45.6803421385523,44.3816572897461,47.5204763137445
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2010,"Rate",45.1942108019474,43.9249574939755,46.969916859667
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2011,"Rate",45.3764332740873,44.0566015381194,47.2109596201741
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2012,"Rate",44.974850765496,43.6654846941456,46.7757075835749
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2013,"Rate",44.962540817237,43.563763505551,46.7468220192495
+1,"Deaths",102,"United States",NA,509,"Chronic obstructive pulmonary disease",3,"Both",27,"Age-standardized",2014,"Rate",45.1028672842242,43.6755792272817,46.8873512812448
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1980,"Rate",1.9696228478199,1.80204716001027,2.15623035672272
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1981,"Rate",1.89438098370972,1.72765087713489,2.05801325616144
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1982,"Rate",1.8051266489361,1.65130376695767,1.95220505370637
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1983,"Rate",1.74943221560713,1.60889855369913,1.88598954414172
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1984,"Rate",1.70453533057788,1.56818586039328,1.83674320078817
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1985,"Rate",1.66976507270034,1.54418139078238,1.79264921384274
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1986,"Rate",1.61807180158508,1.49529491590071,1.7312924240843
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1987,"Rate",1.56575677761088,1.44949247455204,1.68088851493376
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1988,"Rate",1.51026367996594,1.40105343436651,1.61940175346965
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1989,"Rate",1.4547439890128,1.3542122630989,1.56014414418768
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1990,"Rate",1.39720837467828,1.30360554960768,1.49879186344741
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1991,"Rate",1.34363840763118,1.25433107542401,1.44086573854172
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1992,"Rate",1.28604880544337,1.20143539983247,1.37826258830418
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1993,"Rate",1.26415267181589,1.18247000088942,1.35669328402239
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1994,"Rate",1.23107104952855,1.1516474277224,1.32103549361695
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1995,"Rate",1.21522517649945,1.13319572320016,1.30402794630714
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1996,"Rate",1.17090073921893,1.09176614174225,1.25919449590328
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1997,"Rate",1.13030611469396,1.05711371007199,1.21263082385048
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1998,"Rate",1.1162410535177,1.04231612346051,1.19435977033544
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",1999,"Rate",1.11637727206808,1.04196184244435,1.19557324351926
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2000,"Rate",1.10295658303877,1.03247681786472,1.18240386158938
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2001,"Rate",1.07503301530261,1.00707341034632,1.14879685868635
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2002,"Rate",1.04033260829691,0.975142459310945,1.11561649660273
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2003,"Rate",0.999047520859338,0.936659809032257,1.07067134695938
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2004,"Rate",0.942072943349096,0.885100309557932,1.00932845483008
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2005,"Rate",0.904231968806767,0.85142088864528,0.970574394884141
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2006,"Rate",0.855831980230592,0.804597504390695,0.917358445879813
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2007,"Rate",0.81705617940352,0.764365088541594,0.875320813847121
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2008,"Rate",0.786634433814542,0.734100066061051,0.84276862421175
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2009,"Rate",0.747816229959788,0.698433647169803,0.804497705954583
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2010,"Rate",0.719313264025833,0.672778614722935,0.773970875570549
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2011,"Rate",0.695090463805777,0.648099187584305,0.749973399184041
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2012,"Rate",0.674470559282242,0.629472547212468,0.729061692475505
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2013,"Rate",0.661441063641722,0.61440956920845,0.71994660672941
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",1,"Male",27,"Age-standardized",2014,"Rate",0.666158896332374,0.616642171867996,0.727007722191341
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1980,"Rate",0.203897040696987,0.153673041353304,0.222192682929689
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1981,"Rate",0.204894946340851,0.155072355965835,0.222659780656417
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1982,"Rate",0.20669204719104,0.158866005719432,0.224781798684102
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1983,"Rate",0.217745439297881,0.171149296973546,0.236123101142239
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1984,"Rate",0.225478262468706,0.1825167069521,0.244176678241765
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1985,"Rate",0.233250457776751,0.195330581875891,0.252597549479019
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1986,"Rate",0.239117041270181,0.205977523102741,0.259179937030268
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1987,"Rate",0.24245894986721,0.21576735229664,0.262682768123775
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1988,"Rate",0.246692335490026,0.22157293524048,0.26606677143529
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1989,"Rate",0.242298143825669,0.219064758341608,0.260166115683071
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1990,"Rate",0.237727480181252,0.217089496020655,0.255401681809472
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1991,"Rate",0.239369549369781,0.219907222343856,0.257701800268652
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1992,"Rate",0.241096533836355,0.221234205820084,0.259327894754125
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1993,"Rate",0.251847918930947,0.231389334909426,0.27127165905164
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1994,"Rate",0.257854772654536,0.237531117637208,0.278305112036105
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1995,"Rate",0.264343440076028,0.242874448681254,0.285840921156012
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1996,"Rate",0.269203696770178,0.246716301769646,0.292528757575712
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1997,"Rate",0.275550998629478,0.253508574845609,0.299791208799049
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1998,"Rate",0.286696131473277,0.265070358057039,0.312083287452757
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",1999,"Rate",0.308520020408901,0.28662275034779,0.336764248717894
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2000,"Rate",0.322028936609742,0.298303299871986,0.350891364079323
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2001,"Rate",0.32812829000236,0.304877939040887,0.358806159183235
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2002,"Rate",0.333269318082483,0.308887338375251,0.366389239843531
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2003,"Rate",0.332743986383407,0.308126012060329,0.370280392134395
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2004,"Rate",0.326344432879587,0.301904488844577,0.366390789796492
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2005,"Rate",0.325551759242666,0.300432387867982,0.373003718384834
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2006,"Rate",0.322764888237491,0.297396841019228,0.376749003918467
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2007,"Rate",0.316525754862871,0.291437069406253,0.373668419277753
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2008,"Rate",0.314954315745179,0.290198029254925,0.375774470831592
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2009,"Rate",0.311106904866351,0.286458975768366,0.37286760597135
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2010,"Rate",0.306452295361791,0.281074002550652,0.366125765805436
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2011,"Rate",0.309816370776202,0.283859871343835,0.371158508682806
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2012,"Rate",0.307516434972704,0.280418579448266,0.372233227173675
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2013,"Rate",0.311035496131202,0.282709996113941,0.375716001931491
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",2,"Female",27,"Age-standardized",2014,"Rate",0.309854022112726,0.280628312150286,0.369195896509332
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1980,"Rate",0.889034631412085,0.813140800806832,0.963335708089051
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1981,"Rate",0.857232911418168,0.786112905043154,0.921121571420619
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1982,"Rate",0.821631974551988,0.750894701929269,0.879552425050693
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1983,"Rate",0.805047196544821,0.73857289814464,0.858552711647632
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1984,"Rate",0.790851413786265,0.728861317819783,0.842015914371108
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1985,"Rate",0.780478357821905,0.722023286735803,0.827944900406652
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1986,"Rate",0.762883974762636,0.707429167751306,0.806409128192249
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1987,"Rate",0.744153905075299,0.69078210830773,0.78682868401467
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1988,"Rate",0.724853112927157,0.676488011108541,0.765978874066744
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1989,"Rate",0.700258532618785,0.65906302930307,0.740187938444511
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1990,"Rate",0.675502261303144,0.636541546950561,0.713319347864932
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1991,"Rate",0.65583966950963,0.621152818619243,0.692825707875137
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1992,"Rate",0.634697435733723,0.602024965775253,0.671401136183795
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1993,"Rate",0.633838357439676,0.600647005913805,0.668265254225342
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1994,"Rate",0.625535586517278,0.592206287454172,0.66231370229772
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1995,"Rate",0.624737570544047,0.591969611721361,0.661432655436784
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1996,"Rate",0.610978284296976,0.579252269511144,0.647442368530683
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1997,"Rate",0.600457387016102,0.569502578314951,0.635382963488949
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1998,"Rate",0.602927901770414,0.571560715752516,0.638557640331574
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",1999,"Rate",0.617748416740175,0.585246329079247,0.6548956341717
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2000,"Rate",0.622101878946765,0.590917617773628,0.66154926624729
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2001,"Rate",0.61704130621682,0.585968936725356,0.658087575289219
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2002,"Rate",0.608350740279247,0.577588362400679,0.650606441558004
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2003,"Rate",0.59368090995136,0.563449186708583,0.636985662873423
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2004,"Rate",0.569071565110226,0.539131361391477,0.614012985345226
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2005,"Rate",0.55500530465493,0.525445966019161,0.603965223214084
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2006,"Rate",0.535624307923985,0.506728237920705,0.584570940250803
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2007,"Rate",0.517392734258405,0.490133289241895,0.567666415261363
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2008,"Rate",0.505469821050809,0.47978128581677,0.556469451409091
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2009,"Rate",0.488724314163124,0.463134264923657,0.541099742546985
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2010,"Rate",0.47495974397937,0.449804415528824,0.525143361067961
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2011,"Rate",0.467716509013331,0.441488844751512,0.516490754452338
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2012,"Rate",0.458915571430592,0.432547416326793,0.506715369124898
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2013,"Rate",0.456322981903463,0.429250468314663,0.504490139047577
+1,"Deaths",102,"United States",NA,510,"Pneumoconiosis",3,"Both",27,"Age-standardized",2014,"Rate",0.457950379699513,0.429380948374865,0.508446541672793
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1980,"Rate",0.273802764697231,0.228642259284108,0.310653122905181
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1981,"Rate",0.251792957406835,0.205995095171205,0.28250535271887
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1982,"Rate",0.239773226456397,0.192588830495894,0.267611570806186
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1983,"Rate",0.225023539359763,0.179157354975638,0.249079711591842
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1984,"Rate",0.217701871600752,0.172457787984285,0.240342273084346
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1985,"Rate",0.208038716616158,0.164472921302823,0.229930476765581
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1986,"Rate",0.198125447614324,0.158501284320138,0.218234887475353
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1987,"Rate",0.190395435168886,0.153202645832606,0.210380866267493
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1988,"Rate",0.180559957987313,0.14668412969189,0.199704426129644
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1989,"Rate",0.170542732631775,0.141861986728437,0.188412693457007
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1990,"Rate",0.161053513896463,0.135185256015453,0.178225716822379
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1991,"Rate",0.153857992452368,0.12965338076472,0.170402169717933
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1992,"Rate",0.14105791011741,0.120129945515852,0.15806140668903
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1993,"Rate",0.137105619856809,0.117288484688811,0.156102248196625
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1994,"Rate",0.129876600277308,0.112747106976796,0.150980975345671
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1995,"Rate",0.123687662438814,0.108290785280086,0.147752515259887
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1996,"Rate",0.112644094635462,0.0986842491245609,0.13790670272688
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1997,"Rate",0.104003929105045,0.0909746741330864,0.130941248626665
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1998,"Rate",0.098955097805823,0.0865541764029139,0.129186550305848
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",1999,"Rate",0.0987879761807176,0.0860938980432381,0.132507773933062
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2000,"Rate",0.0905178651471163,0.0789173382906996,0.12548591254865
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2001,"Rate",0.0883620447308303,0.0772813839292497,0.124965167248851
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2002,"Rate",0.0854751683895151,0.0750822795638878,0.122150225876018
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2003,"Rate",0.0826841890960541,0.0723585001699583,0.119420701376961
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2004,"Rate",0.0762689904745802,0.0670390405653553,0.110561893844632
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2005,"Rate",0.0731714205983204,0.0644325087959869,0.10561017071494
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2006,"Rate",0.0683315929052965,0.0599180860685951,0.0978519692696323
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2007,"Rate",0.0649898249794592,0.0566079741579104,0.0934217332085317
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2008,"Rate",0.063806920106953,0.0551036728111459,0.0914968186858288
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2009,"Rate",0.0581865898119725,0.0500573757064549,0.0824876541536887
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2010,"Rate",0.0548718626453786,0.0471076355530523,0.0778636335363137
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2011,"Rate",0.0531949017867127,0.045485560871596,0.075028870733043
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2012,"Rate",0.0518184915203247,0.0441081453461145,0.0726116460005736
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2013,"Rate",0.0509298615911461,0.0430398559777743,0.0714107874952206
+1,"Deaths",102,"United States",NA,511,"Silicosis",1,"Male",27,"Age-standardized",2014,"Rate",0.0496410805004845,0.0409908944019753,0.0720816539420029
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1980,"Rate",0.00399210064385727,0.00318072190383046,0.00466636410538432
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1981,"Rate",0.00392752785090666,0.00315431146751258,0.00456583125291596
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1982,"Rate",0.00329537794823033,0.00266489517827358,0.00378813598572848
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1983,"Rate",0.00345328282391375,0.00287426846635865,0.00391657187621382
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1984,"Rate",0.00364307761035546,0.00309830973465272,0.00409968153486429
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1985,"Rate",0.00363210476968465,0.00308951397490873,0.00407298229515135
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1986,"Rate",0.00347233045617839,0.00303751157007826,0.00388546409133508
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1987,"Rate",0.00393904298502254,0.00346667231479644,0.00439877006215918
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1988,"Rate",0.00393630007233353,0.00350164257230541,0.00438777384694023
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1989,"Rate",0.00382873754852551,0.00341282776663354,0.00426047523659677
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1990,"Rate",0.003453105221617,0.00308297187121891,0.0038493989218756
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1991,"Rate",0.00332887909837976,0.00296124552432857,0.0037287260711152
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1992,"Rate",0.00344121647842739,0.00307067302300041,0.00384365151549037
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1993,"Rate",0.00329528055182911,0.00295046565080577,0.00368835036113715
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1994,"Rate",0.00337362491952635,0.003004176986628,0.00378524001683242
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1995,"Rate",0.00314056613107057,0.00279776446091586,0.00353649704843354
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1996,"Rate",0.00301836209337337,0.00269274245991418,0.00338985114195963
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1997,"Rate",0.00291299991143342,0.00258873729925386,0.00329158276155133
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1998,"Rate",0.00261312305361843,0.00232728314821655,0.00295487954204557
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",1999,"Rate",0.00274311431999689,0.00245190214446126,0.0031194257571319
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2000,"Rate",0.0027252785854232,0.00243462961265844,0.00310460504849257
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2001,"Rate",0.00306777109213561,0.00275389341181601,0.00350639418139058
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2002,"Rate",0.00336421871266672,0.00300933049330006,0.00380831320344958
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2003,"Rate",0.003305269775331,0.00295136648230709,0.00375513569724078
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2004,"Rate",0.00294228376433642,0.00262251112025875,0.0033675397364339
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2005,"Rate",0.00261752316192619,0.00233709711184191,0.00302593952658533
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2006,"Rate",0.00271749765976055,0.00243143708455592,0.00312824926383234
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2007,"Rate",0.00275423331674227,0.0024681344054425,0.00321499051825913
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2008,"Rate",0.0027550325563202,0.00245949995308615,0.00324183568891305
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2009,"Rate",0.00251353311436854,0.00223596463863255,0.00297724508591443
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2010,"Rate",0.00239471504871192,0.00211735195730227,0.00283663383682445
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2011,"Rate",0.00242429420712067,0.00212939312757996,0.00288220268312115
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2012,"Rate",0.00240948566722868,0.00209325011440494,0.00290520256146004
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2013,"Rate",0.00239344801341209,0.00206238079746615,0.00293795610438217
+1,"Deaths",102,"United States",NA,511,"Silicosis",2,"Female",27,"Age-standardized",2014,"Rate",0.00235665054583449,0.00201798379628876,0.00291374286175065
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1980,"Rate",0.11086626459151,0.0936892770315049,0.125550596130855
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1981,"Rate",0.101486387134882,0.0841470543311878,0.11369836050816
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1982,"Rate",0.0959360694870171,0.0787118723093466,0.106613996207722
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1983,"Rate",0.0898944141245465,0.0730077476668542,0.0992072479188322
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1984,"Rate",0.0867931485632998,0.0692167565329207,0.095372079753248
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1985,"Rate",0.0826421537795232,0.0659122179617019,0.0907591232572237
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1986,"Rate",0.0784143556502013,0.0633342044268006,0.0860859784900308
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1987,"Rate",0.0756396964542788,0.0615508230696728,0.0830890728320159
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1988,"Rate",0.071766983226873,0.0590126766005491,0.078825217680939
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1989,"Rate",0.0678044691009274,0.0571100337316391,0.0746550589484969
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1990,"Rate",0.0640971440026124,0.0545735135591403,0.0705645533867862
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1991,"Rate",0.061191724346794,0.0521599141872665,0.0675803892480961
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1992,"Rate",0.0564558478631099,0.0482643229376354,0.0635277173017217
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1993,"Rate",0.0549140772051899,0.0472623195231701,0.0628817043455936
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1994,"Rate",0.0522937415943492,0.0456414484667916,0.0611680558913922
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1995,"Rate",0.049923475233901,0.0438452695262829,0.0592422287426686
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1996,"Rate",0.0457669314972009,0.040312628681721,0.0557402917559418
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1997,"Rate",0.0425236037264113,0.0375299743477866,0.053181926366919
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1998,"Rate",0.0403484172406083,0.0355882593618573,0.0525484701844814
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",1999,"Rate",0.0405235930523079,0.0356350581584178,0.0536136645074509
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2000,"Rate",0.0374003730089166,0.0329389363610619,0.0512588666228504
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2001,"Rate",0.0369409278321469,0.0326977932911697,0.0513057320098011
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2002,"Rate",0.0361105583855234,0.0321278995077628,0.0502262294395709
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2003,"Rate",0.0350411746274426,0.031072381483866,0.0492684187410599
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2004,"Rate",0.0324342825164582,0.0288218366567009,0.0459408128988425
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2005,"Rate",0.0311064127018205,0.0274162255257452,0.0439351653362967
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2006,"Rate",0.0294224482714305,0.0259537745242905,0.0407982936904435
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2007,"Rate",0.0281699128724167,0.0248441038243297,0.0390925464332275
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2008,"Rate",0.0277826101680335,0.0243935539042876,0.0384452806740332
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2009,"Rate",0.0254869675628319,0.0221857766423442,0.035351021458289
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2010,"Rate",0.0240812709623571,0.0209429385022996,0.0334038340633393
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2011,"Rate",0.0234514107248936,0.0203812786997654,0.0322152040532418
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2012,"Rate",0.0229740529667804,0.0198085795382517,0.0313195980325823
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2013,"Rate",0.022695967594869,0.0194694120952953,0.031280224209267
+1,"Deaths",102,"United States",NA,511,"Silicosis",3,"Both",27,"Age-standardized",2014,"Rate",0.0220916367105517,0.0186912264973302,0.0312848859160037
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1980,"Rate",0.182060581728492,0.151710475362507,0.320948043470581
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1981,"Rate",0.182755833347536,0.154573238997806,0.322536689059564
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1982,"Rate",0.186384512939707,0.159771791436205,0.318188652664464
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1983,"Rate",0.197133583109831,0.170726129737325,0.322627716748168
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1984,"Rate",0.209294021524899,0.182078221024213,0.3279572822116
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1985,"Rate",0.22290310537735,0.19510309737711,0.338287731711523
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1986,"Rate",0.239317256773688,0.209119487914765,0.347354777106822
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1987,"Rate",0.253615681813869,0.220176267378296,0.352254611007206
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1988,"Rate",0.270367182428975,0.226024925951001,0.360964401284278
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1989,"Rate",0.288071745540322,0.23480712125106,0.372126174982518
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1990,"Rate",0.297666654415326,0.235997111781904,0.371995828828215
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1991,"Rate",0.305482509138721,0.238814881288136,0.377682214846888
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1992,"Rate",0.316888249835728,0.244931727841386,0.382066283979923
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1993,"Rate",0.337004680078086,0.257095551903761,0.39282989530375
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1994,"Rate",0.353065067346044,0.265338153329271,0.401048667138114
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1995,"Rate",0.372320397255562,0.277795664993372,0.42164442380257
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1996,"Rate",0.385150331674964,0.281766818586816,0.433611737202753
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1997,"Rate",0.399757378247168,0.285047553028456,0.442528001169827
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1998,"Rate",0.427152971376924,0.302371971774292,0.470469636892448
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",1999,"Rate",0.454859819910297,0.319676208023514,0.499650783425086
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2000,"Rate",0.480683535551556,0.339311605765402,0.527144776861013
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2001,"Rate",0.489913812720288,0.346597039345553,0.538648016363129
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2002,"Rate",0.491660519581229,0.353631261114507,0.539286803156998
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2003,"Rate",0.489501833671007,0.356575530131645,0.537495302008885
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2004,"Rate",0.475980499350297,0.35159481468471,0.523174058762788
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2005,"Rate",0.46995650422322,0.352420487661835,0.516809922759211
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2006,"Rate",0.457117749956643,0.348810814926341,0.502962555159205
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2007,"Rate",0.449234618108142,0.346229670372022,0.493197908513607
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2008,"Rate",0.440018020434053,0.342070950434593,0.483640607749378
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2009,"Rate",0.424483984907151,0.338845156472769,0.467803510474574
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2010,"Rate",0.414807615471215,0.330972163827087,0.45775849229526
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2011,"Rate",0.406041760856158,0.327466103549322,0.448139431168426
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2012,"Rate",0.399420129661096,0.324351164179306,0.440893788239813
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2013,"Rate",0.39544555747263,0.323158207093782,0.44108203580904
+1,"Deaths",102,"United States",NA,512,"Asbestosis",1,"Male",27,"Age-standardized",2014,"Rate",0.400739317891457,0.328630437541985,0.44769373905661
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1980,"Rate",0.00814248467365492,0.00707470094667723,0.0089954046569695
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1981,"Rate",0.00810189496936873,0.00708106218126189,0.00893877417062427
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1982,"Rate",0.00800133965001831,0.00705352846523067,0.0087965956608428
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1983,"Rate",0.00831837104242124,0.00736867926249185,0.00905592612405787
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1984,"Rate",0.00839632422781372,0.00752305114829127,0.00912762241424865
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1985,"Rate",0.00881752034055936,0.00796035064330957,0.00957152114312161
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1986,"Rate",0.00937550976100381,0.00845418716842531,0.0101996037871455
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1987,"Rate",0.00994130603606301,0.00895223250108433,0.0108417040982292
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1988,"Rate",0.0103135674605083,0.00932791967118963,0.0112615887975016
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1989,"Rate",0.0109706905256048,0.00993987154243682,0.0119414407799604
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1990,"Rate",0.0116663748293926,0.0106283609499492,0.0127759220645025
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1991,"Rate",0.0123392564673552,0.0112312909059389,0.0135014434306749
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1992,"Rate",0.0122176677081769,0.0110380306785691,0.0134548470479791
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1993,"Rate",0.012393662758301,0.0111199154954863,0.0136463270988981
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1994,"Rate",0.0129810653251375,0.0116754887818805,0.0143853812412838
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1995,"Rate",0.0132330351223492,0.011903740438028,0.0147803936625702
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1996,"Rate",0.0134143545468644,0.0121417070805794,0.0149164700157114
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1997,"Rate",0.0143326709138144,0.0129167622165024,0.0160172265099476
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1998,"Rate",0.0148971191070512,0.0134293883305229,0.016622580167918
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",1999,"Rate",0.0155038110374865,0.0140133526830487,0.0173074499255196
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2000,"Rate",0.0172673000234659,0.0155761485108695,0.0191810782687939
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2001,"Rate",0.0176829302200362,0.016014236782432,0.0195975057657843
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2002,"Rate",0.0188934644161197,0.0170288474937001,0.0210050973044662
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2003,"Rate",0.019545129904579,0.0176081940497357,0.0218041339517182
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2004,"Rate",0.019019741588295,0.0171853719221108,0.0212257638581321
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2005,"Rate",0.0187983115951747,0.0170753312288217,0.0209155890689333
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2006,"Rate",0.0186149361151755,0.0168979787181239,0.0208393788954198
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2007,"Rate",0.0191214356752435,0.0172999061503709,0.0215692897159849
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2008,"Rate",0.0191217876781667,0.0172172436806933,0.0217537388036615
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2009,"Rate",0.0196174268816451,0.0176136074373823,0.0223176830712851
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2010,"Rate",0.0192468869163552,0.0171429747742298,0.0219822486011345
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2011,"Rate",0.0195464188302872,0.0172864416474773,0.0225563893618345
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2012,"Rate",0.0194143425977363,0.0170120998458514,0.0225894177922931
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2013,"Rate",0.0189700966354615,0.0165702184110169,0.0225232593318039
+1,"Deaths",102,"United States",NA,512,"Asbestosis",2,"Female",27,"Age-standardized",2014,"Rate",0.019770657419975,0.0171447225749458,0.0233546452965029
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1980,"Rate",0.0761172531743753,0.0645752362639252,0.127297917720549
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1981,"Rate",0.076246614659461,0.0656574491424403,0.127878612400363
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1982,"Rate",0.0772796366222067,0.0671387162632152,0.126168086696169
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1983,"Rate",0.0815550835608783,0.0715890955242866,0.127930710019344
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1984,"Rate",0.0859436706760129,0.0751493371545436,0.129669384743466
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1985,"Rate",0.0912811521697372,0.0803583793003362,0.133584926947411
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1986,"Rate",0.0978058271068361,0.0860185751252047,0.137215905160234
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1987,"Rate",0.103571250657037,0.0894727272280115,0.139265269535528
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1988,"Rate",0.110024802333216,0.0926011143198871,0.142596595094459
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1989,"Rate",0.117086486475721,0.0955558658754722,0.146834179996261
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1990,"Rate",0.121169354650492,0.096570770092793,0.147801339668984
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1991,"Rate",0.124427365445056,0.0985893590447205,0.150434422542575
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1992,"Rate",0.128676589509081,0.100605449115637,0.150651225006712
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1993,"Rate",0.136389618292016,0.103987472968115,0.155218949962692
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1994,"Rate",0.142942593006333,0.106915841444456,0.162502500458037
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1995,"Rate",0.150559650373838,0.111715762745187,0.169236286123221
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1996,"Rate",0.155324768707129,0.113916242662544,0.173916337395007
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1997,"Rate",0.161328318595165,0.116316675416268,0.177820212142756
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1998,"Rate",0.172281807925729,0.124717900973533,0.188808298438601
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",1999,"Rate",0.18333974017672,0.130779401952456,0.200574997027234
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2000,"Rate",0.19454624894502,0.139515384882133,0.211879334412205
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2001,"Rate",0.199172753050812,0.143513153645684,0.217101503678745
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2002,"Rate",0.201244325421275,0.146199970783406,0.219434703507926
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2003,"Rate",0.201693880808704,0.148154913571142,0.219971549287135
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2004,"Rate",0.196964498100449,0.146651851272338,0.214823887651937
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2005,"Rate",0.195189617973339,0.147526914897985,0.212665092679311
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2006,"Rate",0.190738785640111,0.147352265573129,0.207758140932951
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2007,"Rate",0.188706419259959,0.148940324694124,0.205666640284752
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2008,"Rate",0.185853701889193,0.148077440838077,0.203627650542147
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2009,"Rate",0.180746301335843,0.147344698252844,0.197884302814683
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2010,"Rate",0.177191990048652,0.14593278356069,0.194383395476712
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2011,"Rate",0.17444813664141,0.144854482577267,0.191613506183714
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2012,"Rate",0.172499147036898,0.143588295536232,0.189856861220513
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2013,"Rate",0.171286515938684,0.144502072393077,0.190363928569363
+1,"Deaths",102,"United States",NA,512,"Asbestosis",3,"Both",27,"Age-standardized",2014,"Rate",0.174655968693384,0.147960690131625,0.194023838235034
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1980,"Rate",1.37991842065467,1.21446796825502,1.53111448768444
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1981,"Rate",1.3294406422396,1.17568443639,1.46597543982076
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1982,"Rate",1.253168781537,1.10601003554921,1.3824150750094
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1983,"Rate",1.20594351607603,1.06309541150667,1.32900112226014
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1984,"Rate",1.16012416192855,1.0216071951762,1.27636366463525
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1985,"Rate",1.12531239491809,0.998145445184957,1.22906858159555
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1986,"Rate",1.07311560842484,0.956286812210965,1.17508420945875
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1987,"Rate",1.02001501804691,0.911221375952682,1.11563270485935
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1988,"Rate",0.962714475378687,0.859692835312162,1.0542601426414
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1989,"Rate",0.906192779764893,0.811589754601428,0.997633393388097
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1990,"Rate",0.855411960243187,0.765814043640196,0.940667479603174
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1991,"Rate",0.806331773657736,0.721898237778043,0.887754173426666
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1992,"Rate",0.755362736138699,0.6783014370885,0.837617883954688
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1993,"Rate",0.720493232217926,0.644437035028923,0.801657503183214
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1994,"Rate",0.682702252935399,0.609482044623855,0.760511696757891
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1995,"Rate",0.657323872914932,0.587226768222098,0.735922779862989
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1996,"Rate",0.615965323274279,0.552619593456658,0.692816757749977
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1997,"Rate",0.573718851575801,0.515287784414268,0.64745790159127
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1998,"Rate",0.540382864415298,0.485811082999951,0.616808862818972
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",1999,"Rate",0.51450412372333,0.462421873720274,0.590397561956773
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2000,"Rate",0.486252042073689,0.436393398043064,0.568209356090913
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2001,"Rate",0.453767025937932,0.406494296775263,0.533068824134577
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2002,"Rate",0.422490849462038,0.376404814444647,0.503890586102024
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2003,"Rate",0.388635197907278,0.345467319511782,0.470103613092267
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2004,"Rate",0.354031511166851,0.314460080382333,0.433492777969568
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2005,"Rate",0.326848972016907,0.289687160924133,0.404515007880383
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2006,"Rate",0.298170541975605,0.264083502455333,0.374910578994851
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2007,"Rate",0.272510007917282,0.240774539172708,0.347547694974961
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2008,"Rate",0.254004202181627,0.223884161723448,0.322997423202569
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2009,"Rate",0.238023481111792,0.209718852758785,0.302306313514693
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2010,"Rate",0.223598373998865,0.197674333165782,0.28620600895231
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2011,"Rate",0.210819302377122,0.18483708145376,0.268884777342009
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2012,"Rate",0.199171765478593,0.172588518972851,0.253925753347816
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2013,"Rate",0.191648742310546,0.165029861987835,0.249209696311732
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",1,"Male",27,"Age-standardized",2014,"Rate",0.192447484861685,0.163977186867825,0.2538566403649
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1980,"Rate",0.00427708316410659,0.00333383801065174,0.00506249091211435
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1981,"Rate",0.00411279755379431,0.00322412495816686,0.00485283039338911
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1982,"Rate",0.00419139106040613,0.00332844080803435,0.00493350413110474
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1983,"Rate",0.00450832657565875,0.00362379050472947,0.00527161452902031
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1984,"Rate",0.00490605721607756,0.00402754177902843,0.00566494172949134
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1985,"Rate",0.00519473983966581,0.00439436711587508,0.00606684524527546
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1986,"Rate",0.00507363270941486,0.00428478613306185,0.00586698081166035
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1987,"Rate",0.00448326865213272,0.00384162556514965,0.00521521502278825
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1988,"Rate",0.00389339704790676,0.00334865628559931,0.00450267316119438
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1989,"Rate",0.00312499040495179,0.00269990529201822,0.0036152859981307
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1990,"Rate",0.00260565988325832,0.00225841171073278,0.00301722487121757
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1991,"Rate",0.00184196579581406,0.00160672329685686,0.00212649123039421
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1992,"Rate",0.00134329583117705,0.00117546605276329,0.00155064538444449
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1993,"Rate",0.00191280485334402,0.00167605959098792,0.00219397462770849
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1994,"Rate",0.00161790787236552,0.00141024609166796,0.00187371526188117
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1995,"Rate",0.00177809983798091,0.00154521281281974,0.00207310191134349
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1996,"Rate",0.00193670853005633,0.00169113701154662,0.00223626472358079
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1997,"Rate",0.00204775548343399,0.00178784550146135,0.00234871857066601
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1998,"Rate",0.00232656829648035,0.00202888129803964,0.00269624332517181
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",1999,"Rate",0.00225018117553125,0.00194714474249738,0.00263490919053091
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2000,"Rate",0.00246463340522064,0.00213485163168483,0.00290960902651915
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2001,"Rate",0.00232341371465342,0.00202423038550916,0.00274042300084826
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2002,"Rate",0.00213224507053883,0.00187241681239094,0.00249843726605054
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2003,"Rate",0.00206995923766171,0.00181192251854145,0.00244729731294672
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2004,"Rate",0.00204663600345439,0.00178907089319124,0.00244858146459845
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2005,"Rate",0.00187009159322968,0.0016390415386308,0.00222596048255141
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2006,"Rate",0.00187655049772942,0.001642591058622,0.00224565499973516
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2007,"Rate",0.00154050568638542,0.00134825942858948,0.00183485504129619
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2008,"Rate",0.00181257140135492,0.00158748180149386,0.00215891310451247
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2009,"Rate",0.00178930125272309,0.00156485423033733,0.00213246137321874
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2010,"Rate",0.00164892071918763,0.00144000610709019,0.00193370219190176
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2011,"Rate",0.00167168858197125,0.0014438456293669,0.00199696341623888
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2012,"Rate",0.0015983590523951,0.00137198343786497,0.00193560954420926
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2013,"Rate",0.00170596394390488,0.0014421640624763,0.00212349433099342
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",2,"Female",27,"Age-standardized",2014,"Rate",0.00169995695750846,0.00141142275229813,0.00213691861461636
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1980,"Rate",0.530383422431918,0.469241749405018,0.586238938929629
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1981,"Rate",0.508187107043243,0.451165958464794,0.560234013175543
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1982,"Rate",0.477113389841419,0.422331608666402,0.524445622283436
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1983,"Rate",0.457272443595682,0.404107079520494,0.499827138863479
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1984,"Rate",0.438578753446633,0.389429145806095,0.479649283192221
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1985,"Rate",0.423716707424969,0.376580207836609,0.461188109345138
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1986,"Rate",0.402310934707869,0.360944639174027,0.438501141275252
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1987,"Rate",0.380821624945434,0.340708501724854,0.413960590758296
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1988,"Rate",0.357939279356571,0.320376023464994,0.390092184035354
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1989,"Rate",0.335546049197314,0.302477592035649,0.367463860170986
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1990,"Rate",0.315926899071456,0.284451557018378,0.34608504475336
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1991,"Rate",0.296705284301132,0.267143536001898,0.325498022900562
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1992,"Rate",0.276654089022926,0.248873713911498,0.3055181270889
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1993,"Rate",0.264237074383675,0.237648984101633,0.291706935028673
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1994,"Rate",0.249976086618383,0.224502336099932,0.277371582089099
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1995,"Rate",0.241363903593118,0.217740519737889,0.269050835309691
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1996,"Rate",0.226124483248439,0.203432944564058,0.252852433065566
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1997,"Rate",0.211259691419739,0.190692857374929,0.238590372444221
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1998,"Rate",0.19977868532603,0.18117847102596,0.228034394128705
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",1999,"Rate",0.190922138134442,0.172668969253093,0.220089513297117
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2000,"Rate",0.181559470005307,0.163980335768171,0.213032249810957
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2001,"Rate",0.170596611199684,0.15392759839601,0.201737982870564
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2002,"Rate",0.159972444476174,0.143920930002437,0.190319577708804
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2003,"Rate",0.148374623393615,0.132811791819781,0.179089855087018
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2004,"Rate",0.136298926050716,0.122039675966675,0.166696514382519
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2005,"Rate",0.126724821328156,0.113072610859571,0.156291257838652
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2006,"Rate",0.11677552354028,0.104318418122644,0.145439260836909
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2007,"Rate",0.107361703443761,0.0954737755416077,0.13570367920695
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2008,"Rate",0.101181541403956,0.0894744779952281,0.126694968165276
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2009,"Rate",0.0957256806212092,0.0849677608517451,0.120342991968463
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2010,"Rate",0.090392095471073,0.0804921587118596,0.114467408722171
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2011,"Rate",0.085709915879718,0.0757439624980877,0.10821710088682
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2012,"Rate",0.0815408804861503,0.0710457382756519,0.102997760675348
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2013,"Rate",0.0789748395644366,0.0686270932094985,0.10186268211855
+1,"Deaths",102,"United States",NA,513,"Coal workers pneumoconiosis",3,"Both",27,"Age-standardized",2014,"Rate",0.0795129866973759,0.0684959823178158,0.104384222858563
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1980,"Rate",0.133841080739499,0.0983078873057789,0.149508725470644
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1981,"Rate",0.130391550715747,0.0945765181480536,0.144596334213454
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1982,"Rate",0.125800128002995,0.0906373325180752,0.138338971360524
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1983,"Rate",0.121331577061503,0.0876814920140726,0.133262555320239
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1984,"Rate",0.117415275523681,0.0848570946164992,0.128777131267746
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1985,"Rate",0.113510855788745,0.0824224568284134,0.124487192946921
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1986,"Rate",0.107513488772227,0.0797019797747384,0.11798322326047
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1987,"Rate",0.101730642581218,0.0762582423736601,0.111973169275809
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1988,"Rate",0.0966220641709661,0.0738225900320733,0.106413456573669
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1989,"Rate",0.0899367310758134,0.0707873703730617,0.099271192814113
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1990,"Rate",0.0830762461232998,0.0661089050147129,0.0930432346048641
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1991,"Rate",0.0779661323823504,0.0629259321080705,0.0881451086675073
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1992,"Rate",0.0727399093515358,0.0592766799915835,0.0835098254155349
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1993,"Rate",0.0695491396630725,0.0575414105277458,0.0814980130882031
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1994,"Rate",0.0654271289698026,0.0551324062473087,0.0786689439538189
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1995,"Rate",0.0618932438901385,0.052878179011716,0.0764956373495901
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1996,"Rate",0.0571409896342208,0.0493780939403852,0.0724999598026426
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1997,"Rate",0.0528259557659446,0.0465233130624541,0.0690888229222811
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1998,"Rate",0.0497501199196559,0.0441518510922319,0.0682502348693351
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",1999,"Rate",0.0482253522537312,0.0427000711732812,0.0682540067487133
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2000,"Rate",0.0455031402664058,0.04021063857925,0.0665256283587273
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2001,"Rate",0.0429901319135557,0.0380164175094247,0.0643041686527124
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2002,"Rate",0.0407060708641284,0.0359859471039821,0.0615828974062219
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2003,"Rate",0.0382263001849995,0.0334238564893295,0.0584733323496269
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2004,"Rate",0.0357919423573676,0.0314877515198651,0.0552178848012383
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2005,"Rate",0.0342550719683195,0.0300961977752833,0.0522471442447876
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2006,"Rate",0.0322120953930484,0.0281767716240415,0.049263914967789
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2007,"Rate",0.0303217283986358,0.0263922856832084,0.0463664362082293
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2008,"Rate",0.028805291091909,0.0251757883842607,0.0436971779381076
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2009,"Rate",0.0271221741288725,0.023420017869749,0.0406740989294417
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2010,"Rate",0.0260354119103737,0.0222977826136715,0.0387983091526189
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2011,"Rate",0.025034498785784,0.0212302654635445,0.0370277952878081
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2012,"Rate",0.024060172622228,0.0203257513627026,0.0353842097681462
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2013,"Rate",0.0234169022673996,0.0198893996904587,0.0343517061186426
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",1,"Male",27,"Age-standardized",2014,"Rate",0.0233310130787476,0.0194634564910652,0.0348001385481375
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1980,"Rate",0.187485372215369,0.138986917756881,0.204925549243536
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1981,"Rate",0.188752725966782,0.140689628963737,0.205747000628622
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1982,"Rate",0.191203938532385,0.145403510546052,0.208215516314252
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1983,"Rate",0.201465458855887,0.155735846082081,0.218849644788416
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1984,"Rate",0.208532803414459,0.165949944551032,0.226108802416908
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1985,"Rate",0.215606092826841,0.177459539303363,0.234163955910294
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1986,"Rate",0.221195568343584,0.188923311847113,0.240225913252471
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1987,"Rate",0.224095332193991,0.197744828442755,0.24300392207967
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1988,"Rate",0.228549070909277,0.204563917977272,0.246869434910924
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1989,"Rate",0.224373725346587,0.202245892464509,0.241593359377954
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1990,"Rate",0.220002340246984,0.200560481390195,0.236533012945152
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1991,"Rate",0.221859448008232,0.203169569014841,0.238976222354219
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1992,"Rate",0.224094353818573,0.205142762151095,0.241465270042667
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1993,"Rate",0.234246170767473,0.214375047473333,0.252570928309559
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1994,"Rate",0.239882174537507,0.220698155062487,0.259314285509478
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1995,"Rate",0.246191738984627,0.225723701603897,0.266431774595964
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1996,"Rate",0.250834271599884,0.230614824289601,0.272663592129329
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1997,"Rate",0.256257572320796,0.235995120358556,0.27894874943529
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1998,"Rate",0.266859321016127,0.246496844574342,0.291135761955897
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",1999,"Rate",0.288022913875886,0.267290424390039,0.314503173780528
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2000,"Rate",0.299571724595633,0.276870461125052,0.326901288906373
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2001,"Rate",0.305054174975535,0.282784418330999,0.335258048163066
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2002,"Rate",0.308879389883158,0.286021234367515,0.34065186816726
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2003,"Rate",0.307823627465835,0.284763676528447,0.344275844533444
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2004,"Rate",0.302335771523501,0.279394016698129,0.33984251848846
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2005,"Rate",0.302265832892336,0.278050568757463,0.347506330123138
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2006,"Rate",0.299555903964825,0.275337098254069,0.350906213734777
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2007,"Rate",0.2931095801845,0.269525463610948,0.347590172308019
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2008,"Rate",0.291264924109337,0.267626966449226,0.349235938078094
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2009,"Rate",0.287186643617614,0.26396357243284,0.346785125019545
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2010,"Rate",0.283161772677536,0.25927911434908,0.344292133864458
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2011,"Rate",0.286173969156823,0.261737417875755,0.346462283649585
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2012,"Rate",0.284094247655344,0.258993398736282,0.345415420291023
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2013,"Rate",0.287965987538424,0.261162013300265,0.349379711233824
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",2,"Female",27,"Age-standardized",2014,"Rate",0.286026757189408,0.258312986674463,0.342416174282259
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1980,"Rate",0.171667691214282,0.129078775346441,0.184817652298958
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1981,"Rate",0.171312802580583,0.128898927898007,0.184405766024371
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1982,"Rate",0.171302878601345,0.129996752744992,0.184136058113567
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1983,"Rate",0.176325255263714,0.135843695365873,0.189343505863304
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1984,"Rate",0.179535841100318,0.141135561657603,0.192718231087499
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1985,"Rate",0.182838344447675,0.148503947197713,0.195861952351665
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1986,"Rate",0.184352857297729,0.153814501797817,0.198120397243441
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1987,"Rate",0.18412133301855,0.158841632821047,0.197700372595814
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1988,"Rate",0.185122048010497,0.164063191121824,0.198553490868749
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1989,"Rate",0.179821527844822,0.163679796291656,0.192203901329801
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1990,"Rate",0.174308863578583,0.159879326559987,0.186300720466536
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1991,"Rate",0.173515295416648,0.159130325187609,0.185607708996377
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1992,"Rate",0.172910909338607,0.158790705374187,0.185504887314419
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1993,"Rate",0.178297587558795,0.164188985906279,0.191708456017172
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1994,"Rate",0.180323165298212,0.16598419509351,0.194336361330255
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1995,"Rate",0.18289054134319,0.168407435469706,0.197607531311641
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1996,"Rate",0.183762100844207,0.170158638504834,0.199353004142473
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1997,"Rate",0.185345773274787,0.171680255825575,0.202693105966119
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1998,"Rate",0.190518991278047,0.176543219441719,0.208475637355623
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",1999,"Rate",0.202962945376706,0.18846747909538,0.223673690468901
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2000,"Rate",0.208595786987521,0.193552943921852,0.230173237586333
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2001,"Rate",0.210331014134177,0.195431614743461,0.233397331148526
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2002,"Rate",0.211023411996274,0.195314961393475,0.237856123445126
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2003,"Rate",0.208571231121599,0.192659565765263,0.237504483790204
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2004,"Rate",0.203373858442603,0.188033457992611,0.232375017297898
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2005,"Rate",0.201984452651614,0.186154978108854,0.236519476911922
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2006,"Rate",0.198687550472164,0.183085777887776,0.236434107751168
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2007,"Rate",0.193154698682267,0.177943186726411,0.232281102643984
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2008,"Rate",0.190651967589626,0.175478694490643,0.231253448034643
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2009,"Rate",0.186765364643241,0.171649105795993,0.227492487112022
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2010,"Rate",0.183294387497288,0.168044230366536,0.224391147111406
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2011,"Rate",0.18410704576731,0.168748070535624,0.225188994897831
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2012,"Rate",0.181901490940763,0.166331903167434,0.222887485697854
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2013,"Rate",0.183365658805473,0.166758428552693,0.22313911903388
+1,"Deaths",102,"United States",NA,514,"Other pneumoconiosis",3,"Both",27,"Age-standardized",2014,"Rate",0.181689787598202,0.164986351685781,0.218561800062651
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1980,"Rate",2.41835902064594,2.23095020840061,2.59796336347277
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1981,"Rate",2.32272572910634,2.15425448275406,2.4840516866463
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1982,"Rate",2.21835542670899,2.07305040309315,2.35823145271459
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1983,"Rate",2.16359992131697,2.02999806092495,2.29224967506695
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1984,"Rate",2.10933691283009,1.99335683925101,2.22286668861133
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1985,"Rate",2.08784214470375,1.97435764622544,2.192821435202
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1986,"Rate",2.06488072572819,1.9554632289579,2.16686625918011
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1987,"Rate",2.03556488012398,1.93256897813603,2.13623824786906
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1988,"Rate",2.03147160439661,1.92988241097069,2.13402237411229
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1989,"Rate",2.01897794360069,1.90951178794027,2.11946195652222
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1990,"Rate",2.00316764534472,1.90139707552468,2.10283104261352
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1991,"Rate",1.97296049096515,1.87554936566732,2.07117647967983
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1992,"Rate",1.93092187833709,1.82991098675453,2.02950601235251
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1993,"Rate",1.93888400437572,1.83823070759643,2.03761846393243
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1994,"Rate",1.92764939213152,1.82477716186427,2.02334221823093
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1995,"Rate",1.90216914178981,1.8012202057261,2.0006341842074
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1996,"Rate",1.82824239509462,1.73332383645272,1.92413462624932
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1997,"Rate",1.73216595791377,1.63857701680406,1.82331642322505
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1998,"Rate",1.66422430104902,1.57598324256541,1.7534985665648
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",1999,"Rate",1.54735428121251,1.46977933541625,1.63614690020266
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2000,"Rate",1.47929776810932,1.40573576757235,1.5622032501624
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2001,"Rate",1.41043010433803,1.34262970204509,1.49059597797016
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2002,"Rate",1.36273661148824,1.29810386892152,1.43588974482609
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2003,"Rate",1.29399196588757,1.23169134143315,1.35966672199567
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2004,"Rate",1.21105633500487,1.15371353486679,1.27342400109061
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2005,"Rate",1.16561530181781,1.11308059124228,1.22608776948551
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2006,"Rate",1.12227084828109,1.07117282516372,1.18166870188566
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2007,"Rate",1.07289824711709,1.01982265030517,1.1297540427868
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2008,"Rate",1.03053326388667,0.979787940671972,1.08763936053196
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2009,"Rate",1.002593635765,0.949218788130354,1.05956307183465
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2010,"Rate",0.973364905032897,0.920846940291223,1.0310637557605
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2011,"Rate",0.960815373393933,0.907200300020951,1.02036452790706
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2012,"Rate",0.95100453451587,0.896065363711854,1.0152640250239
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2013,"Rate",0.938137827376261,0.879179898586345,1.00876327208281
+1,"Deaths",102,"United States",NA,515,"Asthma",1,"Male",27,"Age-standardized",2014,"Rate",0.912946761900478,0.848079250502011,0.993962908728705
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1980,"Rate",2.06593783850855,1.78698764335654,2.22674807577585
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1981,"Rate",2.03034194234,1.76437970733868,2.18098424582849
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1982,"Rate",2.01202942148467,1.76514854058758,2.15696325391975
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1983,"Rate",2.05286949806635,1.83584650908009,2.18534272091122
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1984,"Rate",2.07758522056656,1.86867613122853,2.20139393944956
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1985,"Rate",2.12875492940324,1.93382255725869,2.25898428948302
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1986,"Rate",2.16247601979629,1.97195622200862,2.28984697678354
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1987,"Rate",2.22824536874468,2.03865493371964,2.35657161496549
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1988,"Rate",2.2949598119591,2.12383346041694,2.42956987409388
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1989,"Rate",2.3228061573161,2.15245999986978,2.45521703397648
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1990,"Rate",2.30486735529104,2.15221822420586,2.43728686738066
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1991,"Rate",2.3550469028937,2.20407110310503,2.49048699976571
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1992,"Rate",2.34781934744995,2.21509848083827,2.48720628751882
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1993,"Rate",2.41432655160568,2.28299218454888,2.56926117000724
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1994,"Rate",2.44431386443545,2.30954007264054,2.61426223082515
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1995,"Rate",2.48273592193973,2.34451537812951,2.65880442773659
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1996,"Rate",2.44790459528675,2.31579642487222,2.62193356485733
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1997,"Rate",2.38210023115899,2.25478855515977,2.56521754768326
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1998,"Rate",2.29560622761801,2.17155140986928,2.48658127121106
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",1999,"Rate",2.21359639756394,2.09055555867204,2.40294609851781
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2000,"Rate",2.12209493011909,2.00514809483683,2.30807327180018
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2001,"Rate",2.05764121597975,1.94351768004774,2.23648105552608
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2002,"Rate",1.96333395659256,1.85161406004391,2.1311963603022
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2003,"Rate",1.87700126622323,1.76770276834277,2.03847227569847
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2004,"Rate",1.76265626149953,1.66090057370475,1.92608884816293
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2005,"Rate",1.70893983850423,1.60986013210166,1.87117533049702
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2006,"Rate",1.63561615058438,1.53874955125473,1.7912079247829
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2007,"Rate",1.55249374945286,1.46172213160045,1.71515659134139
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2008,"Rate",1.50752936730804,1.42032585278223,1.66575663204896
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2009,"Rate",1.47279354537424,1.38379063090479,1.63555784106963
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2010,"Rate",1.41545045603398,1.3264244847367,1.58301239857832
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2011,"Rate",1.40236817348686,1.31118062014326,1.57640108294813
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2012,"Rate",1.38085694609024,1.2840203537616,1.55559414577482
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2013,"Rate",1.37287666340757,1.26238294953051,1.55574576637263
+1,"Deaths",102,"United States",NA,515,"Asthma",2,"Female",27,"Age-standardized",2014,"Rate",1.36937781146625,1.2456644099561,1.56026259363254
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1980,"Rate",2.18893889655815,2.002074134909,2.3186092006542
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1981,"Rate",2.12866040526894,1.94901860852305,2.24432994045404
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1982,"Rate",2.07596783864977,1.90863279179471,2.18325979652076
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1983,"Rate",2.07633274788622,1.92087819687236,2.16920287276911
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1984,"Rate",2.06913707478378,1.92920900287832,2.15774313508518
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1985,"Rate",2.09078526859931,1.96051355789865,2.17613904690682
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1986,"Rate",2.10266110351361,1.97819221924359,2.18781020503072
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1987,"Rate",2.12950697124415,2.00204021187767,2.21793899864508
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1988,"Rate",2.1671348302552,2.06135620102294,2.25901417111634
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1989,"Rate",2.17880144132756,2.06684076912273,2.26991222481609
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1990,"Rate",2.1605161354817,2.05892398322826,2.25247172696943
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1991,"Rate",2.17784362175987,2.07557122810169,2.26774371519716
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1992,"Rate",2.15681611460795,2.06494237316709,2.2525150212551
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1993,"Rate",2.1994303757897,2.10729435834551,2.29899963980362
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1994,"Rate",2.21333175362119,2.12093133800264,2.31594267644183
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1995,"Rate",2.22454763675272,2.13108589719013,2.3256557169876
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1996,"Rate",2.17477476176065,2.08357060362178,2.28568849331305
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1997,"Rate",2.09852689342494,2.01398843020867,2.21260387370022
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1998,"Rate",2.02181394759326,1.9372152109541,2.13872314478174
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",1999,"Rate",1.92671548705969,1.84725768575206,2.04607686744413
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2000,"Rate",1.84659356872521,1.76871785930221,1.96451898697876
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2001,"Rate",1.77984907973587,1.70706109703283,1.89142028371275
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2002,"Rate",1.70612405034774,1.63545860443149,1.81474351480699
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2003,"Rate",1.62720296151201,1.55950590077567,1.73067882538004
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2004,"Rate",1.52677138988602,1.46286024140695,1.62132613953324
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2005,"Rate",1.47673633639317,1.4131711120926,1.57846324615341
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2006,"Rate",1.41621047156462,1.35791593989521,1.52442154576424
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2007,"Rate",1.34806475652838,1.29128714060805,1.45054528434367
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2008,"Rate",1.30314093724407,1.24991013739363,1.41191992904142
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2009,"Rate",1.26996193288507,1.21431959005656,1.37807830929275
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2010,"Rate",1.22526851676596,1.16813964805726,1.33390219121494
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2011,"Rate",1.211976882925,1.15050169427924,1.32795042966209
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2012,"Rate",1.19559281752574,1.13052580660792,1.31275223409628
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2013,"Rate",1.18447914805369,1.1092712157172,1.30440778582616
+1,"Deaths",102,"United States",NA,515,"Asthma",3,"Both",27,"Age-standardized",2014,"Rate",1.17159950422632,1.09013574423466,1.28887863787828
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1980,"Rate",3.81740825234337,3.14325883919789,6.50609975233606
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1981,"Rate",3.83062547041315,3.16806608131107,6.52979252637366
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1982,"Rate",3.80695011629435,3.16160297794575,6.44517789501927
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1983,"Rate",3.87417814553168,3.23294600861966,6.4802914162813
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1984,"Rate",3.9305210638565,3.29892741672751,6.5058356929086
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1985,"Rate",4.05966287965906,3.43152096426919,6.66268930758538
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1986,"Rate",4.14843541672808,3.54354696916288,6.71181678237061
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1987,"Rate",4.20514082183783,3.62116045593336,6.71354722800547
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1988,"Rate",4.31642804878543,3.75497612649239,6.75372185918318
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1989,"Rate",4.41952108059269,3.85458332911018,6.71703848225532
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1990,"Rate",4.46240445826873,3.90947855308755,6.65910974075067
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1991,"Rate",4.54656328828,3.96930653190979,6.65402364873508
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1992,"Rate",4.62051501749328,3.99882456329856,6.64379654675888
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1993,"Rate",4.79188910478682,4.07956763642505,6.77850630776846
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1994,"Rate",4.91276777761968,4.12899800525937,6.77181277850917
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1995,"Rate",5.07830422279217,4.20480002463067,6.89573364520949
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1996,"Rate",5.13937745709096,4.14374825091317,6.8004251155804
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1997,"Rate",5.1998434536354,4.07114546119653,6.70047874621373
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1998,"Rate",5.40130112613541,4.0938968717024,6.75141656541808
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",1999,"Rate",5.6381970599359,4.10967305768127,6.82578799236686
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2000,"Rate",5.87867014092235,4.15449178956999,6.86878136145171
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2001,"Rate",6.02724761506961,4.16939892204621,6.90773653728832
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2002,"Rate",6.13298015537074,4.19851390072085,6.93575503227965
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2003,"Rate",6.23093225911634,4.16891729203482,6.99876393393483
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2004,"Rate",6.26185586471376,4.07504212971729,7.01938270340377
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2005,"Rate",6.35659765446939,4.06790949996374,7.14500504049513
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2006,"Rate",6.42303234271582,4.03935295080494,7.23294132047653
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2007,"Rate",6.43866465393499,4.03933028277475,7.24003312441706
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2008,"Rate",6.4929818210727,4.03072736865078,7.31604901075903
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2009,"Rate",6.54555589495408,3.96391041788227,7.41660508759182
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2010,"Rate",6.51886651082733,3.95340755978671,7.40474725653869
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2011,"Rate",6.58282168796251,4.02350368245282,7.49666889804468
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2012,"Rate",6.57792205011715,4.04937339631513,7.49842670081702
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2013,"Rate",6.61046058181829,4.04260736306879,7.55642508261156
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",1,"Male",27,"Age-standardized",2014,"Rate",6.68216271347676,4.1120245613933,7.68693552273787
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1980,"Rate",2.06199443298417,1.73335958839246,3.50126066438425
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1981,"Rate",2.07337550515042,1.74439800140736,3.49037911935036
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1982,"Rate",2.10486473659899,1.76235373235347,3.49800775463579
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1983,"Rate",2.15429101747902,1.80087472900582,3.51138050300902
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1984,"Rate",2.2161001824444,1.837274169984,3.59303695727755
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1985,"Rate",2.29710326109102,1.8923476582766,3.65953716129398
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1986,"Rate",2.35246501964756,1.93031423960293,3.68361762879241
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1987,"Rate",2.43340370244659,1.96631542133305,3.77986681041213
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1988,"Rate",2.50866599241025,2.00455972373161,3.80131321772668
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1989,"Rate",2.56713830153606,2.01077620251172,3.82373846873334
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1990,"Rate",2.56661304534802,2.00033711967323,3.79918585673267
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1991,"Rate",2.67204441422946,2.05599910852817,3.93100547827889
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1992,"Rate",2.73050461037262,2.09169796797688,3.92938294415438
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1993,"Rate",2.87066106383035,2.16085007790101,4.0444730210591
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1994,"Rate",2.97238288557148,2.20019657585553,4.10314774407893
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1995,"Rate",3.12760816298128,2.27834871282165,4.22396716451412
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1996,"Rate",3.21520148783555,2.31905234454221,4.2219471587997
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1997,"Rate",3.36369867064497,2.34195629137022,4.30407911314591
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1998,"Rate",3.48373958400335,2.33557256990791,4.27413225509395
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",1999,"Rate",3.72834590385045,2.39973281087298,4.47302387592314
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2000,"Rate",3.89461402770791,2.44005954345612,4.53133061401678
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2001,"Rate",4.0942695947851,2.50924626030807,4.67484113286048
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2002,"Rate",4.121581311668,2.520844680466,4.71316061088898
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2003,"Rate",4.2043007821533,2.53647334589375,4.79720208565428
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2004,"Rate",4.23944678284186,2.51599143338348,4.80611761511186
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2005,"Rate",4.32902187425447,2.53803810250188,4.91741181206427
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2006,"Rate",4.36997195464384,2.53861053739955,4.94697562652414
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2007,"Rate",4.3436324752327,2.51786598758924,4.89597814691676
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2008,"Rate",4.3732756264994,2.52334235650775,4.98675043587864
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2009,"Rate",4.4165564013061,2.5342967664407,5.03049216980511
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2010,"Rate",4.41569127046267,2.55287238822849,5.03649713832693
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2011,"Rate",4.46622370173519,2.5786100020249,5.12213395714153
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2012,"Rate",4.48569480747458,2.61720982447871,5.15938126050545
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2013,"Rate",4.44385905959357,2.58764794842109,5.15572429739468
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",2,"Female",27,"Age-standardized",2014,"Rate",4.55745074294213,2.65568144587249,5.33805235002303
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1980,"Rate",2.7213146680864,2.32223770184922,4.18816286429417
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1981,"Rate",2.73106782425483,2.33805103812559,4.18770579974889
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1982,"Rate",2.74105397962743,2.3638671683268,4.16418692215524
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1983,"Rate",2.79654122140253,2.42678341712139,4.21347059296376
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1984,"Rate",2.85609284916405,2.49164987419937,4.26500757003611
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1985,"Rate",2.95634341766271,2.59989789244785,4.36527852086297
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1986,"Rate",3.02560025940776,2.68005156667175,4.41690758503821
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1987,"Rate",3.09849882237901,2.76656520044435,4.46622756693992
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1988,"Rate",3.18927336281243,2.86311059714237,4.52957978548852
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1989,"Rate",3.26705172334463,2.93979203913384,4.57163612775477
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1990,"Rate",3.28167346618165,2.95689019758164,4.51394714566932
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1991,"Rate",3.38002241636043,3.01095619990119,4.54444496006936
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1992,"Rate",3.4454082361356,3.04370971007375,4.55613337839783
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1993,"Rate",3.59901348279041,3.15572584993823,4.68503644969576
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1994,"Rate",3.71007231903511,3.17584828808416,4.73435968586669
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1995,"Rate",3.87098032374747,3.24080066053266,4.8714227717491
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1996,"Rate",3.94980521687396,3.2117305179029,4.8427661071703
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1997,"Rate",4.06420925939777,3.18865994209503,4.84620191746699
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1998,"Rate",4.22005788947464,3.24114118022522,4.91472983451731
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",1999,"Rate",4.46320889875487,3.29987809971806,5.04600070277024
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2000,"Rate",4.66194757051894,3.35404638577617,5.15431008587644
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2001,"Rate",4.84698166522311,3.40229029227753,5.30800056526149
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2002,"Rate",4.91223498326946,3.39889570186183,5.37427784531876
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2003,"Rate",5.00652722993806,3.39998775966942,5.49764172108388
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2004,"Rate",5.04512197886511,3.36513089405883,5.56986628979015
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2005,"Rate",5.14327288175572,3.3941356692714,5.67707215497888
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2006,"Rate",5.19992676105007,3.394665528294,5.74220290970338
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2007,"Rate",5.19661782487649,3.39226797399517,5.74747634948476
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2008,"Rate",5.2416140192832,3.42128488462703,5.80635259685099
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2009,"Rate",5.29288327552546,3.42711364812238,5.86680884559927
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2010,"Rate",5.28599930767757,3.41064061599698,5.85508049157075
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2011,"Rate",5.34663818754814,3.45737937693403,5.93760100376843
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2012,"Rate",5.35934649438244,3.46468206896812,5.95971026027366
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2013,"Rate",5.35268282507189,3.48104435142071,5.97904569389037
+1,"Deaths",102,"United States",NA,516,"Interstitial lung disease and pulmonary sarcoidosis",3,"Both",27,"Age-standardized",2014,"Rate",5.45548763365713,3.54723025573081,6.12540520375042
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1980,"Rate",0.856311829777769,0.803439759386788,0.913510188717411
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1981,"Rate",0.849029012159602,0.797488933191208,0.90361812865565
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1982,"Rate",0.839342432448386,0.790157943686674,0.890946568256315
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1983,"Rate",0.848352363017265,0.798812277698728,0.898140904508176
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1984,"Rate",0.852470149916462,0.803725724905798,0.902233119689623
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1985,"Rate",0.862073739180522,0.815333651709379,0.912708645859729
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1986,"Rate",0.861109316448907,0.815700711306858,0.910708926293532
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1987,"Rate",0.849520920159957,0.803670864201521,0.89940183148164
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1988,"Rate",0.85047697268173,0.804025558786134,0.900471722946539
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1989,"Rate",0.841112426524288,0.791729709194505,0.889193601159678
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1990,"Rate",0.821366621217856,0.771703230407429,0.865723501026918
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1991,"Rate",0.816139343678137,0.767598330444128,0.860821405519794
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1992,"Rate",0.797169923346889,0.749661329838023,0.841841383722582
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1993,"Rate",0.806469860154102,0.756963258205497,0.852015837937539
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1994,"Rate",0.807439591379027,0.757386691555153,0.8540221524851
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1995,"Rate",0.817476180701329,0.765346539796271,0.865906745736075
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1996,"Rate",0.814425356079039,0.763797676673377,0.863102301096421
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1997,"Rate",0.81994196873278,0.77111102051066,0.866231208367655
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1998,"Rate",0.859935666385303,0.810867238977843,0.907018428480783
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",1999,"Rate",0.926886516722735,0.874285203418724,0.980043909736366
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2000,"Rate",0.968570822752187,0.916294491220581,1.02395695610836
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2001,"Rate",1.00081653550323,0.948918720735271,1.0593083080572
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2002,"Rate",1.02248041791792,0.970199060489975,1.08278000932059
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2003,"Rate",1.03776716901407,0.984077853396618,1.10036811140043
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2004,"Rate",1.03599578862557,0.97956514224911,1.10691718797075
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2005,"Rate",1.06044508108447,1.00475601321212,1.13183362783076
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2006,"Rate",1.07535468831489,1.01928232241221,1.1441896374216
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2007,"Rate",1.07722636909634,1.02102281680822,1.14197655311031
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2008,"Rate",1.08044149148374,1.02511966573973,1.14652684260642
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2009,"Rate",1.07713098748365,1.02217653549013,1.14318107601413
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2010,"Rate",1.06989073576512,1.01470954595239,1.13809981308028
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2011,"Rate",1.07086843861472,1.01088994129772,1.14227817245975
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2012,"Rate",1.0649155372555,1.00479966966809,1.13518578167524
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2013,"Rate",1.06594435624652,1.00344353942515,1.13743176323829
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",1,"Male",27,"Age-standardized",2014,"Rate",1.05644343106435,0.992782383898404,1.12885266585606
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1980,"Rate",0.295958899769118,0.257981086081153,0.319624999461768
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1981,"Rate",0.291420696380904,0.254870659314957,0.314316699996475
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1982,"Rate",0.285260453101285,0.248590967822839,0.305857665453134
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1983,"Rate",0.285047497289313,0.252872032934792,0.305315540996118
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1984,"Rate",0.292128037406694,0.262688277686848,0.312072088266425
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1985,"Rate",0.296482545876292,0.2699657008609,0.316257253063376
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1986,"Rate",0.294480062592368,0.271799019180653,0.313223499961147
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1987,"Rate",0.293247575815956,0.271338446771777,0.310866425002737
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1988,"Rate",0.293550682043231,0.271920160298336,0.312021124696453
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1989,"Rate",0.294326892116704,0.273207130947515,0.312708768599387
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1990,"Rate",0.287531558218633,0.266426194563944,0.305308248375012
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1991,"Rate",0.289721654068402,0.269860475689428,0.308730219447012
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1992,"Rate",0.282171757424726,0.262959521031472,0.301446941045861
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1993,"Rate",0.284756830449818,0.265191765671998,0.305709276380806
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1994,"Rate",0.281857571402045,0.262310932320318,0.303491168542316
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1995,"Rate",0.287575785505879,0.268298389715781,0.309218199734622
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1996,"Rate",0.290900641762318,0.271474677756465,0.312435136610334
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1997,"Rate",0.297212621135447,0.277709778017683,0.318949413820405
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1998,"Rate",0.313746523763493,0.293922018198533,0.338105317343946
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",1999,"Rate",0.356766856933686,0.334986842702351,0.384108077026369
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2000,"Rate",0.380641774627193,0.357518560695451,0.410164423208066
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2001,"Rate",0.404530584065404,0.380559040625596,0.439653585943468
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2002,"Rate",0.415302651799604,0.390064863157808,0.452553694747339
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2003,"Rate",0.430499903452323,0.403722025925106,0.471906611769353
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2004,"Rate",0.438713161138175,0.411350389294008,0.48046825442161
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2005,"Rate",0.462926930474689,0.434439144275373,0.505892982351129
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2006,"Rate",0.480612380595398,0.451334386958679,0.525268529352688
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2007,"Rate",0.487663828358777,0.458149070323086,0.534370636564222
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2008,"Rate",0.494160247301014,0.463776550029673,0.541677561078211
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2009,"Rate",0.499884805709228,0.468548231940571,0.550471238332479
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2010,"Rate",0.498206481473709,0.465574963133071,0.549429335461335
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2011,"Rate",0.498507413291696,0.465608522254968,0.551938859297741
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2012,"Rate",0.504049292755587,0.47026086944662,0.555614611367398
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2013,"Rate",0.498835444118341,0.462983996819478,0.547820170905397
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",2,"Female",27,"Age-standardized",2014,"Rate",0.492367180772024,0.454625050679373,0.548853292266983
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1980,"Rate",0.513218917662877,0.482075149109468,0.541565974935227
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1981,"Rate",0.506044004548508,0.475675582984944,0.532662325297936
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1982,"Rate",0.496903509384504,0.467486597079295,0.521796510853933
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1983,"Rate",0.499444234424375,0.471572959072306,0.522783998828427
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1984,"Rate",0.504224374006367,0.478163141658403,0.525868804044799
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1985,"Rate",0.509897903631096,0.485183307770957,0.531630149135329
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1986,"Rate",0.507768300361709,0.483833814452094,0.529066543988186
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1987,"Rate",0.501814534338116,0.478312750406351,0.522837307787002
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1988,"Rate",0.502652812616701,0.479346731671506,0.523550903207846
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1989,"Rate",0.499877729520729,0.475792634880856,0.520814874031671
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1990,"Rate",0.48802968107807,0.464718366416758,0.507900513349125
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1991,"Rate",0.48748865515224,0.464182359563527,0.506992953476956
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1992,"Rate",0.475706121932458,0.452355960078249,0.495309690702895
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1993,"Rate",0.481181911039495,0.45797243009889,0.501271210954871
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1994,"Rate",0.479907018091312,0.456628479470499,0.50031454719389
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1995,"Rate",0.487792844045064,0.46480927054844,0.509729036493161
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1996,"Rate",0.489407630620898,0.466567968360878,0.511528496194137
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1997,"Rate",0.495938166858467,0.473542011608528,0.519370195291471
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1998,"Rate",0.522996115400049,0.499624454151296,0.548685612100882
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",1999,"Rate",0.576885461860486,0.55112281733983,0.610400944796028
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2000,"Rate",0.609492298194328,0.584137578473075,0.644567984104062
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2001,"Rate",0.63887929017534,0.613356570960222,0.676678362925246
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2002,"Rate",0.656266758658103,0.630021078209427,0.696620419793228
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2003,"Rate",0.673283789918762,0.645991896125561,0.715232795460667
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2004,"Rate",0.679080528589663,0.650990870459573,0.720735666892497
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2005,"Rate",0.705492482666642,0.675154899401233,0.748890004693467
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2006,"Rate",0.723369686060484,0.691783451270517,0.770338801361657
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2007,"Rate",0.729927264806783,0.699763589608717,0.775168912654995
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2008,"Rate",0.736116795893306,0.70567374343352,0.787379560395395
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2009,"Rate",0.73898126579575,0.709021573395076,0.790030264719166
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2010,"Rate",0.736070216723059,0.705720346306056,0.788828463303144
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2011,"Rate",0.73749670715464,0.706300769382826,0.792419230498135
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2012,"Rate",0.738733749622125,0.706329998352245,0.789597169524465
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2013,"Rate",0.736835745926475,0.702461356079204,0.792459727584199
+1,"Deaths",102,"United States",NA,520,"Other chronic respiratory diseases",3,"Both",27,"Age-standardized",2014,"Rate",0.730122982464878,0.693366558146311,0.78058130336192
