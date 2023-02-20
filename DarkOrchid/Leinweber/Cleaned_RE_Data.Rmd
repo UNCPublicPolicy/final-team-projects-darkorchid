@@ -48,5 +48,7 @@ state_all_GWh$allpower_GWh <- state_all_GWh$solar_GWh+ state_all_GWh$wind_GWh + 
 
 print(state_all_GWh)
 
+write_csv(state_all_GWh, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/usretechnicalpotential.csv")
+
 ```
 
