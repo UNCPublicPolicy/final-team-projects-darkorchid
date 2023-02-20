@@ -1,0 +1,48 @@
+---
+title: "data_cleaning"
+author: "Betsy Norwood"
+date: "1/30/2023"
+output: html_document
+---
+
+Loading in the data 
+```{r}
+library(dplyr)
+library(tidyverse)
+
+usa_lung_cancer <- read_csv('Desktop/710Project/usa_lung_cancer.csv', skip=1)
+View(usa_lung_cancer)
+
+```
+
+Renaming columns 
+```{r}
+
+usa_lung_cancer <- usa_lung_cancer %>% rename_at('SitsinState', ~'State') 
+
+usa_lung_cancer <- usa_lung_cancer %>% rename_at('GeoID_Name', ~'County')
+
+usa_lung_cancer <- usa_lung_cancer %>% rename_at('r_l_allr_u_alla', ~'lung_cancer_per_100000')
+
+```
+
+Removing columns 
+```{r}
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-one_of('GeoID_Formatted', 'Source', 'Location', 'GeoID_Description', 'GeoVintage'))
+View(usa_lung_cancer)
+
+```
+
+```{r}
+
+/Users/betsynorwood/Documents/710Project
+
+usa_lung_cancer <- read_csv('/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood/usa_state_level_lung_cancer')
+View(usa_lung_cancer)
+
+"/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood"
+
+getwd()
+
+```
