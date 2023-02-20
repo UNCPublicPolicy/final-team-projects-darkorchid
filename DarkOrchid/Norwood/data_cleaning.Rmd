@@ -10,7 +10,9 @@ Loading in the data
 library(dplyr)
 library(tidyverse)
 
-usa_lung_cancer <- read_csv('Desktop/710Project/usa_lung_cancer.csv', skip=1)
+getwd()
+#"/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood"
+usa_lung_cancer <- read_csv("usa_lung_cancer_by_state.csv")
 View(usa_lung_cancer)
 
 ```
