@@ -10,8 +10,12 @@ Loading in the data
 library(dplyr)
 library(tidyverse)
 
-usa_lung_cancer <- read_csv('Desktop/710Project/usa_lung_cancer.csv', skip=1)
+getwd()
+#"/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood"
+usa_lung_cancer <- read_csv("usa_lung_cancer_by_state.csv")
+
 View(usa_lung_cancer)
+
 
 ```
 
@@ -32,17 +36,20 @@ Removing columns
 usa_lung_cancer <- usa_lung_cancer %>% select(-one_of('GeoID_Formatted', 'Source', 'Location', 'GeoID_Description', 'GeoVintage'))
 View(usa_lung_cancer)
 
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...3")
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...4")
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...5")
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...6")
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...7")
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...3")
+
+
+
 ```
-
-```{r}
-
-/Users/betsynorwood/Documents/710Project
-
-usa_lung_cancer <- read_csv('/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood/usa_state_level_lung_cancer')
-View(usa_lung_cancer)
-
-"/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood"
-
-getwd()
 
 ```

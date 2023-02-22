@@ -1,0 +1,35 @@
+---
+title: "Darkorchid4_Merged_Data"
+output: html_document
+date: "2023-02-20"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+
+Hathaway_data <- new_cleaned_data_excel_715 
+Hathaway_data <- clean_names(Hathaway_data)
+#reading in Paige's data and cleaning variable names
+
+Leinweber_data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/usretechnicalpotential.csv") %>% clean_names()
+#reading in Eric's data and cleaning variable names
+
+Norwood_data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHubRepository/final-team-projects-darkorchid/DarkOrchid/Norwood/usa_lung_cancer_by_state.csv") %>% clean_names()
+Norwood_data <- Norwood_data[-c(52:92), ] %>% select(-c("x3", "x4", "x5", "x6", "x7"))
+#reading in Betsy's data, cleaning variable names, and getting rid of NA columns/rows
+
+Bankson_data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Bankson/QBCleanerData/grouped_data.csv") %>% clean_names()
+#reading in Quinn's data and cleaning variable names
+
+Merged_Darkorchid4_Data <- merge(Hathaway_data, Leinweber_data, by = "state")
+Merged_Darkorchid4_Data <- merge(Merged_Darkorchid4_Data, Norwood_data, by="state")
+Merged_Darkorchid4_Data <- merge(Merged_Darkorchid4_Data, Bankson_data, by = "state")
+#merging all data frames by "state" variable
+
+write_csv(Merged_Darkorchid4_Data, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Merged_DarkOrchid4_Dataset")
+
+
+```
+
