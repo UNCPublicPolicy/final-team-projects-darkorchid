@@ -9,6 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(janitor)
 
+
 Hathaway_data <- new_cleaned_data_excel_715 
 Hathaway_data <- clean_names(Hathaway_data)
 #reading in Paige's data and cleaning variable names
@@ -28,7 +29,7 @@ Merged_Darkorchid4_Data <- merge(Merged_Darkorchid4_Data, Norwood_data, by="stat
 Merged_Darkorchid4_Data <- merge(Merged_Darkorchid4_Data, Bankson_data, by = "state")
 #merging all data frames by "state" variable
 
-write_csv(Merged_Darkorchid4_Data, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Merged_DarkOrchid4_Dataset")
+write_csv(Merged_Darkorchid4_Data, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Merged_DarkOrchid4_Dataset.csv")
 
 
 ```
