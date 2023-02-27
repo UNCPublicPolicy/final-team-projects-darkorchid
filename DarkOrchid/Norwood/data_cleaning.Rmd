@@ -49,9 +49,6 @@ usa_lung_cancer <- usa_lung_cancer %>% select(-"...7")
 usa_lung_cancer <- usa_lung_cancer %>% c(-"52":"92")
 
 usa_lung_cancer <- usa_lung_cancer[-c(52:92), ]
-  
-  new_df <- df[-c(2:4), ]
-
 
 ```
 
