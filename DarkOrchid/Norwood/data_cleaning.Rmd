@@ -1,0 +1,55 @@
+---
+title: "data_cleaning"
+author: "Betsy Norwood"
+date: "1/30/2023"
+output: html_document
+---
+
+Loading in the data 
+```{r}
+library(dplyr)
+library(tidyverse)
+
+getwd()
+#"/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood"
+usa_lung_cancer <- read_csv("usa_lung_cancer_by_state.csv")
+
+View(usa_lung_cancer)
+
+
+```
+
+Renaming columns 
+```{r}
+
+usa_lung_cancer <- usa_lung_cancer %>% rename_at('SitsinState', ~'State') 
+
+usa_lung_cancer <- usa_lung_cancer %>% rename_at('GeoID_Name', ~'County')
+
+usa_lung_cancer <- usa_lung_cancer %>% rename_at('r_l_allr_u_alla', ~'lung_cancer_per_100000')
+
+```
+
+Removing columns 
+```{r}
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-one_of('GeoID_Formatted', 'Source', 'Location', 'GeoID_Description', 'GeoVintage'))
+View(usa_lung_cancer)
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...3")
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...4")
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...5")
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...6")
+
+usa_lung_cancer <- usa_lung_cancer %>% select(-"...7")
+
+usa_lung_cancer <- usa_lung_cancer %>% c(-"52":"92")
+
+usa_lung_cancer <- usa_lung_cancer[-c(52:92), ]
+
+```
+
+```
