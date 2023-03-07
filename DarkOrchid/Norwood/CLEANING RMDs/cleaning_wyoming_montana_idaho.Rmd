@@ -1,0 +1,74 @@
+---
+title: "Clean Montana, Wyoming, and Idaho"
+author: "Betsy Norwood"
+date: "3/6/2023"
+output: html_document
+---
+
+# Set working directory 
+getwd()
+setwd("/Users/betsynorwood/Documents/GitHub/")
+
+#Loading in data 
+montana <- read_csv("/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood/montana_lung_cancer.csv")
+wyoming <- read_csv("/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood/wyoming_lung_cancer.csv")
+idaho <- read_csv("/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Norwood/idaho_lung_cancer.csv")
+
+# View
+View(montana)
+View(wyoming)
+View(idaho)
+
+# Deletes 1st row 
+montana <- montana[-c(1), ]
+wyoming <- wyoming[-c(1), ]
+idaho <- idaho[-c(1), ]
+
+#Clean names
+library(janitor)
+montana <- clean_names(montana)
+wyoming <- clean_names(wyoming)
+idaho <- clean_names(idaho)
+
+#Column names 
+names(montana)
+names(wyoming)
+names(idaho)
+
+#Removing columns 
+montana <- montana %>% select(-one_of('geography_type_description', 'data_time_period', 'geographic_vintage', 'data_source', 'selected_location', 'formatted_geo_id'))
+
+wyoming <- wyoming %>% select(-one_of('geography_type_description', 'data_time_period', 'geographic_vintage', 'data_source', 'selected_location', 'formatted_geo_id'))
+
+idaho <- idaho %>% select(-one_of('geography_type_description', 'data_time_period', 'geographic_vintage', 'data_source', 'selected_location', 'formatted_geo_id'))
+
+#Unique 
+unique(montana)
+unique(wyoming)
+unique(idaho)
+
+#Renaming 
+montana <- montana %>% rename_at('sits_in_state', ~'state') 
+montana <- montana %>% rename_at('geography_name', ~'county')
+montana <- montana %>% rename_at('lung_bronchus_cancer_rate', ~'lung_cancer_per_100000')
+
+wyoming <- wyoming %>% rename_at('sits_in_state', ~'state') 
+wyoming <- wyoming %>% rename_at('geography_name', ~'county')
+wyoming <- wyoming %>% rename_at('lung_bronchus_cancer_rate', ~'lung_cancer_per_100000')
+
+idaho <- idaho %>% rename_at('sits_in_state', ~'state') 
+idaho <- idaho %>% rename_at('geography_name', ~'county')
+idaho <- idaho %>% rename_at('lung_bronchus_cancer_rate', ~'lung_cancer_per_100000')
+
+
+#Making it numeric 
+montana$lung_cancer_per_100000 <- as.numeric(montana$lung_cancer_per_100000)
+montana$geo_id <- as.numeric(montana$geo_id)
+
+wyoming$lung_cancer_per_100000 <- as.numeric(wyoming$lung_cancer_per_100000)
+wyoming$geo_id <- as.numeric(wyoming$geo_id)
+
+idaho$lung_cancer_per_100000 <- as.numeric(idaho$lung_cancer_per_100000)
+idaho$geo_id <- as.numeric(idaho$geo_id)
+
+
