@@ -22,6 +22,8 @@ data <- clean_names(data)
 
 ```{r}
 library(ggplot2)
+library(tidyverse)
+library(GGally)
 
 names(data)
 
@@ -41,6 +43,23 @@ data %>% dplyr::select('1':'34')%>%
 
 # I think use this one 
 # X4 is year- that's why it's blank
+
 data %>% dplyr::select('1':'34')%>%
   ggcorr()
+
+data %>% ggplot(aes(x=lung_cancer_per_100000))+
+  geom_density(color = "DarkOrchid")+ 
+  theme_classic()
+
+data %>% ggplot(aes(x=male_chronic_obstructive_pulmonary_disease))+
+  geom_density(color = "DarkOrchid")+ 
+  theme_classic()
+
+data %>% ggplot(aes(x=female_asthma))+
+  geom_density(color = "DarkOrchid")+ 
+  theme_classic()
+
+data %>% ggplot(aes(x=both_asthma))+
+  geom_density(color = "DarkOrchid")+ 
+  theme_classic()
 ```
