@@ -32,7 +32,6 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(janitor)
 
-
 Hathaway_data <- new_cleaned_data_excel_715 
 Hathaway_data <- clean_names(Hathaway_data)
 #reading in Paige's data and cleaning variable names
@@ -60,10 +59,11 @@ write_csv(Merged_Darkorchid4_Data, "/Users/ericleinweber/Desktop/PLCY 715 GitHub
 
 ```{r}
 
-data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Merged_DarkOrchid4_Dataset.csv")
+data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Merged_DarkOrchid4_qDataset.csv")
 
-data <- data %>% rename(reps_disease_death = chronic_lower_res "piratory_disease_deaths_per_100_000_people)
+data <- data %>% rename(reps_disease_death = chronic_lower_res "respiratory_disease_deaths_per_100_000_people")
 
+names(data)
 
 data %>% ggplot(aes(x = allpower_g_wh, y = reps_disease_death)) +
   geom_point()
