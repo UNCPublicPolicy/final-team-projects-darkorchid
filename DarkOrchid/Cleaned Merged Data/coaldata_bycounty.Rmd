@@ -1,0 +1,68 @@
+---
+title: "county_data"
+author: "Quinn Bankson"
+date: "2023-03-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(GGally)
+library(skimr)
+library(naniar)
+library(patchwork)
+library(janitor)
+```
+
+
+```{r}
+combined_draft <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Cleaned Merged Data/darkorchid4_data.csv")
+combined_draft <- subset(combined_draft, select = -lifetime_co2_state)
+combined_draft <- subset(combined_draft, select = c("county", "lung_cancer_per_100000", 
+"allpower_potential_state", "Both_Chronic respiratory diseases", "state")) 
+```
+
+
+```{r}
+coal_data <- USdata %>% select("county", "plant", "statename", "lifetime_co2", "status", "accuracy")%>% filter(statename == "Montana" | statename == "Wyoming" | statename == "Idaho") %>% filter(status == "operating" | status == "retired") 
+coal_data <- coal_data %>% mutate(state = case_when(statename == "Montana" ~ "MT", statename == "Wyoming" ~ "WY", statename == "Idaho" ~"ID"))
+
+coal_data[19, "county"] <- "Rosebud"
+coal_data[27, "county"] <- "Sidney"
+
+coal_data <- coal_data%>%slice(-2)
+coal_data <- coal_data%>%slice(-3)
+coal_data <- coal_data%>%slice(-(6:9))
+coal_data <- coal_data%>%slice(-(7:8))
+coal_data <- coal_data%>%slice(-8)
+coal_data <- coal_data%>%slice(-(2:3))
+coal_data <- coal_data%>%slice(-(13:14))
+coal_data <- coal_data%>%slice(-15)
+
+coal_data <- subset(coal_data, select = -accuracy)
+coal_data <- subset(coal_data, select = -status)
+coal_data <- subset(coal_data, select = -statename)
+view(coal_data)
+```
+
+```{r}
+county_outcomes <- left_join(combined_draft, coal_data, by =c("state", "county"))
+
+view(county_outcomes)
+```
+
+
+```{r}
+summary(county_outcomes$lifetime_co2) 
+```
+
+```{r}
+skimmed <- skim(county_outcomes)
+print(skimmed, strip_metadata = FALSE)
+```
+
+```{r}
+vis_miss(county_outcomes)
+```
+
