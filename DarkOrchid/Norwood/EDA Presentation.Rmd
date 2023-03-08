@@ -15,6 +15,7 @@ data <- read_csv("Cleaned Merged Data/darkorchid4_data.csv")
 # Viewing and cleaning names
 
 View(data)
+library(janitor)
 data <- clean_names(data)
 
 
@@ -56,10 +57,35 @@ data %>% ggplot(aes(x=male_chronic_obstructive_pulmonary_disease))+
   theme_classic()
 
 data %>% ggplot(aes(x=female_asthma))+
-  geom_density(color = "DarkOrchid")+ 
+  geom_hist(color = "DarkOrchid")+ 
   theme_classic()
 
 data %>% ggplot(aes(x=both_asthma))+
   geom_density(color = "DarkOrchid")+ 
   theme_classic()
+
+
+#summary 
+
+summary(data$lifetime_co2_state)
+
+summary(data$both_asthma) 
+
+summary(data$both_chronic_respiratory_diseases)
+
+summary(data$lifetime_co2_state)
+
+```
+
+
+```{r}
+library(naniar)
+vis_miss(data)
+
+# both chronic respiratory diseases 
+
+# 
+
+# 
+
 ```
