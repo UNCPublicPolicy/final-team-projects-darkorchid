@@ -2,7 +2,9 @@
 title: "county_data"
 author: "Quinn Bankson"
 date: "2023-03-07"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -25,6 +27,14 @@ combined_draft <- subset(combined_draft, select = c("county", "lung_cancer_per_1
 
 
 ```{r}
+rawdata <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/DarkOrchid/Bankson/InitialData/QBGlobalCoalTrackData.csv")
+USrawdata <- rawdata %>% filter(Country == "United States")
+USdata <- clean_names(USrawdata)
+names(USdata)
+USdata <- USdata %>% 
+    rename("statename" = "subnational_unit_province_state",
+           "county" = "local_area_taluk_county")
+
 coal_data <- USdata %>% select("county", "plant", "statename", "lifetime_co2", "status", "accuracy")%>% filter(statename == "Montana" | statename == "Wyoming" | statename == "Idaho") %>% filter(status == "operating" | status == "retired") 
 coal_data <- coal_data %>% mutate(state = case_when(statename == "Montana" ~ "MT", statename == "Wyoming" ~ "WY", statename == "Idaho" ~"ID"))
 
@@ -64,5 +74,40 @@ print(skimmed, strip_metadata = FALSE)
 
 ```{r}
 vis_miss(county_outcomes)
+```
+```{r}
+write_csv(county_outcomes, file = "/Users/mac/Documents/R Assignments PLCY 715/DarkOrchid/Bankson/county_outcomes_primary_vars.csv")
+```
+
+```{r}
+combined_draft2 <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Cleaned Merged Data/darkorchid4_data.csv")
+combined_draft2 <- subset(combined_draft2, select = -lifetime_co2_state)
+
+
+coal_data2 <- USdata %>% select("county", "plant", "statename", "lifetime_co2", "status", "accuracy")%>% filter(statename == "Montana" | statename == "Wyoming" | statename == "Idaho") %>% filter(status == "operating" | status == "retired") 
+coal_data2 <- coal_data2 %>% mutate(state = case_when(statename == "Montana" ~ "MT", statename == "Wyoming" ~ "WY", statename == "Idaho" ~"ID"))
+
+coal_data2[19, "county"] <- "Rosebud"
+coal_data2[27, "county"] <- "Sidney"
+
+coal_data2 <- coal_data2%>%slice(-2)
+coal_data2 <- coal_data2%>%slice(-3)
+coal_data2 <- coal_data2%>%slice(-(6:9))
+coal_data2 <- coal_data2%>%slice(-(7:8))
+coal_data2 <- coal_data2%>%slice(-8)
+coal_data2 <- coal_data2%>%slice(-(2:3))
+coal_data2 <- coal_data2%>%slice(-(13:14))
+coal_data2 <- coal_data2%>%slice(-15)
+
+coal_data2 <- subset(coal_data2, select = -accuracy)
+coal_data2 <- subset(coal_data2, select = -status)
+coal_data2 <- subset(coal_data2, select = -statename)
+
+county_outcomes2 <- left_join(combined_draft2, coal_data2, by =c("state", "county"))
+
+view(county_outcomes2)
+
+write_csv(county_outcomes2, file = "/Users/mac/Documents/R Assignments PLCY 715/DarkOrchid/Bankson/county_outcomes_all_vars.csv")
+ 
 ```
 
