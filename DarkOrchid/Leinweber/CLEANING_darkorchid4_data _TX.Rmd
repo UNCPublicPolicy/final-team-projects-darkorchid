@@ -64,6 +64,41 @@ data$coal_plant <- ifelse(data$FIPS == 48175 | data$FIPS == 48149 | data$FIPS ==
 
 write_csv(data, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/darkorchid4_TX.csv")
 
+
+
+
+data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Cleaned Merged Data/darkorchid4_TX.csv")
+
+
+data$neighboring_plant <- ifelse()
+
+
+shape <- st_read(system.file("shape/tx.shp", package="sf")) # included with sf package
+
+
+
+install.packages("sf")
+# a list of neighbors 
+neighbors <- st_touches(shape, # first 
+                        shape, # second
+                        sparse = T)
+
+# neighbors of County Mecklenburg (as in Charlotte of Mecklenburg-Strelitz)
+
+# index of Mecklenburg cnty
+idx_strelitz <- which(shape$NAME == 'Mecklenburg') 
+
+# index of neighbors of Mecklenburg cnty
+nbr_mecklenburg <- neighbors[idx_strelitz][[1]]
+
+# names of neighbours of cnty Meckl.
+shape$NAME[nbr_mecklenburg]
+# [1] "Iredell"  "Lincoln"  "Cabarrus" "Gaston"   "Union"   
+
+# a visual check
+plot(st_geometry(shape))
+plot(shape[idx_strelitz, ], col = "blue", add = T)
+plot(shape[nbr_mecklenburg,], col = "red", add = T)
 ```
 
 
