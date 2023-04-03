@@ -1,0 +1,69 @@
+---
+title: "DOrchid_analysis_1"
+author: "Quinn Bankson"
+date: "2023-03-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+```
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(moderndive)
+library(GGally)
+library(janitor)
+library(dplyr)
+```
+
+```{r}
+coalplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/CoalPlants2.csv")
+```
+
+```{r}
+colnames(coalplants)
+coalplants <- clean_names(coalplants)
+#coalplants <- coalplants %>% filter(country == "United States")
+coalplants <- coalplants %>% select(parent_id, unit, subnational_unit_province_state, plant, status, year, local_area_taluk_county, latitude, longitude )
+coalplants <- rename(coalplants, county = local_area_taluk_county)
+```
+```{r}
+counties <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/DarkOrchid/Bankson/uscounties.csv")
+head(counties)
+colnames(counties)
+county_center <- counties %>% select(county, state_name, lat, lng)
+
+```
+```{r}
+joined_locs <- full_join(county_center, coalplants, by = "county")
+joined_locs2 <-left_join(county_center, coalplants, by = "county")
+```
+
+
+```{r}
+coalplants_op <- coalplants %>% filter(status == "operating")
+coalplants_op <- distinct(coalplants_op, plant, .keep_all = TRUE)
+```
+
+```{r}
+coal_plants <- coalplants_op %>% select("longitude", "latitude")
+coal_plants <- rename(coal_plants, long= longitude, lat = latitude)
+county_centroids <- county_center %>% select("lng", "lat")
+county_centroids <- rename(county_centroids, long = lng)
+```
+
+```{r}
+# install.packages("geosphere")
+library(geosphere)
+
+dist_mat <- apply(county_centroids[, c("long", "lat")], 1,function(x) apply(coal_plants[, c("long", "lat")], 1, function(y) distm(x,y)))
+
+min_dist <- apply(dist_mat, 1, function(x) {
+  if (all(is.na(x))) NA
+  else x[which.min(x[!is.na(x)])]
+})
+
+
+```
+
