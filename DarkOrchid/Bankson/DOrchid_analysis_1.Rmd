@@ -29,7 +29,7 @@ coalplants <- coalplants %>% select(parent_id, unit, subnational_unit_province_s
 coalplants <- rename(coalplants, county = local_area_taluk_county)
 ```
 ```{r}
-counties <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/DarkOrchid/Bankson/uscounties.csv")
+counties <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/uscounties.csv")
 head(counties)
 colnames(counties)
 county_center <- counties %>% select(county, state_name, lat, lng)
@@ -47,15 +47,16 @@ coalplants_op <- distinct(coalplants_op, plant, .keep_all = TRUE)
 ```
 
 ```{r}
-coal_plants <- coalplants_op %>% select("longitude", "latitude","subnational_unit_province_state" )
+coal_plants <- coalplants_op %>% select("latitude", "longitude","subnational_unit_province_state", "plant")
 coal_plants <- rename(coal_plants, long= longitude, lat = latitude)
+coal_plants <- rename(coal_plants, state = subnational_unit_province_state, name = plant)
 county_centroids <- county_center
 county_centroids <- rename(county_centroids, long = lng)
-county_centroids <- filter(county_centroids, state_name == "Texas")
+#county_centroids <- filter(county_centroids, state_name == "Texas")
 ```
 
 ```{r}
-# install.packages("geosphere")
+#install.packages("geosphere")
 library(geosphere)
 library(dplyr)
 library(naniar)
@@ -70,15 +71,36 @@ county_centroids <- county_centroids %>%
 county_centroids <- county_centroids %>% 
   filter(!is.na(lat))
 
-dist_mat <- apply(county_centroids[, c("long", "lat")], 1,function(x) apply(coal_plants[, c("long", "lat")], 1, function(y) distm(x,y)))
+#dist_mat <- apply(county_centroids[, c("long", "lat")], 1,function(x) apply(coal_plants[, c("long", "lat")], 1, function(y) distm(x,y)))
 
-min_dist <- apply(dist_mat, 1, function(x) {
-  if (all(is.na(x))) NA
-  else x[which.min(x[!is.na(x)])]
-})
-county_centroids <- county_centroids[complete.cases(county_centroids), ]
+#min_dist <- apply(dist_mat, 1, function(x) {
+ # if (all(is.na(x))) NA
+ # else x[which.min(x[!is.na(x)])]
+#})
+#county_centroids <- county_centroids[complete.cases(county_centroids), ]
 
-#county_centroids <- county_centroids %>%
-  mutate(min_dist_to_power_plant = ifelse(is.na(min_dist), 5000, #min_dist)) 
+```
+
+```{r}
+library(dplyr)
+library(geosphere)
+
+# filtering to be sure
+coal_plants <- na.omit(coal_plants)
+
+# calculaing distances with the matrix and geosphere package
+distances <- geosphere::distm(county_centroids[, c("long", "lat")], coal_plants[, c("long", "lat")])
+
+# minimum distance per county
+min_distances <- apply(distances, 1, min)
+
+# add the new column to the county_centroids dataframe using mutate
+county_centroids <- county_centroids %>% 
+  mutate(distance_to_nearest_plant = min_distances)
+
+coords_distance <- county_centroids
+```
+
+```{r}
 ```
 
