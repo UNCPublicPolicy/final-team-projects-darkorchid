@@ -24,7 +24,7 @@ coalplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final
 ```{r}
 colnames(coalplants)
 coalplants <- clean_names(coalplants)
-#coalplants <- coalplants %>% filter(country == "United States")
+coalplants <- coalplants %>% filter(country == "United States")
 coalplants <- coalplants %>% select(parent_id, unit, subnational_unit_province_state, plant, status, year, local_area_taluk_county, latitude, longitude )
 coalplants <- rename(coalplants, county = local_area_taluk_county)
 ```
@@ -47,15 +47,28 @@ coalplants_op <- distinct(coalplants_op, plant, .keep_all = TRUE)
 ```
 
 ```{r}
-coal_plants <- coalplants_op %>% select("longitude", "latitude")
+coal_plants <- coalplants_op %>% select("longitude", "latitude","subnational_unit_province_state" )
 coal_plants <- rename(coal_plants, long= longitude, lat = latitude)
-county_centroids <- county_center %>% select("lng", "lat")
+county_centroids <- county_center
 county_centroids <- rename(county_centroids, long = lng)
+county_centroids <- filter(county_centroids, state_name == "Texas")
 ```
 
 ```{r}
 # install.packages("geosphere")
 library(geosphere)
+library(dplyr)
+library(naniar)
+
+coal_plants <- coal_plants %>% 
+  filter(!is.na(long))
+coal_plants <- coal_plants %>% 
+  filter(!is.na(lat))
+
+county_centroids <- county_centroids %>% 
+  filter(!is.na(long))
+county_centroids <- county_centroids %>% 
+  filter(!is.na(lat))
 
 dist_mat <- apply(county_centroids[, c("long", "lat")], 1,function(x) apply(coal_plants[, c("long", "lat")], 1, function(y) distm(x,y)))
 
@@ -63,7 +76,9 @@ min_dist <- apply(dist_mat, 1, function(x) {
   if (all(is.na(x))) NA
   else x[which.min(x[!is.na(x)])]
 })
+county_centroids <- county_centroids[complete.cases(county_centroids), ]
 
-
+#county_centroids <- county_centroids %>%
+  mutate(min_dist_to_power_plant = ifelse(is.na(min_dist), 5000, #min_dist)) 
 ```
 
