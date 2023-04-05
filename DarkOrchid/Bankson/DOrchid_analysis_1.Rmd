@@ -36,8 +36,8 @@ county_center <- counties %>% select(county, state_name, lat, lng)
 
 ```
 ```{r}
-joined_locs <- full_join(county_center, coalplants, by = "county")
-joined_locs2 <-left_join(county_center, coalplants, by = "county")
+#joined_locs <- full_join(county_center, coalplants, by = "county")
+#joined_locs2 <-left_join(county_center, coalplants, by = "county")
 ```
 
 
@@ -47,7 +47,7 @@ coalplants_op <- distinct(coalplants_op, plant, .keep_all = TRUE)
 ```
 
 ```{r}
-coal_plants <- coalplants_op %>% select("latitude", "longitude","subnational_unit_province_state", "plant")
+coal_plants <- coalplants_op %>% select("latitude", "longitude","subnational_unit_province_state", "plant", "county")
 coal_plants <- rename(coal_plants, long= longitude, lat = latitude)
 coal_plants <- rename(coal_plants, state = subnational_unit_province_state, name = plant)
 county_centroids <- county_center
@@ -102,5 +102,47 @@ coords_distance <- county_centroids
 ```
 
 ```{r}
+library(ggplot2)
+library(sf)
+
+## Full disclosure -- From Chat OpenAI
+
+# Load shapefile with county boundaries
+counties <- st_read("/Users/mac/Downloads/cb_2018_us_county_500k/cb_2018_us_county_500k.shp")
+
+# Create separate data frames for county centroids and coal plant coordinates
+county_coords <- county_centroids %>% 
+  select(county, long, lat, distance_to_nearest_plant)
+coal_plant_coords <- coal_plants %>% 
+  select(county, long, lat)
+
+# Plot county centroids and coal plants on a map of the US
+map <- ggplot() + 
+  geom_sf(data = counties, fill = "white", color = "black") +
+  geom_point(data = county_coords, aes(x = long, y = lat, color = distance_to_nearest_plant), size = .15) +
+  geom_point(data = coal_plant_coords, aes(x = long, y = lat), color = "red", size = .2) +
+  labs(title = "Map of US Counties and Coal Plants") +
+  theme_bw()
+
+# Create a separate data frame with the nearest coal plant for each county
+county_to_nearest_plant <- county_centroids %>% 
+  group_by(county) %>% 
+  slice_min(distance_to_nearest_plant) %>% 
+  ungroup() %>% 
+  select(county, long, lat, distance_to_nearest_plant)
+
+# Add lines connecting each county to its nearest coal plant
+map_with_lines <- map + 
+  geom_segment(data = county_to_nearest_plant, aes(x = long, y = lat, xend = county_to_nearest_plant$long, yend = county_to_nearest_plant$lat), color = "blue", size = 0.05)
+
+# Display the map with lines
+map_with_lines
+
+# A map only a machine could read... cannot format it into human understanding...
+```
+
+
+```{r}
+ggsave("UScoalplot.pdf", map_with_lines, width = 12, height = 8, units = "in", dpi = 300)
 ```
 
