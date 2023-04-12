@@ -8,6 +8,8 @@ output: html_document
 ```{r setup, include=FALSE}
 
 ```
+
+
 ```{r}
 library(tidyverse)
 library(ggplot2)
@@ -51,7 +53,8 @@ coal_plants <- coalplants_op %>% select("latitude", "longitude","subnational_uni
 coal_plants <- rename(coal_plants, long= longitude, lat = latitude)
 coal_plants <- rename(coal_plants, state = subnational_unit_province_state, name = plant)
 county_centroids <- county_center
-county_centroids <- rename(county_centroids, long = lng)
+county_centroids <- rename(county_centroids, state = state_name)
+
 #county_centroids <- filter(county_centroids, state_name == "Texas")
 ```
 
@@ -60,6 +63,8 @@ county_centroids <- rename(county_centroids, long = lng)
 library(geosphere)
 library(dplyr)
 library(naniar)
+
+county_centroids <- rename(county_centroids, long = lng)
 
 coal_plants <- coal_plants %>% 
   filter(!is.na(long))
@@ -88,7 +93,7 @@ library(geosphere)
 # filtering to be sure
 coal_plants <- na.omit(coal_plants)
 
-# calculaing distances with the matrix and geosphere package
+
 distances <- geosphere::distm(county_centroids[, c("long", "lat")], coal_plants[, c("long", "lat")])
 
 # minimum distance per county
@@ -101,7 +106,7 @@ county_centroids <- county_centroids %>%
 coords_distance <- county_centroids
 ```
 
-```{r}
+```{#r}
 library(ggplot2)
 library(sf)
 
@@ -142,7 +147,28 @@ map_with_lines
 ```
 
 
-```{r}
-ggsave("UScoalplot.pdf", map_with_lines, width = 12, height = 8, units = "in", dpi = 300)
+```{r, warning = FALSE}
+# filtering to be sure
+coal_plants <- na.omit(coal_plants)
+
+ #repeating earlier to be sure
+distances <- geosphere::distm(county_centroids[, c("long", "lat")], coal_plants[, c("long", "lat")])
+
+# minimum distance and corresponding plant name per county
+min_distances <- apply(distances, 1, min)
+names_of_nearest_plants <- apply(distances, 1, function(x) coal_plants$name[which.min(x)])
+
+# add new columns to the county_centroids dataframe using mutate
+county_centroids <- county_centroids %>% 
+  mutate(distance_to_nearest_plant = min_distances,
+         name_of_nearest_plant = names_of_nearest_plants)
+
+coords_distance <- county_centroids 
+
+write_csv(county_centroids, "/Users/mac/Documents/My Tableau Repository/countycoords.csv")
+write_csv(coal_plants, "/Users/mac/Documents/My Tableau Repository/coalplantcoords.csv")
 ```
 
+
+```{r}
+summary(county_centroids$distance_to_nearest_plant)
