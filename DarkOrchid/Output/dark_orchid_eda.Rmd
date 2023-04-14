@@ -1,0 +1,114 @@
+---
+title: "Dark Orchid EDA"
+author: "Betsy Norwood"
+date: "4/14/2023"
+output: html_document
+---
+
+```{r}
+
+setwd("/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Output")
+getwd()
+
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(naniar)
+library(patchwork)
+
+data <- read.csv("fulldata.csv")
+
+```
+
+fips: 
+location: the location of the power plant listed as county, state  
+county: the county of the power plant 
+
+state: the state of the power plant 
+mortality_resp: 
+perc_mortality_change_resp:
+
+mortality_ast: 
+perc_mortality_change_ast: 
+mortality_lung:
+
+perc_morality_change_lung: 
+year: 
+days_with_aqi: 
+
+good_days: 
+moderate_days: 
+unhealthy_for_sensative_groups_days: 
+
+unhealthy_days: 
+very_unhealthy_days: 
+hazardous_days: 
+
+max_aqi: 
+x90th_percentile_aqi: 
+median_aqi: 
+
+days_co: 
+days_no2:
+days_ozone: 
+
+days_pm2_5: 
+days_pm10: 
+lat: 
+
+long: 
+distance_to_nearest_plant: 
+name_of_nearest_plant: 
+
+```{r}
+
+glimpse(data)
+names(data)
+
+data %>% summarise_all(funs(sum(is.na(.))))
+
+vis_miss(data)
+
+```
+
+```{r, plots}
+
+# max_aqi 
+ggplot(data, aes(x=max_aqi)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  xlim(0, 500) + # scale for aqi is 0 (good) to 500 (hazardous)
+  theme_minimal()
+
+# morality_ast 
+ggplot(data, aes(x=mortality_ast)) +
+  geom_histogram(alpha=1)+
+  theme_minimal()
+
+# Patchwork of AQI Value Categories 
+p1 <- ggplot(data, aes(x=good_days)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  theme_minimal()
+
+p2 <- ggplot(data, aes(x=moderate_days)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  theme_minimal()
+
+p3 <- ggplot(data, aes(x=unhealthy_for_sensitive_groups_days)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  theme_minimal()
+
+p4 <- ggplot(data, aes(x=unhealthy_days)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  theme_minimal()
+
+p5 <- ggplot(data, aes(x=very_unhealthy_days)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  theme_minimal()
+
+p6 <- ggplot(data, aes(x=hazardous_days)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  theme_minimal()
+
+p1 + p2 + p3+ p4 + p5 + p6
+```
