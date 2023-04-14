@@ -16,50 +16,51 @@ library(dplyr)
 library(readr)
 library(naniar)
 library(patchwork)
+library(skimr)
+library(GGally)
 
 data <- read.csv("fulldata.csv")
 
 ```
+An overview of what these variables stand for:
 
-fips: 
-location: the location of the power plant listed as county, state  
-county: the county of the power plant 
-
-state: the state of the power plant 
-mortality_resp: 
-perc_mortality_change_resp:
-
+ - fips: Federal Information Processing Standards code, which identifies counties 
+ - location: the location of the power plant listed as county, state  
+ - county: the county the coal power plant is located in 
+ - state: the state the coal power plant is located in 
+ - mortality_resp: mortality from respiratory disease per 100,000
+ 
+perc_mortality_change_resp: 
 mortality_ast: 
 perc_mortality_change_ast: 
-mortality_lung:
-
+mortality_lung: 
 perc_morality_change_lung: 
-year: 
-days_with_aqi: 
 
-good_days: 
-moderate_days: 
-unhealthy_for_sensative_groups_days: 
+ - year: year the values were recorded in (2014)
+ - days_with_aqi: days with a recorded AQI within a year time span 
 
-unhealthy_days: 
-very_unhealthy_days: 
-hazardous_days: 
+AQI (Air Quality Index) is the EPA's index for reporting air quality. Values range from 0-301+, with the groups of levels of concern as follows: good (0-50), moderate(51-100), unhealthy for sensitive groups (101-150), unhealthy (151-200), very unhealthy (201-300), and hazardous (301 and higher). 
+ - good_days: number of days that have AQI values between 0 and 50 
+ - moderate_days: number of days that have AQI values between 51 and 100
+ - unhealthy_for_sensitive_groups_days: number of days that have AQI values between 101 and 150
+ - unhealthy_days: number of days that have AQI values between 151 and 200
+ - very_unhealthy_days: number of days that have AQI values between 201 and 300
+ - hazardous_days: number of days that have AQI values of 301 or higher 
 
-max_aqi: 
-x90th_percentile_aqi: 
-median_aqi: 
-
+ - max_aqi: maximum value of the AQI per county 
+ - x90th_percentile_aqi: 90th percentile for AQI value per county. 90% of the API values per each county would fall below this value. 
+ - median_aqi: median (middle) AQI value per county 
+ 
 days_co: 
 days_no2:
 days_ozone: 
+days_pm2_5: fine, inhalable particulate matter with diameters that are generally 2.5 micrometers or smaller 
+days_pm10: inhalable particulate matter with diameters that are generally 10 micrometers or smaller 
 
-days_pm2_5: 
-days_pm10: 
-lat: 
-
-long: 
-distance_to_nearest_plant: 
-name_of_nearest_plant: 
+ - lat: latitude location of coal power plant 
+ - long: longitude location of coal power plant 
+ - distance_to_nearest_plant: distance from county centroid (long, lat) to nearest coal fire power plant (long, lat) in meters, calculated by   Haversine formula  
+ - name_of_nearest_plant: official name of the coal power plant 
 
 ```{r}
 
@@ -112,3 +113,18 @@ p6 <- ggplot(data, aes(x=hazardous_days)) +
 
 p1 + p2 + p3+ p4 + p5 + p6
 ```
+
+```{r}
+
+summary(data)
+
+skimmed <- skim(data)
+print(skimmed, strip_metadata = FALSE)
+
+data %>% dplyr::select(mortality_resp:days_pm10) %>%
+  ggcorr()
+
+``` 
+
+
+
