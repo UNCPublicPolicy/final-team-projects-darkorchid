@@ -69,20 +69,38 @@ names(data)
 
 data %>% summarise_all(funs(sum(is.na(.))))
 
-vis_miss(data)
+vis_miss(data) 
 
 ```
+```{r, health plots }
 
-```{r, plots}
+p1 <- ggplot(data, aes(x=mortality_resp)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  theme_minimal()
 
-# max_aqi 
+p2 <- ggplot(data, aes(x=mortality_lung)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  theme_minimal()
+
+p3 <- ggplot(data, aes(x=mortality_ast)) +
+  geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
+  theme_minimal()
+
+p1+p2+p3
+# mortality_resp has a higher median value (~60) compared to mortality_lung(~5) and mortality_ast(~1)
+``` 
+
+
+```{r, AQI plots}
+
+# max_aqi- the majority of the max_aqis recorded in this data set lie at ~100, which is somewhere between the moderate and unhealthy for sensative groups categories. 
 ggplot(data, aes(x=max_aqi)) +
   geom_density(alpha=0.5,show.legend = FALSE, color="darkorchid") +
   xlim(0, 500) + # scale for aqi is 0 (good) to 500 (hazardous)
   theme_minimal()
 
-# morality_ast 
-ggplot(data, aes(x=mortality_ast)) +
+# median_aqi- the average value of the median_aqi is ~40, which is in the good days category 
+ggplot(data, aes(x=median_aqi)) +
   geom_histogram(alpha=1)+
   theme_minimal()
 
@@ -122,7 +140,7 @@ skimmed <- skim(data)
 print(skimmed, strip_metadata = FALSE)
 
 data %>% dplyr::select(mortality_resp:days_pm10) %>%
-  ggcorr()
+  ggcorr() 
 
 ``` 
 
