@@ -70,35 +70,15 @@ write_csv(data, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-t
 data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Cleaned Merged Data/darkorchid4_TX.csv")
 
 
-data$neighboring_plant <- ifelse()
+
+data$neighboring_plant <- ifelse(data$county_name == "Armstrong County" | data$county_name == "Atascosa County" | data$county_name == "Austin County" | data$county_name == "Bailey County" | data$county_name == "Bandera County"| data$county_name == "Bastrop County" | data$county_name == "Bee County" | data$county_name == "Bell County" | data$county_name == "Bexar County" | data$county_name == "Bosque County" | data$county_name == "Brazoria County" | data$county_name == "Brazos County" | data$county_name == "Burleson County" | data$county_name == "Caldwell County" | data$county_name == "Camp County" | data$county_name == "Carson County" | data$county_name == "Castro County" | data$county_name == "Cherokee County" | data$county_name == "Cochran County" | data$county_name == "Colorado County" | data$county_name == "Comal County" | data$county_name == "Coryell County" | data$county_name == "Deaf Smith County" | data$county_name == "DeWitt County" | data$county_name == "Falls County" | data$county_name == "Franklin County" | data$county_name == "Freestone County" | data$county_name == "Frio County" | data$county_name == "Gonzales County" | data$county_name == "Gregg County" | data$county_name == "Guadalupe County" | data$county_name == "Hale County" | data$county_name == "Harris County" | data$county_name == "Harrison County" | data$county_name == "Hartley County" | data$county_name == "Hill County" | data$county_name == "Hockley County" | data$county_name == "Hutchinson County" | data$county_name == "Karnes County" | data$county_name == "Kendall County" | data$county_name == "La Salle County" | data$county_name == "Lavaca County" | data$county_name == "Lee County" | data$county_name == "Leon County" | data$county_name == "Limestone County" | data$county_name == "Live Oak County" | data$county_name == "Lubbock County" | data$county_name == "Marion County" | data$county_name == "McLennan County" | data$county_name == "McMullen County" | data$county_name == "Medina County" | data$county_name == "Milam County" | data$county_name == "Moore County" | data$county_name == "Morris County" | data$county_name == "Nacogdoches County" | data$county_name == "Navarro County" | data$county_name == "Oldham County" | data$county_name == "Panola County" | data$county_name == "Parmer County" | data$county_name == "Randall County" | data$county_name == "Red River County" | data$county_name == "Refugio County" | data$county_name == "Robertson County" | data$county_name == "Rusk County" | data$county_name == "Shelby County" | data$county_name == "Smith County" | data$county_name == "Upshur County" | data$county_name == "Victoria County" | data$county_name == "Waller County" | data$county_name == "Washington County" | data$county_name == "Wharton County" | data$county_name == "Wilson County", 1, 0)
+
+data %>% tally(neighboring_plant)
+data %>% select(c("county_name", "neighboring_plant")) %>% filter(neighboring_plant == 1)
 
 
-shape <- st_read(system.file("shape/tx.shp", package="sf")) # included with sf package
 
 
-
-install.packages("sf")
-# a list of neighbors 
-neighbors <- st_touches(shape, # first 
-                        shape, # second
-                        sparse = T)
-
-# neighbors of County Mecklenburg (as in Charlotte of Mecklenburg-Strelitz)
-
-# index of Mecklenburg cnty
-idx_strelitz <- which(shape$NAME == 'Mecklenburg') 
-
-# index of neighbors of Mecklenburg cnty
-nbr_mecklenburg <- neighbors[idx_strelitz][[1]]
-
-# names of neighbours of cnty Meckl.
-shape$NAME[nbr_mecklenburg]
-# [1] "Iredell"  "Lincoln"  "Cabarrus" "Gaston"   "Union"   
-
-# a visual check
-plot(st_geometry(shape))
-plot(shape[idx_strelitz, ], col = "blue", add = T)
-plot(shape[nbr_mecklenburg,], col = "red", add = T)
 ```
 
 
