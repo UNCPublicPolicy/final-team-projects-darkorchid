@@ -1,0 +1,25 @@
+---
+title: "Dark Orchid Final Project Regressions"
+author: "Betsy Norwood"
+date: "4/16/2023"
+output: html_document
+---
+```{r}
+
+setwd("/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Individual Work/Norwood")
+getwd()
+
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(naniar)
+library(patchwork)
+library(skimr)
+library(GGally)
+
+data <- read.csv("presentationdata.csv")
+
+View(data)
+
+```
