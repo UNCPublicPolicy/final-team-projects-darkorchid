@@ -30,10 +30,10 @@ An overview of what these variables stand for:
  - state: the state the coal power plant is located in 
  - mortality_resp: mortality from respiratory disease per 100,000
  
-perc_mortality_change_resp: 
-mortality_ast: 
-perc_mortality_change_ast: 
-mortality_lung: 
+- perc_mortality_change_resp: 1980 to 2014 
+- mortality_ast: mortality of asthma 
+- perc_mortality_change_ast: 
+mortality_lung: mortality from lung disease 
 perc_morality_change_lung: 
 
  - year: year the values were recorded in (2014)
@@ -51,7 +51,7 @@ AQI (Air Quality Index) is the EPA's index for reporting air quality. Values ran
  - x90th_percentile_aqi: 90th percentile for AQI value per county. 90% of the API values per each county would fall below this value. 
  - median_aqi: median (middle) AQI value per county 
  
-days_co: 
+days_co: days in which the EPA detector detected this chemical in the air in that year 
 days_no2:
 days_ozone: 
 days_pm2_5: fine, inhalable particulate matter with diameters that are generally 2.5 micrometers or smaller 
