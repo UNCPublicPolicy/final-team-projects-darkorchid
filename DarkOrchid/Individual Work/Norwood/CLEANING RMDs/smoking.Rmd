@@ -1,0 +1,38 @@
+---
+
+```{r}
+
+
+smoking <- read.csv("smoking.csv")
+
+setwd("/Users/betsynorwood/Desktop")
+getwd()
+
+View(smoking)
+glimpse(smoking)
+
+# Deletes 1st row 
+smoking <- smoking[-c(1), ]
+
+# Clean names 
+library(janitor)
+smoking <- clean_names(smoking)
+names(smoking)
+
+# Remove columns
+library(dplyr)
+smoking <- smoking %>% select(-one_of('geography_type_description', 'data_time_period', 'geographic_vintage', 'data_source', 'selected_location', 'formatted_geo_id'))
+
+smoking <- smoking %>% rename_at('sits_in_state', ~'state') 
+smoking <- smoking %>% rename_at('geography_name', ~'county')
+
+
+# as.numeric 
+smoking <- smoking %>% mutate(current_smokers = as.numeric(current_smokers))
+
+
+# write CSV 
+write.csv("smoking_cleaned.csv")
+
+```
+
