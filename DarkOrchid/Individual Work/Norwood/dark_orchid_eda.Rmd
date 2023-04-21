@@ -20,6 +20,7 @@ library(GGally)
 
 data <- read.csv("presentationdata.csv")
 
+
 View(data)
 
 ```
