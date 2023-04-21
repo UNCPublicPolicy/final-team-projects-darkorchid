@@ -2,11 +2,12 @@
 
 ```{r}
 
-
 smoking <- read.csv("smoking.csv")
 
-setwd("/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Individual Work/ Norwood/Smoking Data")
+setwd("/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Individual Work/Norwood/Smoking Data")
 getwd()
+
+smoking <- read.csv("smoking.csv")
 
 View(smoking)
 glimpse(smoking)
@@ -32,7 +33,12 @@ smoking <- smoking %>% mutate(current_smokers = as.numeric(current_smokers))
 
 
 # write CSV 
-write.csv("smoking_cleaned.csv")
+library(readr)
+write.csv(smoking, "smoking_cleaned.csv", row.names=FALSE)
+
+# Checking CSV 
+smoking_clean <- read.csv("smoking_cleaned.csv")
+View(smoking_clean)
 
 ```
 
