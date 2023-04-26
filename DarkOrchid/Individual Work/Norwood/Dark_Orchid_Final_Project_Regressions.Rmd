@@ -1,0 +1,63 @@
+---
+title: "Dark Orchid Final Project Regressions"
+author: "Betsy Norwood"
+date: "4/16/2023"
+output: html_document
+---
+```{r}
+
+setwd("/Users/betsynorwood/Documents/GitHub/final-team-projects-darkorchid/DarkOrchid/Individual Work/Norwood")
+getwd()
+
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(naniar)
+library(patchwork)
+library(skimr)
+library(GGally)
+library(naniar)
+
+data <- read.csv("presentationdata.csv")
+
+View(data)
+
+```
+
+
+```{r, regressions }
+names(data)
+
+# all mortality and API index ranges 
+m1 <- lm(mortality_resp ~ good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + very_unhealthy_days + hazardous_days , data = data) 
+summary(m1)
+
+m2 <- lm(mortality_lung ~ good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + very_unhealthy_days + hazardous_days , data = data) 
+summary(m2)
+
+m3 <- lm(mortality_ast ~ good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + very_unhealthy_days + hazardous_days , data = data) 
+summary(m3)
+
+# respiratory mortality and 90th percentile AQI 
+m4 <- lm(mortality_resp ~ x90th_percentile_aqi * state, data = data)
+summary(m4)
+
+ggplot(data, aes(x=x90th_percentile_aqi, y=mortality_lung)) +
+  geom_smooth(method = "lm", se=FALSE)+
+  geom_point(size=2, alpha=.5)+ 
+  theme_minimal()
+
+# respiratory mortality and distance to nearest plant 
+m5 <- lm(mortality_resp ~ distance_to_nearest_plant + state, data=data)
+summary(m5)
+
+ggplot(data, aes(x=distance_to_nearest_plant, y=mortality_resp)) +
+  geom_smooth(method = "lm", se=FALSE)+
+  geom_point(size=2, alpha=.5)+ 
+  theme_minimal()
+
+```
+
+
+
