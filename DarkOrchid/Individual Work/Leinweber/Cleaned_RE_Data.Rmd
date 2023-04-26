@@ -1,0 +1,54 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+---
+title: "Cleaned Data 715"
+author: "Eric Leinweber"
+output: html_document
+date: "2023-02-04"
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/usretechnicalpotential.csv")
+colnames(data)[1] <- "state"
+colnames(data)
+
+#selecting variables that use GWh as metric
+data_GWh <- data %>% select(state, urbanUtilityScalePV_GWh, ruralUtilityScalePV_GWh, rooftopPV_GWh, CSP_GWh, onshoreWind_GWh, offshoreWind_GWh, biopowerSolid_GWh, biopowerGaseous_GWh, geothermalHydrothermal_GWh, EGSGeothermal_GWh, hydropower_GWh)
+
+
+#separating each individual renewable energy source potential - solar, wind, bio, geothermal, and hydropower
+state_solar <- data_GWh %>% group_by(state) %>% summarise(solar_GWh = (urbanUtilityScalePV_GWh + ruralUtilityScalePV_GWh + rooftopPV_GWh + CSP_GWh))
+
+state_wind <- data_GWh %>% group_by(state) %>% summarise(wind_GWh = (onshoreWind_GWh + offshoreWind_GWh))
+
+state_bio <- data_GWh %>% group_by(state) %>% summarise(biopower_GWh = (biopowerSolid_GWh + biopowerGaseous_GWh))
+
+state_geo <- data_GWh %>% group_by(state) %>% summarise(geo_GWh = (geothermalHydrothermal_GWh + EGSGeothermal_GWh))
+
+state_hydro <- data_GWh %>% group_by(state) %>% summarise(hydro_GWh = hydropower_GWh)
+
+#creating a dataframe with every individual renewable energy source
+state_all_GWh <- list(state_solar, state_wind, state_bio, state_geo, state_hydro)
+state_all_GWh <- state_all_GWh %>% reduce(full_join, by="state") 
+
+#changing NA values to have a value of 0
+state_all_GWh[is.na(state_all_GWh)] <- 0
+
+#creating a new column with all potential renewable energy GWh for each state 
+state_all_GWh$allpower_GWh <- state_all_GWh$solar_GWh+ state_all_GWh$wind_GWh + state_all_GWh$biopower_GWh + state_all_GWh$geo_GWh + state_all_GWh$hydro_GWh
+
+print(state_all_GWh)
+
+write_csv(state_all_GWh, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/usretechnicalpotential.csv")
+
+```
+

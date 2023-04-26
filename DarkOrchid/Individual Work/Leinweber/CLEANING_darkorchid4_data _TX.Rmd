@@ -1,0 +1,132 @@
+---
+title: "Merged Data Set and Tests"
+output: html_document
+date: "2023-03-30"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+
+
+
+
+
+data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715/darkorchid_co2data.csv")
+
+```
+
+```{r, include = FALSE, eval = FALSE, echo = FALSE}
+
+
+asthma <- asthma %>% filter(FIPS >= 48000, FIPS <= 48507) %>% select(c("Location", "FIPS", `Mortality Rate, 2014*`, `% Change in Mortality Rate, 1980-2014`)) %>% mutate("2014_mortality_ast" = `Mortality Rate, 2014*`, "perc_mortality_change_ast" = `% Change in Mortality Rate, 1980-2014`) %>% select(-c(`% Change in Mortality Rate, 1980-2014`, `Mortality Rate, 2014*`))
+
+chronic_resp <- chronic_resp %>% filter(FIPS >= 48000, FIPS <= 48507) %>% select(c("Location", "FIPS", `Mortality Rate, 2014*`, `% Change in Mortality Rate, 1980-2014`)) %>% mutate("2014_mortality_resp" = `Mortality Rate, 2014*`, "perc_mortality_change_resp" = `% Change in Mortality Rate, 1980-2014`) %>% select(-c(`% Change in Mortality Rate, 1980-2014`, `Mortality Rate, 2014*`))
+
+coal_worker_pneumo <- coal_worker_pneumo %>% filter(FIPS >= 48000, FIPS <= 48507) %>% select(c("Location", "FIPS", `Mortality Rate, 2014*`, `% Change in Mortality Rate, 1980-2014`)) %>% mutate("2014_mortality_cwp" = `Mortality Rate, 2014*`, "perc_mortality_change_cwp" = `% Change in Mortality Rate, 1980-2014`) %>% select(-c(`% Change in Mortality Rate, 1980-2014`, `Mortality Rate, 2014*`))
+
+
+
+
+data_1 <- merge(asthma, chronic_resp, by = c("FIPS", "Location"))
+health_outcomes <- merge(data_1, coal_worker_pneumo, by = c("FIPS", "Location"))
+
+write_csv(health_outcomes, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/health_outcomes_TX.csv")
+```
+
+```{r}
+data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715/darkorchid_co2data.csv")
+data <- data %>% rename("FIPS" = "county_id") %>% select(-c("county_state_name", "population_cohort", "employment_cohort", "cohort", "longitude", "latitude")) %>% filter(FIPS >= 48000, FIPS <= 48507)
+
+
+darkorchid4 <- merge(data, health_outcomes, by = "FIPS")
+darkorchid4 <-darkorchid4 %>% select(-c("Location", "state_id", "state"))
+
+
+write_csv(darkorchid4, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/darkorchid4_TX.csv")
+
+
+data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/darkorchid4_TX.csv")
+
+data <- data %>% select(-c(`CO2e_output_rate_elec_mton/mwh`))
+write_csv(data, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/darkorchid4_TX.csv")
+
+str(data)
+```
+
+```{r}
+data$coal_plant <- ifelse(data$FIPS == 48175 | data$FIPS == 48149 | data$FIPS ==  48375 | data$FIPS ==  48029 | data$FIPS ==  48293 | data$FIPS ==  48395 | data$FIPS ==  48401 | data$FIPS ==  48157 | data$FIPS ==  48203 | data$FIPS ==  48013 | data$FIPS ==  48309 | data$FIPS ==  48279 | data$FIPS ==  48449, 1, 0)
+
+
+write_csv(data, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Leinweber/darkorchid4_TX.csv")
+
+
+
+
+data <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/Cleaned Merged Data/darkorchid4_TX.csv")
+
+
+
+data$neighboring_plant <- ifelse(data$county_name == "Armstrong County" | data$county_name == "Atascosa County" | data$county_name == "Austin County" | data$county_name == "Bailey County" | data$county_name == "Bandera County"| data$county_name == "Bastrop County" | data$county_name == "Bee County" | data$county_name == "Bell County" | data$county_name == "Bexar County" | data$county_name == "Bosque County" | data$county_name == "Brazoria County" | data$county_name == "Brazos County" | data$county_name == "Burleson County" | data$county_name == "Caldwell County" | data$county_name == "Camp County" | data$county_name == "Carson County" | data$county_name == "Castro County" | data$county_name == "Cherokee County" | data$county_name == "Cochran County" | data$county_name == "Colorado County" | data$county_name == "Comal County" | data$county_name == "Coryell County" | data$county_name == "Deaf Smith County" | data$county_name == "DeWitt County" | data$county_name == "Falls County" | data$county_name == "Franklin County" | data$county_name == "Freestone County" | data$county_name == "Frio County" | data$county_name == "Gonzales County" | data$county_name == "Gregg County" | data$county_name == "Guadalupe County" | data$county_name == "Hale County" | data$county_name == "Harris County" | data$county_name == "Harrison County" | data$county_name == "Hartley County" | data$county_name == "Hill County" | data$county_name == "Hockley County" | data$county_name == "Hutchinson County" | data$county_name == "Karnes County" | data$county_name == "Kendall County" | data$county_name == "La Salle County" | data$county_name == "Lavaca County" | data$county_name == "Lee County" | data$county_name == "Leon County" | data$county_name == "Limestone County" | data$county_name == "Live Oak County" | data$county_name == "Lubbock County" | data$county_name == "Marion County" | data$county_name == "McLennan County" | data$county_name == "McMullen County" | data$county_name == "Medina County" | data$county_name == "Milam County" | data$county_name == "Moore County" | data$county_name == "Morris County" | data$county_name == "Nacogdoches County" | data$county_name == "Navarro County" | data$county_name == "Oldham County" | data$county_name == "Panola County" | data$county_name == "Parmer County" | data$county_name == "Randall County" | data$county_name == "Red River County" | data$county_name == "Refugio County" | data$county_name == "Robertson County" | data$county_name == "Rusk County" | data$county_name == "Shelby County" | data$county_name == "Smith County" | data$county_name == "Upshur County" | data$county_name == "Victoria County" | data$county_name == "Waller County" | data$county_name == "Washington County" | data$county_name == "Wharton County" | data$county_name == "Wilson County", 1, 0)
+
+data %>% tally(neighboring_plant)
+data %>% select(c("county_name", "neighboring_plant")) %>% filter(neighboring_plant == 1)
+
+
+
+
+```
+
+
+#summing all residential electricity 
+
+data <- data %>% group_by(state) %>% mutate(all_res_elec_CO2e = sum(res_elec_CO2e))
+
+#summing all residential natural gas
+data <- data %>% group_by(state) %>% mutate(all_res_ng_CO2e = sum(res_ng_CO2e))
+
+#summing all residential data at county level
+data <- data %>% group_by(state) %>% mutate(all_res_CO2e_county = res_elec_CO2e + res_ng_CO2e)
+
+#summing all residential data at state level
+data <- data %>% group_by(state) %>% mutate(all_res_CO2e_state = all_res_elec_CO2e + all_res_ng_CO2e)
+
+
+data <- data %>% group_by(state) %>% mutate(all_com_elec_CO2e = sum(com_elec_CO2e))
+
+data <- data %>% group_by(state) %>% mutate(all_com_ng_CO2e = sum(com_ng_CO2e))
+
+#summing all commercial data at county level
+data <- data %>% group_by(state) %>% mutate(all_com_CO2e_county = com_elec_CO2e + com_ng_CO2e)
+
+#summing all commercial data at state level
+data <- data %>% group_by(state) %>% mutate(all_com_CO2e_state = all_com_elec_CO2e + all_com_ng_CO2e)
+
+
+data <- data %>% group_by(state) %>% mutate(all_ind_elec_CO2e = sum(ind_elec_CO2e))
+
+data <- data %>% group_by(state) %>% mutate(all_ind_ng_CO2e = sum(ind_ng_CO2e))
+
+#summing all commercial data at state level
+data <- data %>% group_by(state) %>% mutate(all_ind_CO2e_county = ind_elec_CO2e + ind_ng_CO2e)
+
+#summing all commercial data at state level
+data <- data %>% group_by(state) %>% mutate(all_ind_CO2e_state = all_ind_elec_CO2e + all_ind_ng_CO2e)
+
+
+data <- data %>% group_by(state) %>% mutate(all_ORT_gas_CO2e = sum(ORT_gas_CO2e))
+
+data <- data %>% group_by(state) %>% mutate(all_ORT_diesel_CO2e = sum(ORT_diesel_CO2e))
+
+
+#summing all ORT  data at state level
+data <- data %>% group_by(state) %>% mutate(all_ORT_CO2e_county = ORT_gas_CO2e + ORT_diesel_CO2e)
+
+#summing all ORT data at state level
+data <- data %>% group_by(state) %>% mutate(all_ORT_CO2e_state = all_ORT_gas_CO2e + all_ORT_diesel_CO2e)
+
+
