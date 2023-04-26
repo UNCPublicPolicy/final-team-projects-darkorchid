@@ -1,0 +1,24 @@
+"","county","state","geo_id","lung_cancer_per_100000"
+"1","Albany","WY",56001,32.3
+"2","Big Horn","WY",56003,44.8
+"3","Campbell","WY",56005,57.8
+"4","Carbon","WY",56007,45.7
+"5","Converse","WY",56009,31.9
+"6","Crook","WY",56011,50.6
+"7","Fremont","WY",56013,36.2
+"8","Goshen","WY",56015,38.7
+"9","Hot Springs","WY",56017,38.9
+"10","Johnson","WY",56019,59.1
+"11","Laramie","WY",56021,47.5
+"12","Lincoln","WY",56023,32
+"13","Natrona","WY",56025,53.6
+"14","Niobrara","WY",56027,NA
+"15","Park","WY",56029,31
+"16","Platte","WY",56031,27.4
+"17","Sheridan","WY",56033,41.3
+"18","Sublette","WY",56035,NA
+"19","Sweetwater","WY",56037,45.4
+"20","Teton","WY",56039,20.9
+"21","Uinta","WY",56041,34
+"22","Washakie","WY",56043,34.9
+"23","Weston","WY",56045,65.1
