@@ -2,8 +2,13 @@
 title: "Final_Mark_Down"
 author: "Quinn Bankson"
 date: "2023-05-04"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
+
+# DarkOrchid4 Final Mark Down 
+## How does proximity to coal fired power plant affect health outcomes in the United States?
 
 ```{r setup}
 ```
@@ -17,7 +22,11 @@ library(janitor)
 library(dplyr)
 ```
 
+## Introducing coal plant data to undergo feature engineering. 
+
 ```{r}
+#Coal plant data was cleaned in an individual folder, the excel was converted to csv and excess worksheets were removed from the workbook. 
+
 coalplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/CoalPlants2.csv")
 
 # coalplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/CoalPlants2.csv")
@@ -50,6 +59,12 @@ coal_plants <- rename(coal_plants, state = subnational_unit_province_state, name
 county_centroids <- county_center
 county_centroids <- rename(county_centroids, state = state_name)
 ```
+
+```{r}
+### "latitude", "longitude","subnational_unit_province_state", "plant", "county" were selected as the most important values of interest for the rest of the project. The names were changed but these are the orginal values of interest as they were known in the orignal coal plant data set from globalcoaltracker. 
+```
+
+## Feature engineering - calculating the minimum distance from every county centroid in the US to the nearest coal fired power plant using the Haversine formula and longitudinal and latitudinal data. 
 
 ```{r}
 #install.packages("geosphere")
@@ -125,10 +140,7 @@ summary(county_centroids$distance_to_nearest_plant)
 ### This concludes the feature engineering in which the minimum distance from each county centroid to the nearest coal fired power plant is calculated and compiled along with the name of the nearest plant into a tibble called countycoords.csv. This csv has record of 3143 US counties and their distance. ### 
 ```
 
-```{r}
-### The next section of the .rmd will compile 3196 health outcomes (3143 of which correspond to the 3143 US counties that are observed) and aqi data from 1036 observed US counties as well. A crosswalk was used to match values by FIPS codes. 
-```
-
+## The next section of the .rmd will compile 3196 health outcomes (3143 of which correspond to the 3143 US counties that are observed) and aqi data from 1036 observed US counties as well. A crosswalk was used to match values by FIPS codes. 
 
 ```{r libraries}
 library(tidyverse)
@@ -218,7 +230,7 @@ vis_miss(final)
 ```{r}
 write_csv(final, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/presentationdata.csv")
 
-#write_csv(final, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_aqi_coal_distance.csv")
+#write_csv(final, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_aqi_coal_distance_CLEAN.csv")
 ```
 
 
@@ -231,7 +243,7 @@ colnames(final)
 ### At this point in the process, we had a merged data set containing health outcomes, air quality, and distance from operating coal plants by county for 3143 counties in the United States. We established health outcomes as our dependent variables ("mortality_resp", "perc_mortality_change_resp", "mortality_ast", "perc_mortality_change_ast", "mortality_lung", "perc_mortality_change_lung"). The remaining variables were independent variables and controls of interest to us. We began conducting some basic regressions. ###
 ```
 
-
+## Basic Regressions
 
 ```{r}
 library(tidyverse)
@@ -246,7 +258,7 @@ library(naniar)
 ```
 
 ```{r}
-data <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/presentationdata.csv")
+data <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_aqi_coal_distance_CLEAN.csv")
 ```
 ```{r}
 head(data)
@@ -278,8 +290,10 @@ summary(pr2model)
 
 ```
 
+## Advanced Regressions
+
 ```{r}
-data <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/presentationdata.csv")
+data <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_aqi_coal_distance_CLEAN.csv")
 ```
 
 ```{r}
@@ -294,9 +308,13 @@ library(magrittr)
 data <- data %>% 
   mutate(distance_km = distance_to_nearest_plant / 1000)
 
-# The file smoking_cleaned provides more independent variables for control. The crucial variable provided by this data set is the crude percent of adults who currently smoke in 2020.
+# The file smoking_CLEAN provides more independent variables for control. The crucial variable provided by this data set is the crude percent of adults who currently smoke in 2020.
 
 smoking <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Norwood/smoking_cleaned.csv")
+
+#smoking <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/smoking_CLEAN.csv")
+
+#Making the fips code identical- changed geo_id to "fips" and used sprintf to add an extra "0" in front of codes that were 4 digits long isntead of 5. This made the fips codes compatible between thesmoking data and the rest of the compiled data. 
 
 smoking <- smoking %>% rename(fips = geo_id)
 
@@ -311,9 +329,7 @@ merged_data <- data %>%
 merged_data <- merged_data %>%
   rename(state = state.x, state_abrv = state.y)
 
-#write_csv(merged_data, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_aqi_coal_distance.csv")
-
-write_csv(merged_data, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/QBCleanerData/health_aqi_coal_smoking.csv")
+write_csv(merged_data, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_aqi_coal_distance.csv")
 
 #data_s <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Cleaned Merged Data/fullplusmoke.csv") 
 
@@ -330,11 +346,13 @@ data_50 <- merged_data %>%
 ```
 
 ```{r}
+#An experimental model including many different independent variables. Investigating realtionship for mortality_resp. 
 exmodel <- lm(mortality_resp ~ median_aqi + max_aqi + good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + hazardous_days +days_ozone + days_no2 + distance_km, data = merged_data)
 summary(exmodel)
 ```
 
 ```{r}
+# Experiments with mortality_resp models. 
 exmodel2 <- lm(mortality_resp ~ median_aqi + unhealthy_days + hazardous_days + days_no2 + distance_km, data = data)
 summary(exmodel2)
 ```
@@ -346,6 +364,8 @@ summary(final_mod1)
 ```
 
 ```{r}
+# A deeper look into distance_km's effect on mortality_resp. Only analyzing the top 10 percent lowest values for min_distance from caol fired power plant. 
+
 final_mod10 <-lm(mortality_resp ~ distance_km, data = data_10)
 
 summary(final_mod10)
@@ -353,6 +373,8 @@ summary(final_mod10)
 
 
 ```{r}
+# A deeper look into distance_km's effect on mortality_resp. Only analyzing the top 50 percent lowest values for min_distance from caol fired power plant. 
+
 final_mod50 <-lm(mortality_resp ~ distance_km, data = data_50)
 
 summary(final_mod50)
@@ -360,6 +382,8 @@ summary(final_mod50)
 
 
 ```{r}
+# Investigating the strength of current_smokers effect on moratlity_resp compared to distance_km. 
+
 smoking_mod1 <-lm(mortality_resp ~ distance_km + current_smokers, data = merged_data)
 
 summary(smoking_mod1)
@@ -367,6 +391,8 @@ summary(smoking_mod1)
 
 
 ```{r}
+# Investigating the strength of current_smokers effect on moratlity_resp compared to distance_km controlling by state. 
+
 smoking_mod2 <- lm(mortality_resp ~ distance_km + current_smokers + state, data = merged_data)
 
 summary(smoking_mod2)
@@ -374,14 +400,16 @@ summary(smoking_mod2)
 
 
 ```{r}
-smoking_mod10 <- lm(mortality_resp ~ distance_km + current_smokers, data = merged_data)
+# Investigating the strength of current_smokers effect on moratlity_resp compared to distance_km. Only analyzing the top 10 percent lowest values for min_distance from coal fired power plant. 
+smoking_mod10 <- lm(mortality_resp ~ distance_km + current_smokers, data = data_10)
 
 summary(smoking_mod10)
 ```
 
 
 ```{r}
-smoking_mod50 <- lm(mortality_resp ~ distance_km + current_smokers, data = merged_data)
+# Investigating the strength of current_smokers effect on moratlity_resp compared to distance_km. Only analyzing the top 50 percent lowest values for min_distance from coal fired power plant. 
+smoking_mod50 <- lm(mortality_resp ~ distance_km + current_smokers, data = data_50)
 
 summary(smoking_mod50)
 ```
