@@ -1,0 +1,228 @@
+---
+title: "Final_Mark_Down"
+author: "Quinn Bankson"
+date: "2023-05-04"
+output: html_document
+---
+
+```{r setup}
+```
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(moderndive)
+library(GGally)
+library(janitor)
+library(dplyr)
+```
+
+```{r}
+coalplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/CoalPlants2.csv")
+
+# coalplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/CoalPlants2.csv")
+```
+
+```{r}
+colnames(coalplants)
+coalplants <- clean_names(coalplants)
+coalplants <- coalplants %>% filter(country == "United States")
+coalplants <- coalplants %>% select(parent_id, unit, subnational_unit_province_state, plant, status, year, local_area_taluk_county, latitude, longitude )
+coalplants <- rename(coalplants, county = local_area_taluk_county)
+```
+
+```{r}
+counties <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/uscounties.csv")
+head(counties)
+colnames(counties)
+county_center <- counties %>% select(county, state_name, lat, lng)
+```
+
+```{r}
+coalplants_op <- coalplants %>% filter(status == "operating")
+coalplants_op <- distinct(coalplants_op, plant, .keep_all = TRUE)
+```
+
+```{r}
+coal_plants <- coalplants_op %>% select("latitude", "longitude","subnational_unit_province_state", "plant", "county")
+coal_plants <- rename(coal_plants, long= longitude, lat = latitude)
+coal_plants <- rename(coal_plants, state = subnational_unit_province_state, name = plant)
+county_centroids <- county_center
+county_centroids <- rename(county_centroids, state = state_name)
+```
+
+```{r}
+#install.packages("geosphere")
+library(geosphere)
+library(dplyr)
+library(naniar)
+
+county_centroids <- rename(county_centroids, long = lng)
+
+coal_plants <- coal_plants %>% 
+  filter(!is.na(long))
+coal_plants <- coal_plants %>% 
+  filter(!is.na(lat))
+
+county_centroids <- county_centroids %>% 
+  filter(!is.na(long))
+county_centroids <- county_centroids %>% 
+  filter(!is.na(lat))
+```
+
+```{r}
+library(dplyr)
+library(geosphere)
+
+# filtering to be sure
+coal_plants <- na.omit(coal_plants)
+
+
+distances <- geosphere::distm(county_centroids[, c("long", "lat")], coal_plants[, c("long", "lat")])
+
+# minimum distance per county
+min_distances <- apply(distances, 1, min)
+
+# add the new column to the county_centroids dataframe using mutate
+county_centroids <- county_centroids %>% 
+  mutate(distance_to_nearest_plant = min_distances)
+
+coords_distance <- county_centroids
+```
+
+```{r, warning = FALSE}
+# filtering to be sure, this code will atatch plant name as well as the minimum distance
+coal_plants <- na.omit(coal_plants)
+
+ #repeating earlier to be sure
+distances <- geosphere::distm(county_centroids[, c("long", "lat")], coal_plants[, c("long", "lat")])
+
+# minimum distance and corresponding plant name per county
+min_distances <- apply(distances, 1, min)
+names_of_nearest_plants <- apply(distances, 1, function(x) coal_plants$name[which.min(x)])
+
+# add new columns to the county_centroids dataframe using mutate
+county_centroids <- county_centroids %>% 
+  mutate(distance_to_nearest_plant = min_distances,
+         name_of_nearest_plant = names_of_nearest_plants)
+
+coords_distance <- county_centroids 
+
+write_csv(county_centroids, "/Users/mac/Documents/My Tableau Repository/countycoords.csv")
+write_csv(coal_plants, "/Users/mac/Documents/My Tableau Repository/coalplantcoords.csv")
+
+#write_csv(county_centroids, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/countycoords.csv")
+
+#write_csv(coal_plants, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/coalplantcoords.csv")
+
+```
+
+```{r}
+summary(county_centroids$distance_to_nearest_plant)
+```
+
+```{r}
+### This concludes the feature engineering in which the minimum distance from each county centroid to the nearest coal fired power plant is calculated and compiled along with the name of the nearest plant into a tibble called countycoords.csv. This csv has record of 3143 US counties and their distance. ### 
+```
+
+```{r}
+### The next section of the .rmd will compile 3196 health outcomes (3143 of which correspond to the 3143 US counties that are observed) and aqi data from 1036 observed US counties as well. A crosswalk was used to match values by FIPS codes. 
+```
+
+
+```{r libraries}
+library(tidyverse)
+library(ggplot2)
+library(moderndive)
+library(GGally)
+library(janitor)
+library(dplyr)
+library(stringr)
+#install.packages("tidyr")
+library(tidyr)
+```
+
+```{r read files}
+crossw <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/countycrosswalk.csv")
+
+aqi <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/annual_aqi_by_county_2014.csv")
+
+outcomes <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_outcomes_2014.csv")
+
+#outcomes <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_outcomes_2014.csv")
+```
+```{r correct names}
+
+colnames(crossw)[1] <- "County"
+colnames(crossw)[2] <- "State"
+colnames(crossw)[3] <- "FIPS"
+
+crossw <- crossw %>% select(County, State, FIPS)
+
+crossw <- crossw %>%
+  filter(County != "County Name")
+```
+
+```{r}
+
+crossw <- crossw %>%
+  mutate(County = str_to_title(tolower(County)))
+```
+
+
+```{r}
+outcomes <- outcomes %>%
+  separate(Location, into = c("County", "State"), sep = ", ", remove = FALSE)
+
+outcomes <- outcomes %>%
+  filter(!is.na(State))
+
+outcomes$County <- str_replace(outcomes$County, " County", "")
+
+outcomes$County <- str_replace(outcomes$County, " Parish", "")
+
+outcomes$County <- str_replace(outcomes$County, "Saint ", "St. ")
+```
+
+```{r}
+# join AQI and Outcomes, there will be all 3000+ Outcomes visible and only 1000ish AQI present
+
+joined_dv_iv <- left_join(outcomes, aqi, by = c("County" = "County", "State" = "State"))
+view(joined_dv_iv)
+```
+
+
+```{r}
+joined_dv_iv <- clean_names(joined_dv_iv)
+
+# I intend to join the countycoords tibble which has county, state, lat, long, distance_to_nearest_plant, name_of_nearest_plant 
+
+centroidsandplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/QBCleanerData/countycoords.csv")
+
+#centroidsandplants <- read_csv("/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/coalplantcoords.csv")
+```
+
+```{r}
+final <- left_join(joined_dv_iv, centroidsandplants, by = c("county" = "county", "state" = "state"))
+view(final)
+```
+
+
+
+```{r}
+library(naniar)
+
+vis_miss(final)
+```
+
+```{r}
+write_csv(final, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/presentationdata.csv")
+
+#write_csv(final, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_aqi_coal_distance.csv")
+```
+
+
+```{r}
+colnames(final)
+```
+
