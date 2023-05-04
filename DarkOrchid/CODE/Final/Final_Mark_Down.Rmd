@@ -224,5 +224,165 @@ write_csv(final, "/Users/mac/Documents/R Assignments PLCY 715/final-team-project
 
 ```{r}
 colnames(final)
+
+```
+
+```{r}
+### At this point in the process, we had a merged data set containing health outcomes, air quality, and distance from operating coal plants by county for 3143 counties in the United States. We established health outcomes as our dependent variables ("mortality_resp", "perc_mortality_change_resp", "mortality_ast", "perc_mortality_change_ast", "mortality_lung", "perc_mortality_change_lung"). The remaining variables were independent variables and controls of interest to us. We began conducting some basic regressions. ###
+```
+
+
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(moderndive)
+library(GGally)
+library(janitor)
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(naniar)
+```
+
+```{r}
+data <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/presentationdata.csv")
+```
+```{r}
+head(data)
+colnames(data)
+```
+
+```{r}
+# Checking to see which variables would create a regression using 1000+ observations and which variables would create a regression using 3000+ observations. 
+
+vis_miss(data)
+```
+
+```{r}
+data <- data %>% 
+  mutate(distance_km = distance_to_nearest_plant / 1000)
+
+pr1model <- lm(mortality_resp ~ median_aqi + unhealthy_days + hazardous_days + days_no2 + distance_km, data = data)
+summary(pr1model)
+```
+
+```{r}
+pr2model <- lm(mortality_resp ~ median_aqi + max_aqi + good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + hazardous_days +days_ozone + days_no2 + distance_km, data = data)
+summary(pr2model)
+```
+
+```{r}
+
+### After observing some basic regressions, we found our R-squared values to be very low, but our distance variable to be significant at at least the 0.01 level frequently. This lead us to believe that our regressions accounted for very little of the explanation for health outcomes across US counties, but distance still was an important contributor. Our regressions advanced to include smoking data, control by county, look at the closest 10 percent of county centroids to plants, and look at the top 50 percent of closest county centroids to plants. ###
+
+```
+
+```{r}
+data <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/presentationdata.csv")
+```
+
+```{r}
+head(data)
+colnames(data)
+```
+
+```{r}
+library(dplyr)
+library(magrittr)
+
+data <- data %>% 
+  mutate(distance_km = distance_to_nearest_plant / 1000)
+
+# The file smoking_cleaned provides more independent variables for control. The crucial variable provided by this data set is the crude percent of adults who currently smoke in 2020.
+
+smoking <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Norwood/smoking_cleaned.csv")
+
+smoking <- smoking %>% rename(fips = geo_id)
+
+data <- data %>%
+  mutate(fips = sprintf("%05d", fips))
+
+# Join the two data sets using the FIPS code
+
+merged_data <- data %>%
+  left_join(smoking, by = c("fips", "county"))
+
+merged_data <- merged_data %>%
+  rename(state = state.x, state_abrv = state.y)
+
+#write_csv(merged_data, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_aqi_coal_distance.csv")
+
+write_csv(merged_data, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/QBCleanerData/health_aqi_coal_smoking.csv")
+
+#data_s <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Cleaned Merged Data/fullplusmoke.csv") 
+
+```
+
+```{r}
+data_10 <- merged_data %>%
+  arrange(distance_km) %>% # sort by distance_km
+  slice(1:round(n() * 0.1)) # keep top 10% of observations
+
+data_50 <- merged_data %>%
+  arrange(distance_km) %>% # sort by distance_km
+  slice(1:round(n() * 0.5)) # keep top 50% of observations
+```
+
+```{r}
+exmodel <- lm(mortality_resp ~ median_aqi + max_aqi + good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + hazardous_days +days_ozone + days_no2 + distance_km, data = merged_data)
+summary(exmodel)
+```
+
+```{r}
+exmodel2 <- lm(mortality_resp ~ median_aqi + unhealthy_days + hazardous_days + days_no2 + distance_km, data = data)
+summary(exmodel2)
+```
+
+```{r}
+final_mod1 <-lm(mortality_resp ~ distance_km, data = data)
+
+summary(final_mod1)
+```
+
+```{r}
+final_mod10 <-lm(mortality_resp ~ distance_km, data = data_10)
+
+summary(final_mod10)
+```
+
+
+```{r}
+final_mod50 <-lm(mortality_resp ~ distance_km, data = data_50)
+
+summary(final_mod50)
+```
+
+
+```{r}
+smoking_mod1 <-lm(mortality_resp ~ distance_km + current_smokers, data = merged_data)
+
+summary(smoking_mod1)
+```
+
+
+```{r}
+smoking_mod2 <- lm(mortality_resp ~ distance_km + current_smokers + state, data = merged_data)
+
+summary(smoking_mod2)
+```
+
+
+```{r}
+smoking_mod10 <- lm(mortality_resp ~ distance_km + current_smokers, data = merged_data)
+
+summary(smoking_mod10)
+```
+
+
+```{r}
+smoking_mod50 <- lm(mortality_resp ~ distance_km + current_smokers, data = merged_data)
+
+summary(smoking_mod50)
 ```
 
