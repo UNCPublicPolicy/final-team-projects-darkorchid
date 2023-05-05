@@ -36,7 +36,7 @@ An overview of what these variables stand for:
  - mortality_ast_2014: mortality from asthma per 100,000 
  - perc_mortality_change_ast: percent change in mortality from asthma from 1980 to 2014 
  - mortality_cwp_2014: mortality from Pneumoconiosis
- - perc_mortality_change_cwp: percent change in mortality from Pneumoconiosisfrom 1980 to 2014 
+ - perc_mortality_change_cwp: percent change in mortality from Pneumoconiosis from 1980 to 2014 
  - mortality_lung_2014: mortality from lung disease 
  - perc_morality_change_lung: percent change in mortality from lung disease from 1980 to 2014 
   - mortality_resp_2014: mortality from respiratory disease per 100,000
