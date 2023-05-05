@@ -20,6 +20,7 @@ library(moderndive)
 library(GGally)
 library(janitor)
 library(dplyr)
+library(geosphere)
 ```
 
 ## Introducing coal plant data to undergo feature engineering. 
