@@ -27,8 +27,6 @@ crossw <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-tea
 aqi <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/annual_aqi_by_county_2014.csv")
 
 outcomes <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_outcomes_2014.csv")
-
-#outcomes <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_outcomes_2014.csv")
 ```
 
 ```{r correct names}
@@ -154,6 +152,5 @@ final_fortableau$is_plant <- ifelse(is.na(final_fortableau$name) | final_fortabl
 ```{r}
 
 write_csv(final_fortableau, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/fortableau2.csv")
-
 ```
 
