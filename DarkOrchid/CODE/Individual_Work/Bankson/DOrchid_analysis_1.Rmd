@@ -1,0 +1,175 @@
+---
+title: "DOrchid_analysis_1"
+author: "Quinn Bankson"
+date: "2023-03-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+```
+
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(moderndive)
+library(GGally)
+library(janitor)
+library(dplyr)
+```
+
+```{r}
+coalplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/CoalPlants2.csv")
+```
+
+```{r}
+colnames(coalplants)
+coalplants <- clean_names(coalplants)
+coalplants <- coalplants %>% filter(country == "United States")
+coalplants <- coalplants %>% select(parent_id, unit, subnational_unit_province_state, plant, status, year, local_area_taluk_county, latitude, longitude )
+coalplants <- rename(coalplants, county = local_area_taluk_county)
+```
+```{r}
+counties <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/uscounties.csv")
+head(counties)
+colnames(counties)
+county_center <- counties %>% select(county, state_name, lat, lng)
+```
+
+```{r}
+#joined_locs <- full_join(county_center, coalplants, by = "county")
+#joined_locs2 <-left_join(county_center, coalplants, by = "county")
+```
+
+
+```{r}
+coalplants_op <- coalplants %>% filter(status == "operating")
+coalplants_op <- distinct(coalplants_op, plant, .keep_all = TRUE)
+```
+
+```{r}
+coal_plants <- coalplants_op %>% select("latitude", "longitude","subnational_unit_province_state", "plant", "county")
+coal_plants <- rename(coal_plants, long= longitude, lat = latitude)
+coal_plants <- rename(coal_plants, state = subnational_unit_province_state, name = plant)
+county_centroids <- county_center
+county_centroids <- rename(county_centroids, state = state_name)
+
+#county_centroids <- filter(county_centroids, state_name == "Texas")
+```
+
+```{r}
+#install.packages("geosphere")
+library(geosphere)
+library(dplyr)
+library(naniar)
+
+county_centroids <- rename(county_centroids, long = lng)
+
+coal_plants <- coal_plants %>% 
+  filter(!is.na(long))
+coal_plants <- coal_plants %>% 
+  filter(!is.na(lat))
+
+county_centroids <- county_centroids %>% 
+  filter(!is.na(long))
+county_centroids <- county_centroids %>% 
+  filter(!is.na(lat))
+
+#dist_mat <- apply(county_centroids[, c("long", "lat")], 1,function(x) apply(coal_plants[, c("long", "lat")], 1, function(y) distm(x,y)))
+
+#min_dist <- apply(dist_mat, 1, function(x) {
+ # if (all(is.na(x))) NA
+ # else x[which.min(x[!is.na(x)])]
+#})
+#county_centroids <- county_centroids[complete.cases(county_centroids), ]
+
+```
+
+```{r}
+library(dplyr)
+library(geosphere)
+
+# filtering to be sure
+coal_plants <- na.omit(coal_plants)
+
+
+distances <- geosphere::distm(county_centroids[, c("long", "lat")], coal_plants[, c("long", "lat")])
+
+# minimum distance per county
+min_distances <- apply(distances, 1, min)
+
+# add the new column to the county_centroids dataframe using mutate
+county_centroids <- county_centroids %>% 
+  mutate(distance_to_nearest_plant = min_distances)
+
+coords_distance <- county_centroids
+```
+
+```{#r}
+library(ggplot2)
+library(sf)
+
+## Full disclosure -- From Chat OpenAI
+
+# Load shapefile with county boundaries
+counties <- st_read("/Users/mac/Downloads/cb_2018_us_county_500k/cb_2018_us_county_500k.shp")
+
+# Create separate data frames for county centroids and coal plant coordinates
+county_coords <- county_centroids %>% 
+  select(county, long, lat, distance_to_nearest_plant)
+coal_plant_coords <- coal_plants %>% 
+  select(county, long, lat)
+
+# Plot county centroids and coal plants on a map of the US
+map <- ggplot() + 
+  geom_sf(data = counties, fill = "white", color = "black") +
+  geom_point(data = county_coords, aes(x = long, y = lat, color = distance_to_nearest_plant), size = .15) +
+  geom_point(data = coal_plant_coords, aes(x = long, y = lat), color = "red", size = .2) +
+  labs(title = "Map of US Counties and Coal Plants") +
+  theme_bw()
+
+# Create a separate data frame with the nearest coal plant for each county
+county_to_nearest_plant <- county_centroids %>% 
+  group_by(county) %>% 
+  slice_min(distance_to_nearest_plant) %>% 
+  ungroup() %>% 
+  select(county, long, lat, distance_to_nearest_plant)
+
+# Add lines connecting each county to its nearest coal plant
+map_with_lines <- map + 
+  geom_segment(data = county_to_nearest_plant, aes(x = long, y = lat, xend = county_to_nearest_plant$long, yend = county_to_nearest_plant$lat), color = "blue", size = 0.05)
+
+# Display the map with lines
+map_with_lines
+
+# A map only a machine could read... cannot format it into human understanding...
+```
+
+
+```{r, warning = FALSE}
+# filtering to be sure, this code will atatch plant name as well as the minimum distance
+coal_plants <- na.omit(coal_plants)
+
+ #repeating earlier to be sure
+distances <- geosphere::distm(county_centroids[, c("long", "lat")], coal_plants[, c("long", "lat")])
+
+# minimum distance and corresponding plant name per county
+min_distances <- apply(distances, 1, min)
+names_of_nearest_plants <- apply(distances, 1, function(x) coal_plants$name[which.min(x)])
+
+# add new columns to the county_centroids dataframe using mutate
+county_centroids <- county_centroids %>% 
+  mutate(distance_to_nearest_plant = min_distances,
+         name_of_nearest_plant = names_of_nearest_plants)
+
+coords_distance <- county_centroids 
+
+write_csv(county_centroids, "/Users/mac/Documents/My Tableau Repository/countycoords.csv")
+write_csv(coal_plants, "/Users/mac/Documents/My Tableau Repository/coalplantcoords.csv")
+```
+
+
+```{r}
+summary(county_centroids$distance_to_nearest_plant)
+```
