@@ -29,7 +29,7 @@ library(readr)
 ```{r}
 #Coal plant data was cleaned in an individual folder, the excel was converted to csv and excess worksheets were removed from the workbook. 
 
-coalplants <- read_csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/coal_plants_CLEAN")
+coalplants <- read_csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/coal_plants_CLEAN.CSV")
 ```
 
 ```{r}

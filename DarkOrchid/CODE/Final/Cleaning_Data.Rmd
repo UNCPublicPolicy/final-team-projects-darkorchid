@@ -1,5 +1,6 @@
 ---
 title: "Cleaning Darkorchid4 Data"
+author: "Eric Leinweber"
 output: html_document
 ---
 
@@ -107,7 +108,7 @@ coal_plants <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository
 coal_plants <- coal_plants %>% filter(Country == "United States")
 
 #this data is already cleaned, as we only need the latitude/longitude of each coal plant for the purposes of this data
-write_csv(coal_plants,  "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/coal_plants_CLEAN")
+write_csv(coal_plants,  "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/coal_plants_CLEAN.csv")
 ```
 
 ```{r Cleaning Smoking Data}
