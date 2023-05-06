@@ -1,0 +1,1252 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Final\_Mark\_Down},
+  pdfauthor={Quinn Bankson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Final\_Mark\_Down}
+\author{Quinn Bankson}
+\date{2023-05-04}
+
+\begin{document}
+\maketitle
+
+\hypertarget{darkorchid4-final-mark-down}{%
+\section{DarkOrchid4 Final Mark
+Down}\label{darkorchid4-final-mark-down}}
+
+\hypertarget{how-does-proximity-to-coal-fired-power-plant-affect-health-outcomes-in-the-united-states}{%
+\subsection{How does proximity to coal fired power plant affect health
+outcomes in the United
+States?}\label{how-does-proximity-to-coal-fired-power-plant-affect-health-outcomes-in-the-united-states}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## -- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+## v dplyr     1.1.1     v readr     2.1.4
+## v forcats   1.0.0     v stringr   1.5.0
+## v ggplot2   3.4.1     v tibble    3.2.1
+## v lubridate 1.9.2     v tidyr     1.3.0
+## v purrr     1.0.1     
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(moderndive)}
+\FunctionTok{library}\NormalTok{(GGally)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Registered S3 method overwritten by 'GGally':
+##   method from   
+##   +.gg   ggplot2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(janitor)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attaching package: 'janitor'
+## 
+## The following objects are masked from 'package:stats':
+## 
+##     chisq.test, fisher.test
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(geosphere)}
+\FunctionTok{library}\NormalTok{(readr)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{introducing-coal-plant-data-to-undergo-feature-engineering.}{%
+\subsection{Introducing coal plant data to undergo feature
+engineering.}\label{introducing-coal-plant-data-to-undergo-feature-engineering.}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Coal plant data was cleaned in an individual folder, the excel was converted to csv and excess worksheets were removed from the workbook. }
+
+\NormalTok{coalplants }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\StringTok{"https://raw.githubusercontent.com/UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/main/DarkOrchid/DATA/Clean/coal\_plants\_CLEAN"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 1225 Columns: 37
+## -- Column specification --------------------------------------------------------
+## Delimiter: ","
+## chr (23): Tracker ID, TrackerLOC, ParentID, Wiki page, Country, Subnational ...
+## dbl (11): Capacity (MW), Year, RETIRED, Planned Retire, Latitude, Longitude,...
+## lgl  (3): Chinese Name, Major area (prefecture, district), Permits
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{colnames}\NormalTok{(coalplants)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "Tracker ID"                          "TrackerLOC"                         
+##  [3] "ParentID"                            "Wiki page"                          
+##  [5] "Country"                             "Subnational unit (province, state)" 
+##  [7] "Unit"                                "Plant"                              
+##  [9] "Chinese Name"                        "Other names"                        
+## [11] "Owner"                               "Parent"                             
+## [13] "Capacity (MW)"                       "Status"                             
+## [15] "Year"                                "RETIRED"                            
+## [17] "Planned Retire"                      "Combustion technology"              
+## [19] "Coal type"                           "Coal source"                        
+## [21] "Location"                            "Local area (taluk, county)"         
+## [23] "Major area (prefecture, district)"   "Region"                             
+## [25] "Latitude"                            "Longitude"                          
+## [27] "Accuracy"                            "Permits"                            
+## [29] "Captive"                             "Captive industry use"               
+## [31] "Captive residential use"             "Heat rate (Btu per kWh)"            
+## [33] "Emission factor (kg of CO2 per TJ)"  "Capacity factor"                    
+## [35] "Annual CO2 (million tonnes / annum)" "Lifetime CO2"                       
+## [37] "Remaining plant lifetime (years)"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{coalplants }\OtherTok{\textless{}{-}} \FunctionTok{clean\_names}\NormalTok{(coalplants)}
+\NormalTok{coalplants }\OtherTok{\textless{}{-}}\NormalTok{ coalplants }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(country }\SpecialCharTok{==} \StringTok{"United States"}\NormalTok{)}
+\NormalTok{coalplants }\OtherTok{\textless{}{-}}\NormalTok{ coalplants }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(parent\_id, unit, subnational\_unit\_province\_state, plant, status, year, local\_area\_taluk\_county, latitude, longitude )}
+\NormalTok{coalplants }\OtherTok{\textless{}{-}} \FunctionTok{rename}\NormalTok{(coalplants, }\AttributeTok{county =}\NormalTok{ local\_area\_taluk\_county)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{counties }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\AttributeTok{file =} \StringTok{"https://raw.githubusercontent.com/UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/main/DarkOrchid/DATA/Clean/uscounties\_CLEAN.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 3143 Columns: 9
+## -- Column specification --------------------------------------------------------
+## Delimiter: ","
+## chr (6): county, county_ascii, county_full, county_fips, state_id, state_name
+## dbl (3): lat, lng, population
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(counties)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 9
+##   county   county_ascii county_full county_fips state_id state_name   lat    lng
+##   <chr>    <chr>        <chr>       <chr>       <chr>    <chr>      <dbl>  <dbl>
+## 1 Los Ang~ Los Angeles  Los Angele~ 06037       CA       California  34.3 -118. 
+## 2 Cook     Cook         Cook County 17031       IL       Illinois    41.8  -87.8
+## 3 Harris   Harris       Harris Cou~ 48201       TX       Texas       29.9  -95.4
+## 4 Maricopa Maricopa     Maricopa C~ 04013       AZ       Arizona     33.3 -112. 
+## 5 San Die~ San Diego    San Diego ~ 06073       CA       California  33.0 -117. 
+## 6 Orange   Orange       Orange Cou~ 06059       CA       California  33.7 -118. 
+## # i 1 more variable: population <dbl>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{colnames}\NormalTok{(counties)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "county"       "county_ascii" "county_full"  "county_fips"  "state_id"    
+## [6] "state_name"   "lat"          "lng"          "population"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{county\_center }\OtherTok{\textless{}{-}}\NormalTok{ counties }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(county, state\_name, lat, lng)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{coalplants\_op }\OtherTok{\textless{}{-}}\NormalTok{ coalplants }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(status }\SpecialCharTok{==} \StringTok{"operating"}\NormalTok{)}
+\NormalTok{coalplants\_op }\OtherTok{\textless{}{-}} \FunctionTok{distinct}\NormalTok{(coalplants\_op, plant, }\AttributeTok{.keep\_all =} \ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{coal\_plants }\OtherTok{\textless{}{-}}\NormalTok{ coalplants\_op }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(}\StringTok{"latitude"}\NormalTok{, }\StringTok{"longitude"}\NormalTok{,}\StringTok{"subnational\_unit\_province\_state"}\NormalTok{, }\StringTok{"plant"}\NormalTok{, }\StringTok{"county"}\NormalTok{)}
+\NormalTok{coal\_plants }\OtherTok{\textless{}{-}} \FunctionTok{rename}\NormalTok{(coal\_plants, }\AttributeTok{long=}\NormalTok{ longitude, }\AttributeTok{lat =}\NormalTok{ latitude)}
+\NormalTok{coal\_plants }\OtherTok{\textless{}{-}} \FunctionTok{rename}\NormalTok{(coal\_plants, }\AttributeTok{state =}\NormalTok{ subnational\_unit\_province\_state, }\AttributeTok{name =}\NormalTok{ plant)}
+\NormalTok{county\_centroids }\OtherTok{\textless{}{-}}\NormalTok{ county\_center}
+\NormalTok{county\_centroids }\OtherTok{\textless{}{-}} \FunctionTok{rename}\NormalTok{(county\_centroids, }\AttributeTok{state =}\NormalTok{ state\_name)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\# "latitude", "longitude","subnational\_unit\_province\_state", "plant", "county" were selected as the most important values of interest for the rest of the project. The names were changed but these are the orginal values of interest as they were known in the orignal coal plant data set from globalcoaltracker. }
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{feature-engineering---calculating-the-minimum-distance-from-every-county-centroid-in-the-us-to-the-nearest-coal-fired-power-plant-using-the-haversine-formula-and-longitudinal-and-latitudinal-data.}{%
+\subsection{Feature engineering - calculating the minimum distance from
+every county centroid in the US to the nearest coal fired power plant
+using the Haversine formula and longitudinal and latitudinal
+data.}\label{feature-engineering---calculating-the-minimum-distance-from-every-county-centroid-in-the-us-to-the-nearest-coal-fired-power-plant-using-the-haversine-formula-and-longitudinal-and-latitudinal-data.}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#install.packages("geosphere")}
+\FunctionTok{library}\NormalTok{(geosphere)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(naniar)}
+
+\NormalTok{county\_centroids }\OtherTok{\textless{}{-}} \FunctionTok{rename}\NormalTok{(county\_centroids, }\AttributeTok{long =}\NormalTok{ lng)}
+
+\NormalTok{coal\_plants }\OtherTok{\textless{}{-}}\NormalTok{ coal\_plants }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(long))}
+\NormalTok{coal\_plants }\OtherTok{\textless{}{-}}\NormalTok{ coal\_plants }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(lat))}
+
+\NormalTok{county\_centroids }\OtherTok{\textless{}{-}}\NormalTok{ county\_centroids }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(long))}
+\NormalTok{county\_centroids }\OtherTok{\textless{}{-}}\NormalTok{ county\_centroids }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(lat))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(geosphere)}
+
+\CommentTok{\# filtering to be sure}
+\NormalTok{coal\_plants }\OtherTok{\textless{}{-}} \FunctionTok{na.omit}\NormalTok{(coal\_plants)}
+
+\NormalTok{distances }\OtherTok{\textless{}{-}}\NormalTok{ geosphere}\SpecialCharTok{::}\FunctionTok{distm}\NormalTok{(county\_centroids[, }\FunctionTok{c}\NormalTok{(}\StringTok{"long"}\NormalTok{, }\StringTok{"lat"}\NormalTok{)], coal\_plants[, }\FunctionTok{c}\NormalTok{(}\StringTok{"long"}\NormalTok{, }\StringTok{"lat"}\NormalTok{)])}
+
+\CommentTok{\# minimum distance per county}
+\NormalTok{min\_distances }\OtherTok{\textless{}{-}} \FunctionTok{apply}\NormalTok{(distances, }\DecValTok{1}\NormalTok{, min)}
+
+\CommentTok{\# add the new column to the county\_centroids dataframe using mutate}
+\NormalTok{county\_centroids }\OtherTok{\textless{}{-}}\NormalTok{ county\_centroids }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{distance\_to\_nearest\_plant =}\NormalTok{ min\_distances)}
+
+\NormalTok{coords\_distance }\OtherTok{\textless{}{-}}\NormalTok{ county\_centroids}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# filtering to be sure, this code will atatch plant name as well as the minimum distance}
+\NormalTok{coal\_plants }\OtherTok{\textless{}{-}} \FunctionTok{na.omit}\NormalTok{(coal\_plants)}
+
+ \CommentTok{\#repeating earlier to be sure}
+\NormalTok{distances }\OtherTok{\textless{}{-}}\NormalTok{ geosphere}\SpecialCharTok{::}\FunctionTok{distm}\NormalTok{(county\_centroids[, }\FunctionTok{c}\NormalTok{(}\StringTok{"long"}\NormalTok{, }\StringTok{"lat"}\NormalTok{)], coal\_plants[, }\FunctionTok{c}\NormalTok{(}\StringTok{"long"}\NormalTok{, }\StringTok{"lat"}\NormalTok{)])}
+
+\CommentTok{\# minimum distance and corresponding plant name per county}
+\NormalTok{min\_distances }\OtherTok{\textless{}{-}} \FunctionTok{apply}\NormalTok{(distances, }\DecValTok{1}\NormalTok{, min)}
+\NormalTok{names\_of\_nearest\_plants }\OtherTok{\textless{}{-}} \FunctionTok{apply}\NormalTok{(distances, }\DecValTok{1}\NormalTok{, }\ControlFlowTok{function}\NormalTok{(x) coal\_plants}\SpecialCharTok{$}\NormalTok{name[}\FunctionTok{which.min}\NormalTok{(x)])}
+
+\CommentTok{\# add new columns to the county\_centroids dataframe using mutate}
+\NormalTok{county\_centroids }\OtherTok{\textless{}{-}}\NormalTok{ county\_centroids }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{distance\_to\_nearest\_plant =}\NormalTok{ min\_distances,}
+         \AttributeTok{name\_of\_nearest\_plant =}\NormalTok{ names\_of\_nearest\_plants)}
+
+\CommentTok{\#file\_path1 \textless{}{-} "https://raw.githubusercontent.com/UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/main/DarkOrchid/DATA/Clean/centroids\_plants\_CLEAN.csv"}
+
+\DocumentationTok{\#\#\# A note about write\_csv in this .Rmd: all write\_csv commands are tagged out to avoid problems with the online repository. The files that are written from this .Rmd were created locally and pushed into their proper place in the repository. If any user of this .Rmd plans to use write\_csv to write csvs into their own local pathway, please replace the \#file\_pathX pathway with your own local path. }\AlertTok{\#\#\#}
+
+\CommentTok{\#file\_path1 \textless{}{-} "https://raw.githubusercontent.com/UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/main/DarkOrchid/DATA/Clean/centroids\_plants\_CLEAN.csv"}
+
+\CommentTok{\#write\_csv(county\_centroids, file\_path1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(county\_centroids}\SpecialCharTok{$}\NormalTok{distance\_to\_nearest\_plant)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    4243   55230   95075  139529  152866 3182722
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\# This concludes the feature engineering in which the minimum distance from each county centroid to the nearest coal fired power plant is calculated and compiled along with the name of the nearest plant into a tibble called countycoords.csv. This csv has record of 3143 US counties and their distance. }\AlertTok{\#\#\#}\DocumentationTok{ }
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{the-next-section-of-the-.rmd-will-compile-3196-health-outcomes-3143-of-which-correspond-to-the-3143-us-counties-that-are-observed-and-aqi-data-from-1036-observed-us-counties-as-well.-a-crosswalk-was-used-to-match-values-by-fips-codes.}{%
+\subsection{The next section of the .rmd will compile 3196 health
+outcomes (3143 of which correspond to the 3143 US counties that are
+observed) and aqi data from 1036 observed US counties as well. A
+crosswalk was used to match values by FIPS
+codes.}\label{the-next-section-of-the-.rmd-will-compile-3196-health-outcomes-3143-of-which-correspond-to-the-3143-us-counties-that-are-observed-and-aqi-data-from-1036-observed-us-counties-as-well.-a-crosswalk-was-used-to-match-values-by-fips-codes.}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(moderndive)}
+\FunctionTok{library}\NormalTok{(GGally)}
+\FunctionTok{library}\NormalTok{(janitor)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(stringr)}
+\CommentTok{\#install.packages("tidyr")}
+\FunctionTok{library}\NormalTok{(tidyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{crossw }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\AttributeTok{file =} \StringTok{"https://raw.githubusercontent.com/UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/main/DarkOrchid/DATA/Clean/countycrosswalk\_CLEAN.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## New names:
+## Rows: 3274 Columns: 5
+## -- Column specification
+## -------------------------------------------------------- Delimiter: "," chr
+## (5): FY 2023 Crosswalk, ...2, ...3, ...4, ...5
+## i Use `spec()` to retrieve the full column specification for this data. i
+## Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## * `` -> `...2`
+## * `` -> `...3`
+## * `` -> `...4`
+## * `` -> `...5`
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{aqi }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\AttributeTok{file =} \StringTok{"https://raw.githubusercontent.com/UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/main/DarkOrchid/DATA/Clean/aqi\_2014\_CLEAN.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 1036 Columns: 18
+## -- Column specification --------------------------------------------------------
+## Delimiter: ","
+## chr  (2): State, County
+## dbl (16): Year, Days with AQI, Good Days, Moderate Days, Unhealthy for Sensi...
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{outcomes }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\AttributeTok{file =} \StringTok{"https://raw.githubusercontent.com/UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/main/DarkOrchid/DATA/Clean/health\_outcomes\_CLEAN.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 3142 Columns: 11
+## -- Column specification --------------------------------------------------------
+## Delimiter: ","
+## chr (2): County, State
+## dbl (9): FIPS, mortality_ast_2014, perc_mortality_change_ast, mortality_cwp_...
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{colnames}\NormalTok{(crossw)[}\DecValTok{1}\NormalTok{] }\OtherTok{\textless{}{-}} \StringTok{"County"}
+\FunctionTok{colnames}\NormalTok{(crossw)[}\DecValTok{2}\NormalTok{] }\OtherTok{\textless{}{-}} \StringTok{"State"}
+\FunctionTok{colnames}\NormalTok{(crossw)[}\DecValTok{3}\NormalTok{] }\OtherTok{\textless{}{-}} \StringTok{"FIPS"}
+
+\NormalTok{crossw }\OtherTok{\textless{}{-}}\NormalTok{ crossw }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(County, State, FIPS)}
+
+\NormalTok{crossw }\OtherTok{\textless{}{-}}\NormalTok{ crossw }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(County }\SpecialCharTok{!=} \StringTok{"County Name"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{crossw }\OtherTok{\textless{}{-}}\NormalTok{ crossw }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{County =} \FunctionTok{str\_to\_title}\NormalTok{(}\FunctionTok{tolower}\NormalTok{(County)))}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{r}{%
+\label{r}}%
+\begin{verbatim}
+outcomes <- outcomes %>%
+  separate(Location, into = c("County", "State"), sep = ", ", remove = FALSE)
+
+outcomes <- outcomes %>%
+  filter(!is.na(State))
+
+outcomes$County <- str_replace(outcomes$County, " County", "")
+
+outcomes$County <- str_replace(outcomes$County, " Parish", "")
+
+outcomes$County <- str_replace(outcomes$County, "Saint ", "St. ")
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# join AQI and Outcomes, there will be all 3000+ Outcomes visible and only 1000ish AQI present}
+
+\NormalTok{joined\_dv\_iv }\OtherTok{\textless{}{-}} \FunctionTok{left\_join}\NormalTok{(outcomes, aqi, }\AttributeTok{by =} \FunctionTok{c}\NormalTok{(}\StringTok{"County"} \OtherTok{=} \StringTok{"County"}\NormalTok{, }\StringTok{"State"} \OtherTok{=} \StringTok{"State"}\NormalTok{))}
+\FunctionTok{view}\NormalTok{(joined\_dv\_iv)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{joined\_dv\_iv }\OtherTok{\textless{}{-}} \FunctionTok{clean\_names}\NormalTok{(joined\_dv\_iv)}
+
+\CommentTok{\# I intend to join the countycoords tibble which has county, state, lat, long, distance\_to\_nearest\_plant, name\_of\_nearest\_plant }
+
+\NormalTok{centroidsandplants }\OtherTok{\textless{}{-}}\NormalTok{ county\_centroids}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{final }\OtherTok{\textless{}{-}} \FunctionTok{left\_join}\NormalTok{(joined\_dv\_iv, centroidsandplants, }\AttributeTok{by =} \FunctionTok{c}\NormalTok{(}\StringTok{"county"} \OtherTok{=} \StringTok{"county"}\NormalTok{, }\StringTok{"state"} \OtherTok{=} \StringTok{"state"}\NormalTok{))}
+\FunctionTok{view}\NormalTok{(final)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(naniar)}
+
+\FunctionTok{vis\_miss}\NormalTok{(final)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Final_Mark_Down_files/figure-latex/unnamed-chunk-17-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#file\_path2 \textless{}{-} UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/DATA/clean/health\_aqi\_coal\_distance\_CLEAN.csv}
+
+\CommentTok{\#write\_csv(final, file\_path2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{colnames}\NormalTok{(final)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "fips"                                "county"                             
+##  [3] "state"                               "mortality_ast_2014"                 
+##  [5] "perc_mortality_change_ast"           "mortality_cwp_2014"                 
+##  [7] "perc_mortality_change_cwp"           "mortality_lung_2014"                
+##  [9] "perc_mortality_change_lung"          "mortality_resp_2014"                
+## [11] "perc_mortality_change_resp"          "year"                               
+## [13] "days_with_aqi"                       "good_days"                          
+## [15] "moderate_days"                       "unhealthy_for_sensitive_groups_days"
+## [17] "unhealthy_days"                      "very_unhealthy_days"                
+## [19] "hazardous_days"                      "max_aqi"                            
+## [21] "x90th_percentile_aqi"                "median_aqi"                         
+## [23] "days_co"                             "days_no2"                           
+## [25] "days_ozone"                          "days_pm2_5"                         
+## [27] "days_pm10"                           "lat"                                
+## [29] "long"                                "distance_to_nearest_plant"          
+## [31] "name_of_nearest_plant"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\# At this point in the process, we had a merged data set containing health outcomes, air quality, and distance from operating coal plants by county for 3143 counties in the United States. We established health outcomes as our dependent variables ("mortality\_resp", "perc\_mortality\_change\_resp", "mortality\_ast", "perc\_mortality\_change\_ast", "mortality\_lung", "perc\_mortality\_change\_lung"). The remaining variables were independent variables and controls of interest to us. We began conducting some basic regressions. }\AlertTok{\#\#\#}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{basic-regressions}{%
+\subsection{Basic Regressions}\label{basic-regressions}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(moderndive)}
+\FunctionTok{library}\NormalTok{(GGally)}
+\FunctionTok{library}\NormalTok{(janitor)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(stringr)}
+\FunctionTok{library}\NormalTok{(tidyr)}
+\FunctionTok{library}\NormalTok{(naniar)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\OtherTok{\textless{}{-}}\NormalTok{ final}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 31
+##    fips county     state    mortality_ast_2014 perc_mortality_change_ast
+##   <dbl> <chr>      <chr>                 <dbl>                     <dbl>
+## 1 10001 Kent       Delaware               1.38                     -19.1
+## 2 10003 New Castle Delaware               1.12                     -24.2
+## 3 10005 Sussex     Delaware               0.92                     -44.2
+## 4  1001 Autauga    Alabama                1.07                     -29.5
+## 5  1003 Baldwin    Alabama                0.94                     -40.1
+## 6  1005 Barbour    Alabama                1.63                     -35.4
+## # i 26 more variables: mortality_cwp_2014 <dbl>,
+## #   perc_mortality_change_cwp <dbl>, mortality_lung_2014 <dbl>,
+## #   perc_mortality_change_lung <dbl>, mortality_resp_2014 <dbl>,
+## #   perc_mortality_change_resp <dbl>, year <dbl>, days_with_aqi <dbl>,
+## #   good_days <dbl>, moderate_days <dbl>,
+## #   unhealthy_for_sensitive_groups_days <dbl>, unhealthy_days <dbl>,
+## #   very_unhealthy_days <dbl>, hazardous_days <dbl>, max_aqi <dbl>, ...
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{colnames}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "fips"                                "county"                             
+##  [3] "state"                               "mortality_ast_2014"                 
+##  [5] "perc_mortality_change_ast"           "mortality_cwp_2014"                 
+##  [7] "perc_mortality_change_cwp"           "mortality_lung_2014"                
+##  [9] "perc_mortality_change_lung"          "mortality_resp_2014"                
+## [11] "perc_mortality_change_resp"          "year"                               
+## [13] "days_with_aqi"                       "good_days"                          
+## [15] "moderate_days"                       "unhealthy_for_sensitive_groups_days"
+## [17] "unhealthy_days"                      "very_unhealthy_days"                
+## [19] "hazardous_days"                      "max_aqi"                            
+## [21] "x90th_percentile_aqi"                "median_aqi"                         
+## [23] "days_co"                             "days_no2"                           
+## [25] "days_ozone"                          "days_pm2_5"                         
+## [27] "days_pm10"                           "lat"                                
+## [29] "long"                                "distance_to_nearest_plant"          
+## [31] "name_of_nearest_plant"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Checking to see which variables would create a regression using 1000+ observations and which variables would create a regression using 3000+ observations. }
+
+\FunctionTok{vis\_miss}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Final_Mark_Down_files/figure-latex/unnamed-chunk-24-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\OtherTok{\textless{}{-}}\NormalTok{ data }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{distance\_km =}\NormalTok{ distance\_to\_nearest\_plant }\SpecialCharTok{/} \DecValTok{1000}\NormalTok{)}
+
+\NormalTok{pr1model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ median\_aqi }\SpecialCharTok{+}\NormalTok{ unhealthy\_days }\SpecialCharTok{+}\NormalTok{ hazardous\_days }\SpecialCharTok{+}\NormalTok{ days\_no2 }\SpecialCharTok{+}\NormalTok{ distance\_km, }\AttributeTok{data =}\NormalTok{ data)}
+\FunctionTok{summary}\NormalTok{(pr1model)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ median_aqi + unhealthy_days + 
+##     hazardous_days + days_no2 + distance_km, data = data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -46.248 -10.947  -1.335  10.136  74.774 
+## 
+## Coefficients:
+##                Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)    69.29949    2.24906  30.813  < 2e-16 ***
+## median_aqi     -0.15308    0.05597  -2.735  0.00635 ** 
+## unhealthy_days  0.38550    0.20220   1.906  0.05688 .  
+## hazardous_days -1.35431    1.06926  -1.267  0.20560    
+## days_no2       -0.14915    0.02706  -5.511 4.54e-08 ***
+## distance_km    -0.02084    0.00391  -5.331 1.21e-07 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 15.37 on 987 degrees of freedom
+##   (2155 observations deleted due to missingness)
+## Multiple R-squared:  0.0637, Adjusted R-squared:  0.05896 
+## F-statistic: 13.43 on 5 and 987 DF,  p-value: 1.089e-12
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{pr2model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ median\_aqi }\SpecialCharTok{+}\NormalTok{ max\_aqi }\SpecialCharTok{+}\NormalTok{ good\_days }\SpecialCharTok{+}\NormalTok{ moderate\_days }\SpecialCharTok{+}\NormalTok{ unhealthy\_for\_sensitive\_groups\_days }\SpecialCharTok{+}\NormalTok{ unhealthy\_days }\SpecialCharTok{+}\NormalTok{ hazardous\_days }\SpecialCharTok{+}\NormalTok{days\_ozone }\SpecialCharTok{+}\NormalTok{ days\_no2 }\SpecialCharTok{+}\NormalTok{ distance\_km, }\AttributeTok{data =}\NormalTok{ data)}
+\FunctionTok{summary}\NormalTok{(pr2model)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ median_aqi + max_aqi + good_days + 
+##     moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + 
+##     hazardous_days + days_ozone + days_no2 + distance_km, data = data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -46.679 -10.600  -1.318  10.324  74.367 
+## 
+## Coefficients:
+##                                      Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)                         67.733488   3.986348  16.991  < 2e-16 ***
+## median_aqi                           0.139036   0.114929   1.210  0.22667    
+## max_aqi                             -0.010888   0.007531  -1.446  0.14857    
+## good_days                           -0.016600   0.008412  -1.973  0.04874 *  
+## moderate_days                       -0.044013   0.018865  -2.333  0.01985 *  
+## unhealthy_for_sensitive_groups_days -0.303088   0.120649  -2.512  0.01216 *  
+## unhealthy_days                       0.838586   0.354236   2.367  0.01811 *  
+## hazardous_days                       0.285364   1.474556   0.194  0.84659    
+## days_ozone                          -0.010523   0.006788  -1.550  0.12141    
+## days_no2                            -0.129272   0.027231  -4.747 2.37e-06 ***
+## distance_km                         -0.013324   0.004201  -3.171  0.00156 ** 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 15.19 on 982 degrees of freedom
+##   (2155 observations deleted due to missingness)
+## Multiple R-squared:  0.09032,    Adjusted R-squared:  0.08106 
+## F-statistic:  9.75 on 10 and 982 DF,  p-value: 1.165e-15
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\# After observing some basic regressions, we found our R{-}squared values to be very low, but our distance variable to be significant at at least the 0.01 level frequently. This lead us to believe that our regressions accounted for very little of the explanation for health outcomes across US counties, but distance still was an important contributor. Our regressions advanced to include smoking data, control by county, look at the closest 10 percent of county centroids to plants, and look at the top 50 percent of closest county centroids to plants. }\AlertTok{\#\#\#}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{advanced-regressions}{%
+\subsection{Advanced Regressions}\label{advanced-regressions}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\OtherTok{\textless{}{-}}\NormalTok{ final}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 31
+##    fips county     state    mortality_ast_2014 perc_mortality_change_ast
+##   <dbl> <chr>      <chr>                 <dbl>                     <dbl>
+## 1 10001 Kent       Delaware               1.38                     -19.1
+## 2 10003 New Castle Delaware               1.12                     -24.2
+## 3 10005 Sussex     Delaware               0.92                     -44.2
+## 4  1001 Autauga    Alabama                1.07                     -29.5
+## 5  1003 Baldwin    Alabama                0.94                     -40.1
+## 6  1005 Barbour    Alabama                1.63                     -35.4
+## # i 26 more variables: mortality_cwp_2014 <dbl>,
+## #   perc_mortality_change_cwp <dbl>, mortality_lung_2014 <dbl>,
+## #   perc_mortality_change_lung <dbl>, mortality_resp_2014 <dbl>,
+## #   perc_mortality_change_resp <dbl>, year <dbl>, days_with_aqi <dbl>,
+## #   good_days <dbl>, moderate_days <dbl>,
+## #   unhealthy_for_sensitive_groups_days <dbl>, unhealthy_days <dbl>,
+## #   very_unhealthy_days <dbl>, hazardous_days <dbl>, max_aqi <dbl>, ...
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{colnames}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "fips"                                "county"                             
+##  [3] "state"                               "mortality_ast_2014"                 
+##  [5] "perc_mortality_change_ast"           "mortality_cwp_2014"                 
+##  [7] "perc_mortality_change_cwp"           "mortality_lung_2014"                
+##  [9] "perc_mortality_change_lung"          "mortality_resp_2014"                
+## [11] "perc_mortality_change_resp"          "year"                               
+## [13] "days_with_aqi"                       "good_days"                          
+## [15] "moderate_days"                       "unhealthy_for_sensitive_groups_days"
+## [17] "unhealthy_days"                      "very_unhealthy_days"                
+## [19] "hazardous_days"                      "max_aqi"                            
+## [21] "x90th_percentile_aqi"                "median_aqi"                         
+## [23] "days_co"                             "days_no2"                           
+## [25] "days_ozone"                          "days_pm2_5"                         
+## [27] "days_pm10"                           "lat"                                
+## [29] "long"                                "distance_to_nearest_plant"          
+## [31] "name_of_nearest_plant"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(magrittr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attaching package: 'magrittr'
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:purrr':
+## 
+##     set_names
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:tidyr':
+## 
+##     extract
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\OtherTok{\textless{}{-}}\NormalTok{ data }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{distance\_km =}\NormalTok{ distance\_to\_nearest\_plant }\SpecialCharTok{/} \DecValTok{1000}\NormalTok{)}
+
+\CommentTok{\# The file smoking\_CLEAN provides more independent variables for control. The crucial variable provided by this data set is the crude percent of adults who currently smoke in 2020.}
+
+\NormalTok{smoking }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\AttributeTok{file =} \StringTok{"https://raw.githubusercontent.com/UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/main/DarkOrchid/DATA/Clean/smoking\_CLEAN.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 3234 Columns: 4
+\end{verbatim}
+
+\begin{verbatim}
+## -- Column specification --------------------------------------------------------
+## Delimiter: ","
+## chr (3): county, state, geo_id
+## dbl (1): current_smokers
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Making the fips code identical{-} changed geo\_id to "fips" and used sprintf to add an extra "0" in front of codes that were 4 digits long isntead of 5. This made the fips codes compatible between the smoking data and the rest of the compiled data. }
+
+\NormalTok{smoking }\OtherTok{\textless{}{-}}\NormalTok{ smoking }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{rename}\NormalTok{(}\AttributeTok{fips =}\NormalTok{ geo\_id)}
+
+\NormalTok{data }\OtherTok{\textless{}{-}}\NormalTok{ data }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{fips =} \FunctionTok{sprintf}\NormalTok{(}\StringTok{"\%05d"}\NormalTok{, fips))}
+
+\CommentTok{\# Join the two data sets using the FIPS code}
+
+\NormalTok{merged\_data }\OtherTok{\textless{}{-}}\NormalTok{ data }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{left\_join}\NormalTok{(smoking, }\AttributeTok{by =} \FunctionTok{c}\NormalTok{(}\StringTok{"fips"}\NormalTok{, }\StringTok{"county"}\NormalTok{))}
+
+\NormalTok{merged\_data }\OtherTok{\textless{}{-}}\NormalTok{ merged\_data }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{rename}\NormalTok{(}\AttributeTok{state =}\NormalTok{ state.x, }\AttributeTok{state\_abrv =}\NormalTok{ state.y)}
+
+\CommentTok{\#file\_path3 \textless{}{-} UNCPublicPolicy/final{-}team{-}projects{-}darkorchid/DATA/clean/health\_aqi\_coal\_distance\_smoking\_CLEAN.csv}
+
+\CommentTok{\#write\_csv(merged\_data, file\_path3)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data\_10 }\OtherTok{\textless{}{-}}\NormalTok{ merged\_data }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(distance\_km) }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# sort by distance\_km}
+  \FunctionTok{slice}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\FunctionTok{round}\NormalTok{(}\FunctionTok{n}\NormalTok{() }\SpecialCharTok{*} \FloatTok{0.1}\NormalTok{)) }\CommentTok{\# keep top 10\% of observations}
+
+\NormalTok{data\_50 }\OtherTok{\textless{}{-}}\NormalTok{ merged\_data }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(distance\_km) }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# sort by distance\_km}
+  \FunctionTok{slice}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\FunctionTok{round}\NormalTok{(}\FunctionTok{n}\NormalTok{() }\SpecialCharTok{*} \FloatTok{0.5}\NormalTok{)) }\CommentTok{\# keep top 50\% of observations}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#An experimental model including many different independent variables. Investigating realtionship for mortality\_resp. }
+\NormalTok{exmodel }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ median\_aqi }\SpecialCharTok{+}\NormalTok{ max\_aqi }\SpecialCharTok{+}\NormalTok{ good\_days }\SpecialCharTok{+}\NormalTok{ moderate\_days }\SpecialCharTok{+}\NormalTok{ unhealthy\_for\_sensitive\_groups\_days }\SpecialCharTok{+}\NormalTok{ unhealthy\_days }\SpecialCharTok{+}\NormalTok{ hazardous\_days }\SpecialCharTok{+}\NormalTok{days\_ozone }\SpecialCharTok{+}\NormalTok{ days\_no2 }\SpecialCharTok{+}\NormalTok{ distance\_km, }\AttributeTok{data =}\NormalTok{ merged\_data)}
+\FunctionTok{summary}\NormalTok{(exmodel)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ median_aqi + max_aqi + good_days + 
+##     moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + 
+##     hazardous_days + days_ozone + days_no2 + distance_km, data = merged_data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -46.679 -10.600  -1.318  10.324  74.367 
+## 
+## Coefficients:
+##                                      Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)                         67.733488   3.986348  16.991  < 2e-16 ***
+## median_aqi                           0.139036   0.114929   1.210  0.22667    
+## max_aqi                             -0.010888   0.007531  -1.446  0.14857    
+## good_days                           -0.016600   0.008412  -1.973  0.04874 *  
+## moderate_days                       -0.044013   0.018865  -2.333  0.01985 *  
+## unhealthy_for_sensitive_groups_days -0.303088   0.120649  -2.512  0.01216 *  
+## unhealthy_days                       0.838586   0.354236   2.367  0.01811 *  
+## hazardous_days                       0.285364   1.474556   0.194  0.84659    
+## days_ozone                          -0.010523   0.006788  -1.550  0.12141    
+## days_no2                            -0.129272   0.027231  -4.747 2.37e-06 ***
+## distance_km                         -0.013324   0.004201  -3.171  0.00156 ** 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 15.19 on 982 degrees of freedom
+##   (2155 observations deleted due to missingness)
+## Multiple R-squared:  0.09032,    Adjusted R-squared:  0.08106 
+## F-statistic:  9.75 on 10 and 982 DF,  p-value: 1.165e-15
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Experiments with mortality\_resp models. }
+\NormalTok{exmodel2 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ median\_aqi }\SpecialCharTok{+}\NormalTok{ unhealthy\_days }\SpecialCharTok{+}\NormalTok{ hazardous\_days }\SpecialCharTok{+}\NormalTok{ days\_no2 }\SpecialCharTok{+}\NormalTok{ distance\_km, }\AttributeTok{data =}\NormalTok{ merged\_data)}
+\FunctionTok{summary}\NormalTok{(exmodel2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ median_aqi + unhealthy_days + 
+##     hazardous_days + days_no2 + distance_km, data = merged_data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -46.248 -10.947  -1.335  10.136  74.774 
+## 
+## Coefficients:
+##                Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)    69.29949    2.24906  30.813  < 2e-16 ***
+## median_aqi     -0.15308    0.05597  -2.735  0.00635 ** 
+## unhealthy_days  0.38550    0.20220   1.906  0.05688 .  
+## hazardous_days -1.35431    1.06926  -1.267  0.20560    
+## days_no2       -0.14915    0.02706  -5.511 4.54e-08 ***
+## distance_km    -0.02084    0.00391  -5.331 1.21e-07 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 15.37 on 987 degrees of freedom
+##   (2155 observations deleted due to missingness)
+## Multiple R-squared:  0.0637, Adjusted R-squared:  0.05896 
+## F-statistic: 13.43 on 5 and 987 DF,  p-value: 1.089e-12
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{final\_mod1 }\OtherTok{\textless{}{-}}\FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ distance\_km, }\AttributeTok{data =}\NormalTok{ merged\_data)}
+
+\FunctionTok{summary}\NormalTok{(final\_mod1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ distance_km, data = merged_data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -49.356 -11.589  -1.125   9.371  96.714 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) 66.847970   0.469114  142.50  < 2e-16 ***
+## distance_km -0.024500   0.002984   -8.21 3.22e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 16.74 on 3075 degrees of freedom
+##   (71 observations deleted due to missingness)
+## Multiple R-squared:  0.02145,    Adjusted R-squared:  0.02113 
+## F-statistic:  67.4 on 1 and 3075 DF,  p-value: 3.224e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# A deeper look into distance\_km\textquotesingle{}s effect on mortality\_resp. Only analyzing the top 10 percent lowest values for min\_distance from caol fired power plant. }
+
+\NormalTok{final\_mod10 }\OtherTok{\textless{}{-}}\FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ distance\_km, }\AttributeTok{data =}\NormalTok{ data\_10)}
+
+\FunctionTok{summary}\NormalTok{(final\_mod10)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ distance_km, data = data_10)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -40.699 -11.464  -1.845   9.298  62.017 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  65.3625     2.9501  22.156   <2e-16 ***
+## distance_km   0.0702     0.1384   0.507    0.612    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 16.15 on 313 degrees of freedom
+## Multiple R-squared:  0.0008217,  Adjusted R-squared:  -0.002371 
+## F-statistic: 0.2574 on 1 and 313 DF,  p-value: 0.6123
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# A deeper look into distance\_km\textquotesingle{}s effect on mortality\_resp. Only analyzing the top 50 percent lowest values for min\_distance from caol fired power plant. }
+
+\NormalTok{final\_mod50 }\OtherTok{\textless{}{-}}\FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ distance\_km, }\AttributeTok{data =}\NormalTok{ data\_50)}
+
+\FunctionTok{summary}\NormalTok{(final\_mod50)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ distance_km, data = data_50)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -39.912 -12.295  -1.279   9.459  83.631 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) 66.059682   1.088449  60.692   <2e-16 ***
+## distance_km  0.002394   0.018213   0.131    0.895    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 17.33 on 1572 degrees of freedom
+## Multiple R-squared:  1.099e-05,  Adjusted R-squared:  -0.0006251 
+## F-statistic: 0.01727 on 1 and 1572 DF,  p-value: 0.8955
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Investigating the strength of current\_smokers effect on moratlity\_resp compared to distance\_km. }
+
+\NormalTok{smoking\_mod1 }\OtherTok{\textless{}{-}}\FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ distance\_km }\SpecialCharTok{+}\NormalTok{ current\_smokers, }\AttributeTok{data =}\NormalTok{ merged\_data)}
+
+\FunctionTok{summary}\NormalTok{(smoking\_mod1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ distance_km + current_smokers, 
+##     data = merged_data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -46.202  -8.425  -0.664   7.185  65.936 
+## 
+## Coefficients:
+##                  Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)     11.594778   1.302267   8.904   <2e-16 ***
+## distance_km      0.002291   0.002411   0.950    0.342    
+## current_smokers  2.751439   0.062226  44.217   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 13.08 on 3072 degrees of freedom
+##   (73 observations deleted due to missingness)
+## Multiple R-squared:  0.4022, Adjusted R-squared:  0.4018 
+## F-statistic:  1033 on 2 and 3072 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Investigating the strength of current\_smokers effect on moratlity\_resp compared to distance\_km controlling by state. }
+
+\NormalTok{smoking\_mod2 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ distance\_km }\SpecialCharTok{+}\NormalTok{ current\_smokers }\SpecialCharTok{+}\NormalTok{ state, }\AttributeTok{data =}\NormalTok{ merged\_data)}
+
+\FunctionTok{summary}\NormalTok{(smoking\_mod2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ distance_km + current_smokers + 
+##     state, data = merged_data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -43.956  -6.982  -0.566   6.152  70.177 
+## 
+## Coefficients:
+##                             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)                23.127413   2.174564  10.635  < 2e-16 ***
+## distance_km                -0.005851   0.003299  -1.774  0.07622 .  
+## current_smokers             2.676781   0.078366  34.157  < 2e-16 ***
+## stateArizona              -16.952659   3.397177  -4.990 6.37e-07 ***
+## stateArkansas              -8.243678   1.993100  -4.136 3.63e-05 ***
+## stateCalifornia            -2.273168   2.579946  -0.881  0.37834    
+## stateColorado              -1.141197   2.114359  -0.540  0.58942    
+## stateConnecticut          -11.644694   4.464990  -2.608  0.00915 ** 
+## stateDelaware             -12.198049   6.990368  -1.745  0.08109 .  
+## stateDistrict of Columbia -26.075415  11.934372  -2.185  0.02897 *  
+## stateFlorida              -12.772506   2.044941  -6.246 4.80e-10 ***
+## stateGeorgia               -5.114836   1.723162  -2.968  0.00302 ** 
+## stateHawaii               -25.571134   5.523757  -4.629 3.82e-06 ***
+## stateIdaho                 -7.887214   2.444939  -3.226  0.00127 ** 
+## stateIllinois              -7.918500   1.875106  -4.223 2.48e-05 ***
+## stateIndiana               -7.960361   1.905378  -4.178 3.03e-05 ***
+## stateIowa                 -13.494018   1.893608  -7.126 1.29e-12 ***
+## stateKansas                -5.260468   1.862139  -2.825  0.00476 ** 
+## stateKentucky              -0.975838   1.838335  -0.531  0.59558    
+## stateLouisiana            -18.932881   2.079270  -9.106  < 2e-16 ***
+## stateMaine                 -5.217212   3.319863  -1.572  0.11617    
+## stateMaryland             -11.761250   2.858112  -4.115 3.97e-05 ***
+## stateMassachusetts        -11.181565   3.530183  -3.167  0.00155 ** 
+## stateMichigan             -13.799827   1.944603  -7.096 1.59e-12 ***
+## stateMinnesota            -22.676775   1.935151 -11.718  < 2e-16 ***
+## stateMississippi           -6.177585   1.948261  -3.171  0.00154 ** 
+## stateMissouri              -9.310938   1.826588  -5.097 3.65e-07 ***
+## stateMontana               -4.825523   2.246822  -2.148  0.03182 *  
+## stateNebraska              -4.707574   1.932364  -2.436  0.01490 *  
+## stateNevada                -2.434837   3.240877  -0.751  0.45254    
+## stateNew Hampshire         -7.022344   4.034568  -1.741  0.08187 .  
+## stateNew Jersey           -13.530726   3.017965  -4.483 7.62e-06 ***
+## stateNew Mexico            -5.442153   2.579473  -2.110  0.03496 *  
+## stateNew York              -9.834193   2.138565  -4.599 4.43e-06 ***
+## stateNorth Carolina       -10.198324   1.871140  -5.450 5.43e-08 ***
+## stateNorth Dakota         -20.870787   2.190990  -9.526  < 2e-16 ***
+## stateOhio                 -16.338561   1.926850  -8.479  < 2e-16 ***
+## stateOklahoma              -1.726730   1.978982  -0.873  0.38299    
+## stateOregon                -4.288845   2.552311  -1.680  0.09299 .  
+## statePennsylvania         -19.921520   2.052251  -9.707  < 2e-16 ***
+## stateRhode Island         -13.552588   5.513038  -2.458  0.01402 *  
+## stateSouth Carolina        -9.873325   2.268689  -4.352 1.39e-05 ***
+## stateSouth Dakota         -17.914424   2.082158  -8.604  < 2e-16 ***
+## stateTennessee            -10.800017   1.904865  -5.670 1.57e-08 ***
+## stateTexas                 -7.479661   1.639152  -4.563 5.24e-06 ***
+## stateUtah                   0.133755   2.746157   0.049  0.96116    
+## stateVermont               -2.481288   3.514469  -0.706  0.48023    
+## stateVirginia             -13.486502   1.884770  -7.156 1.04e-12 ***
+## stateWashington            -6.964322   2.454701  -2.837  0.00458 ** 
+## stateWest Virginia         -3.625999   2.172575  -1.669  0.09522 .  
+## stateWisconsin            -17.506569   2.024761  -8.646  < 2e-16 ***
+## stateWyoming               -0.131681   2.868314  -0.046  0.96339    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 11.83 on 3023 degrees of freedom
+##   (73 observations deleted due to missingness)
+## Multiple R-squared:  0.5189, Adjusted R-squared:  0.5108 
+## F-statistic: 63.92 on 51 and 3023 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Investigating the strength of current\_smokers effect on moratlity\_resp compared to distance\_km. Only analyzing the top 10 percent lowest values for min\_distance from coal fired power plant. }
+\NormalTok{smoking\_mod10 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ distance\_km }\SpecialCharTok{+}\NormalTok{ current\_smokers, }\AttributeTok{data =}\NormalTok{ data\_10)}
+
+\FunctionTok{summary}\NormalTok{(smoking\_mod10)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ distance_km + current_smokers, 
+##     data = data_10)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -29.962  -8.209  -0.414   6.511  44.822 
+## 
+## Coefficients:
+##                 Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)      3.39946    4.40952   0.771    0.441    
+## distance_km      0.05961    0.10224   0.583    0.560    
+## current_smokers  3.21430    0.19884  16.165   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 11.93 on 312 degrees of freedom
+## Multiple R-squared:  0.4562, Adjusted R-squared:  0.4528 
+## F-statistic: 130.9 on 2 and 312 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Investigating the strength of current\_smokers effect on moratlity\_resp compared to distance\_km. Only analyzing the top 50 percent lowest values for min\_distance from coal fired power plant. }
+\NormalTok{smoking\_mod50 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mortality\_resp\_2014 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ distance\_km }\SpecialCharTok{+}\NormalTok{ current\_smokers, }\AttributeTok{data =}\NormalTok{ data\_50)}
+
+\FunctionTok{summary}\NormalTok{(smoking\_mod50)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mortality_resp_2014 ~ distance_km + current_smokers, 
+##     data = data_50)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -34.638  -8.375  -0.685   6.688  63.709 
+## 
+## Coefficients:
+##                 Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)      6.01602    1.78914   3.363 0.000791 ***
+## distance_km     -0.01346    0.01326  -1.016 0.309888    
+## current_smokers  3.10980    0.08310  37.423  < 2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 12.61 on 1570 degrees of freedom
+##   (1 observation deleted due to missingness)
+## Multiple R-squared:  0.4715, Adjusted R-squared:  0.4708 
+## F-statistic: 700.3 on 2 and 1570 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\end{document}
