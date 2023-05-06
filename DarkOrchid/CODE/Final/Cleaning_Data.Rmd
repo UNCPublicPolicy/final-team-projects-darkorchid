@@ -1,6 +1,5 @@
 ---
 title: "Cleaning Darkorchid4 Data"
-author: "Eric Leinweber"
 output: html_document
 ---
 
@@ -22,15 +21,16 @@ library(janitor)
 library(dplyr)
 library(stringr)
 library(tidyr)
+library(readr)
 ```
 
 
 ```{r Cleaning Health Outcomes Data}
 #reading in the data 
-asthma_outcomes <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Raw_Unprocessed/Health Outcomes/Asthma_Mortality_UNCLEAN.csv")
-resp_outcomes <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Raw_Unprocessed/Health Outcomes/ChronicRespiratoryDiseases_Mortality_UNCLEAN.csv")
-cwp_outcomes <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Raw_Unprocessed/Health Outcomes/CoalWorkersPneumoconiosis_Mortality_UNCLEAN.csv")
-lung_outcomes <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Raw_Unprocessed/Health Outcomes/LungDisease_Mortality_UNCLEAN.csv")
+asthma_outcomes <- read_csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Raw_Unprocessed/Health%20Outcomes/Asthma_Mortality_UNCLEAN.csv")
+resp_outcomes <- read_csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Raw_Unprocessed/Health%20Outcomes/ChronicRespiratoryDiseases_Mortality_UNCLEAN.csv")
+cwp_outcomes <- read_csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Raw_Unprocessed/Health%20Outcomes/CoalWorkersPneumoconiosis_Mortality_UNCLEAN.csv")
+lung_outcomes <- read_csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Raw_Unprocessed/Health%20Outcomes/LungDisease_Mortality_UNCLEAN.csv")
 
 #selecting and renaming mortality rate rows for clarity 
 asthma_outcomes <- asthma_outcomes  %>% select(c("Location", "FIPS", `Mortality Rate, 2014*`, `% Change in Mortality Rate, 1980-2014`)) %>% mutate("mortality_ast_2014" = `Mortality Rate, 2014*`, "perc_mortality_change_ast" = `% Change in Mortality Rate, 1980-2014`) %>% select(-c(`% Change in Mortality Rate, 1980-2014`, `Mortality Rate, 2014*`))
@@ -89,30 +89,30 @@ health_outcomes <- health_outcomes %>%
   filter(!is.na(State))
 
 #creating cleaned CSV into shared folder
-write_csv(health_outcomes, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_outcomes_CLEAN.csv")
+# write_csv(health_outcomes, ".../PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_outcomes_CLEAN.csv")
 ```
 
 ```{r Cleaning AQI Data}
 #reading in the data 
-aqi_2014 <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Raw_Unprocessed/annual_aqi_by_county_2014.csv")
+aqi_2014 <- read_csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Raw_Unprocessed/annual_aqi_by_county_2014.csv")
 
 #this data is already cleaned, so creating a new CSV into the shared folder
-write_csv(aqi_2014, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/aqi_2014_CLEAN.csv")
+# write_csv(aqi_2014, ".../PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/aqi_2014_CLEAN.csv")
 
 ```
 
 ```{r Cleaning Coal Plant Data}
-coal_plants <- read_csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Raw_Unprocessed/CoalPlants.csv")
+coal_plants <- read_csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Raw_Unprocessed/CoalPlants.csv")
 
 #filtering for just the United States, as this dataset contains infornmation on the entire world
 coal_plants <- coal_plants %>% filter(Country == "United States")
 
 #this data is already cleaned, as we only need the latitude/longitude of each coal plant for the purposes of this data
-write_csv(coal_plants,  "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/coal_plants_CLEAN.csv")
+# write_csv(coal_plants,  ".../PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/coal_plants_CLEAN")
 ```
 
 ```{r Cleaning Smoking Data}
-smoking <- read.csv("/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Raw_Unprocessed/smoking.csv")
+smoking <- read.csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Raw_Unprocessed/smoking.csv")
 
 #Deleting the first row
 smoking <- smoking[-c(1), ]
@@ -132,6 +132,6 @@ smoking <- smoking %>% rename_at('geography_name', ~'county')
 smoking <- smoking %>% mutate(current_smokers = as.numeric(current_smokers))
 
 #creating cleaned CSV into shared folder
-write.csv(smoking, "/Users/ericleinweber/Desktop/PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/smoking_CLEAN.csv", row.names=FALSE)
+# write.csv(smoking, ".../PLCY 715 GitHub Repository/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/smoking_CLEAN.csv", row.names=FALSE)
 ```
 
