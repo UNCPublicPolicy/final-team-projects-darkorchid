@@ -20,6 +20,8 @@ library(moderndive)
 library(GGally)
 library(janitor)
 library(dplyr)
+library(geosphere)
+library(readr)
 ```
 
 ## Introducing coal plant data to undergo feature engineering. 
@@ -27,9 +29,7 @@ library(dplyr)
 ```{r}
 #Coal plant data was cleaned in an individual folder, the excel was converted to csv and excess worksheets were removed from the workbook. 
 
-coalplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/CoalPlants2.csv")
-
-# coalplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/CoalPlants2.csv")
+coalplants <- read_csv("https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/coal_plants_CLEAN")
 ```
 
 ```{r}
@@ -41,7 +41,7 @@ coalplants <- rename(coalplants, county = local_area_taluk_county)
 ```
 
 ```{r}
-counties <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/uscounties.csv")
+counties <- read_csv(file = "https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/uscounties_CLEAN.csv")
 head(counties)
 colnames(counties)
 county_center <- counties %>% select(county, state_name, lat, lng)
@@ -92,7 +92,6 @@ library(geosphere)
 # filtering to be sure
 coal_plants <- na.omit(coal_plants)
 
-
 distances <- geosphere::distm(county_centroids[, c("long", "lat")], coal_plants[, c("long", "lat")])
 
 # minimum distance per county
@@ -121,14 +120,13 @@ county_centroids <- county_centroids %>%
   mutate(distance_to_nearest_plant = min_distances,
          name_of_nearest_plant = names_of_nearest_plants)
 
-coords_distance <- county_centroids 
+#file_path1 <- "https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/centroids_plants_CLEAN.csv"
 
-write_csv(county_centroids, "/Users/mac/Documents/My Tableau Repository/countycoords.csv")
-write_csv(coal_plants, "/Users/mac/Documents/My Tableau Repository/coalplantcoords.csv")
+### A note about write_csv in this .Rmd: all write_csv commands are tagged out to avoid problems with the online repository. The files that are written from this .Rmd were created locally and pushed into their proper place in the repository. If any user of this .Rmd plans to use write_csv to write csvs into their own local pathway, please replace the #file_pathX pathway with your own local path. ###
 
-#write_csv(county_centroids, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/countycoords.csv")
+#file_path1 <- "https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/centroids_plants_CLEAN.csv"
 
-#write_csv(coal_plants, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/coalplantcoords.csv")
+#write_csv(county_centroids, file_path1)
 
 ```
 
@@ -155,14 +153,14 @@ library(tidyr)
 ```
 
 ```{r read files}
-crossw <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/countycrosswalk.csv")
+crossw <- read_csv(file = "https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/countycrosswalk_CLEAN.csv")
 
-aqi <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/annual_aqi_by_county_2014.csv")
+aqi <- read_csv(file = "https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/aqi_2014_CLEAN.csv")
 
-outcomes <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_outcomes_2014.csv")
-
-#outcomes <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_outcomes_2014.csv")
+outcomes <- read_csv(file = "https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/health_outcomes_CLEAN.csv")
 ```
+
+
 ```{r correct names}
 
 colnames(crossw)[1] <- "County"
@@ -182,7 +180,7 @@ crossw <- crossw %>%
 ```
 
 
-```{r}
+```{#r}
 outcomes <- outcomes %>%
   separate(Location, into = c("County", "State"), sep = ", ", remove = FALSE)
 
@@ -209,9 +207,8 @@ joined_dv_iv <- clean_names(joined_dv_iv)
 
 # I intend to join the countycoords tibble which has county, state, lat, long, distance_to_nearest_plant, name_of_nearest_plant 
 
-centroidsandplants <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Bankson/QBCleanerData/countycoords.csv")
+centroidsandplants <- county_centroids
 
-#centroidsandplants <- read_csv("/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/coalplantcoords.csv")
 ```
 
 ```{r}
@@ -228,9 +225,11 @@ vis_miss(final)
 ```
 
 ```{r}
-write_csv(final, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/presentationdata.csv")
 
-#write_csv(final, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_aqi_coal_distance_CLEAN.csv")
+#file_path2 <- UNCPublicPolicy/final-team-projects-darkorchid/DATA/clean/health_aqi_coal_distance_CLEAN.csv
+
+#write_csv(final, file_path2)
+
 ```
 
 
@@ -258,8 +257,9 @@ library(naniar)
 ```
 
 ```{r}
-data <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_aqi_coal_distance_CLEAN.csv")
+data <- final
 ```
+
 ```{r}
 head(data)
 colnames(data)
@@ -275,12 +275,12 @@ vis_miss(data)
 data <- data %>% 
   mutate(distance_km = distance_to_nearest_plant / 1000)
 
-pr1model <- lm(mortality_resp ~ median_aqi + unhealthy_days + hazardous_days + days_no2 + distance_km, data = data)
+pr1model <- lm(mortality_resp_2014 ~ median_aqi + unhealthy_days + hazardous_days + days_no2 + distance_km, data = data)
 summary(pr1model)
 ```
 
 ```{r}
-pr2model <- lm(mortality_resp ~ median_aqi + max_aqi + good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + hazardous_days +days_ozone + days_no2 + distance_km, data = data)
+pr2model <- lm(mortality_resp_2014 ~ median_aqi + max_aqi + good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + hazardous_days +days_ozone + days_no2 + distance_km, data = data)
 summary(pr2model)
 ```
 
@@ -293,7 +293,7 @@ summary(pr2model)
 ## Advanced Regressions
 
 ```{r}
-data <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Output/health_aqi_coal_distance_CLEAN.csv")
+data <- final
 ```
 
 ```{r}
@@ -310,11 +310,10 @@ data <- data %>%
 
 # The file smoking_CLEAN provides more independent variables for control. The crucial variable provided by this data set is the crude percent of adults who currently smoke in 2020.
 
-smoking <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Norwood/smoking_cleaned.csv")
+smoking <- read_csv(file = "https://raw.githubusercontent.com/UNCPublicPolicy/final-team-projects-darkorchid/main/DarkOrchid/DATA/Clean/smoking_CLEAN.csv")
 
-#smoking <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/smoking_CLEAN.csv")
 
-#Making the fips code identical- changed geo_id to "fips" and used sprintf to add an extra "0" in front of codes that were 4 digits long isntead of 5. This made the fips codes compatible between thesmoking data and the rest of the compiled data. 
+#Making the fips code identical- changed geo_id to "fips" and used sprintf to add an extra "0" in front of codes that were 4 digits long isntead of 5. This made the fips codes compatible between the smoking data and the rest of the compiled data. 
 
 smoking <- smoking %>% rename(fips = geo_id)
 
@@ -329,9 +328,9 @@ merged_data <- data %>%
 merged_data <- merged_data %>%
   rename(state = state.x, state_abrv = state.y)
 
-write_csv(merged_data, "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/DATA/Clean/health_aqi_coal_distance.csv")
+#file_path3 <- UNCPublicPolicy/final-team-projects-darkorchid/DATA/clean/health_aqi_coal_distance_smoking_CLEAN.csv
 
-#data_s <- read_csv(file = "/Users/mac/Documents/R Assignments PLCY 715/final-team-projects-darkorchid/DarkOrchid/Cleaned Merged Data/fullplusmoke.csv") 
+#write_csv(merged_data, file_path3)
 
 ```
 
@@ -347,18 +346,18 @@ data_50 <- merged_data %>%
 
 ```{r}
 #An experimental model including many different independent variables. Investigating realtionship for mortality_resp. 
-exmodel <- lm(mortality_resp ~ median_aqi + max_aqi + good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + hazardous_days +days_ozone + days_no2 + distance_km, data = merged_data)
+exmodel <- lm(mortality_resp_2014 ~ median_aqi + max_aqi + good_days + moderate_days + unhealthy_for_sensitive_groups_days + unhealthy_days + hazardous_days +days_ozone + days_no2 + distance_km, data = merged_data)
 summary(exmodel)
 ```
 
 ```{r}
 # Experiments with mortality_resp models. 
-exmodel2 <- lm(mortality_resp ~ median_aqi + unhealthy_days + hazardous_days + days_no2 + distance_km, data = data)
+exmodel2 <- lm(mortality_resp_2014 ~ median_aqi + unhealthy_days + hazardous_days + days_no2 + distance_km, data = merged_data)
 summary(exmodel2)
 ```
 
 ```{r}
-final_mod1 <-lm(mortality_resp ~ distance_km, data = data)
+final_mod1 <-lm(mortality_resp_2014 ~ distance_km, data = merged_data)
 
 summary(final_mod1)
 ```
@@ -366,7 +365,7 @@ summary(final_mod1)
 ```{r}
 # A deeper look into distance_km's effect on mortality_resp. Only analyzing the top 10 percent lowest values for min_distance from caol fired power plant. 
 
-final_mod10 <-lm(mortality_resp ~ distance_km, data = data_10)
+final_mod10 <-lm(mortality_resp_2014 ~ distance_km, data = data_10)
 
 summary(final_mod10)
 ```
@@ -375,7 +374,7 @@ summary(final_mod10)
 ```{r}
 # A deeper look into distance_km's effect on mortality_resp. Only analyzing the top 50 percent lowest values for min_distance from caol fired power plant. 
 
-final_mod50 <-lm(mortality_resp ~ distance_km, data = data_50)
+final_mod50 <-lm(mortality_resp_2014 ~ distance_km, data = data_50)
 
 summary(final_mod50)
 ```
@@ -384,7 +383,7 @@ summary(final_mod50)
 ```{r}
 # Investigating the strength of current_smokers effect on moratlity_resp compared to distance_km. 
 
-smoking_mod1 <-lm(mortality_resp ~ distance_km + current_smokers, data = merged_data)
+smoking_mod1 <-lm(mortality_resp_2014 ~ distance_km + current_smokers, data = merged_data)
 
 summary(smoking_mod1)
 ```
@@ -393,7 +392,7 @@ summary(smoking_mod1)
 ```{r}
 # Investigating the strength of current_smokers effect on moratlity_resp compared to distance_km controlling by state. 
 
-smoking_mod2 <- lm(mortality_resp ~ distance_km + current_smokers + state, data = merged_data)
+smoking_mod2 <- lm(mortality_resp_2014 ~ distance_km + current_smokers + state, data = merged_data)
 
 summary(smoking_mod2)
 ```
@@ -401,7 +400,7 @@ summary(smoking_mod2)
 
 ```{r}
 # Investigating the strength of current_smokers effect on moratlity_resp compared to distance_km. Only analyzing the top 10 percent lowest values for min_distance from coal fired power plant. 
-smoking_mod10 <- lm(mortality_resp ~ distance_km + current_smokers, data = data_10)
+smoking_mod10 <- lm(mortality_resp_2014 ~ distance_km + current_smokers, data = data_10)
 
 summary(smoking_mod10)
 ```
@@ -409,7 +408,7 @@ summary(smoking_mod10)
 
 ```{r}
 # Investigating the strength of current_smokers effect on moratlity_resp compared to distance_km. Only analyzing the top 50 percent lowest values for min_distance from coal fired power plant. 
-smoking_mod50 <- lm(mortality_resp ~ distance_km + current_smokers, data = data_50)
+smoking_mod50 <- lm(mortality_resp_2014 ~ distance_km + current_smokers, data = data_50)
 
 summary(smoking_mod50)
 ```
